@@ -1,0 +1,849 @@
+{
+ "stage1": {
+  "sensevoice": {
+   "mean_err": 0.0736,
+   "n_err": 0,
+   "wall_s": 27.1,
+   "records": [
+    {
+     "id": "BAC009S0002W0122",
+     "lang": "zh",
+     "text": "而对面楼市成交抑制作用最大的限购。",
+     "err": 0.0667,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "BAC009S0002W0130",
+     "lang": "zh",
+     "text": "财政金融政策紧随其候而来。",
+     "err": 0.0833,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "BAC009S0002W0132",
+     "lang": "zh",
+     "text": "放松了与自网需求密切相关的房贷政策。",
+     "err": 0.0588,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "BAC009S0002W0136",
+     "lang": "zh",
+     "text": "这个后来被称为930新政策的措施。",
+     "err": 0.125,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "BAC009S0002W0139",
+     "lang": "zh",
+     "text": "支持缴存职工购买手套和改善型自住住房。",
+     "err": 0.0556,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "1320-122612-0001",
+     "lang": "en",
+     "text": "The dews were suffered to exhale, and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey.",
+     "err": 0.0333,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "1320-122612-0002",
+     "lang": "en",
+     "text": "After proceedcing a few miles, the progress of Hawkeye, who LED the advance, became more deliberate and watchful.",
+     "err": 0.0556,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "1320-122612-0003",
+     "lang": "en",
+     "text": "He often stopped to examine the trees, nor did he cross aivulet without attentively considering the quantity, the velocity and the color of its waters.",
+     "err": 0.0769,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "1320-122612-0004",
+     "lang": "en",
+     "text": "Disistrusting his own judgment, his appeals to the opinion of Chingachchguk were frequent and earnest.",
+     "err": 0.1333,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "1320-122612-0005",
+     "lang": "en",
+     "text": "Yet here are we within a short range of the Scoonons and not a sign of a trail have we crossed.",
+     "err": 0.0476,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    }
+   ]
+  },
+  "qwen3asr": {
+   "mean_err": 0.0173,
+   "n_err": 0,
+   "wall_s": 23.7,
+   "records": [
+    {
+     "id": "BAC009S0002W0122",
+     "lang": "zh",
+     "text": "而对面楼市成交抑制作用最大的限购。",
+     "err": 0.0667,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "BAC009S0002W0130",
+     "lang": "zh",
+     "text": "财政金融政策紧随其后而来。",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "BAC009S0002W0132",
+     "lang": "zh",
+     "text": "放松了与自网需求密切相关的房贷政策。",
+     "err": 0.0588,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "BAC009S0002W0136",
+     "lang": "zh",
+     "text": "这个后来被称为“九三零”新政策的措施。",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "BAC009S0002W0139",
+     "lang": "zh",
+     "text": "支持缴存职工购买首套和改善型自住住房。",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "1320-122612-0001",
+     "lang": "en",
+     "text": "The dews were suffered to exhale, and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travelers resumed their journey.",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "1320-122612-0002",
+     "lang": "en",
+     "text": "After proceeding a few miles, the progress of Hawkeye, who led the advance, became more deliberate and watchful.",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "1320-122612-0003",
+     "lang": "en",
+     "text": "He often stopped to examine the trees, nor did he cross a rivulet without attentively considering the quantity, the velocity, and the color of its waters.",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "1320-122612-0004",
+     "lang": "en",
+     "text": "Distrusting his own judgment, his appeals to the opinion of Chingachgook were frequent and earnest.",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    },
+    {
+     "id": "1320-122612-0005",
+     "lang": "en",
+     "text": "Yet here are we, within a short range of the Scarruns, and not a sign of a trail have we crossed.",
+     "err": 0.0476,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": false
+    }
+   ]
+  },
+  "xingchen-v32": {
+   "mean_err": 0.0225,
+   "n_err": 0,
+   "wall_s": 27.0,
+   "records": [
+    {
+     "id": "BAC009S0002W0122",
+     "lang": "zh",
+     "text": "而对面楼市成交抑制作用最大的限购",
+     "err": 0.0667,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "BAC009S0002W0130",
+     "lang": "zh",
+     "text": "财政金融政策紧随其后而来",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "BAC009S0002W0132",
+     "lang": "zh",
+     "text": "放松了与自往需求密切相关的房贷政策。",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "BAC009S0002W0136",
+     "lang": "zh",
+     "text": "这个后来被称为930新政策的措施。",
+     "err": 0.125,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "BAC009S0002W0139",
+     "lang": "zh",
+     "text": "支持缴存职工购买首套和改善型自住住房。",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0001",
+     "lang": "en",
+     "text": "The dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+     "err": 0.0333,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0002",
+     "lang": "en",
+     "text": "After proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful.",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0003",
+     "lang": "en",
+     "text": "He often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters.",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0004",
+     "lang": "en",
+     "text": "Distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest.",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0005",
+     "lang": "en",
+     "text": "Yet here are we within a short range of the scaroons and not a sign of a trail have we crossed.",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    }
+   ]
+  },
+  "xingchen-ultra": {
+   "mean_err": 0.0284,
+   "n_err": 0,
+   "wall_s": 59.5,
+   "records": [
+    {
+     "id": "BAC009S0002W0122",
+     "lang": "zh",
+     "text": "而对面楼市成交抑制作用最大的限购",
+     "err": 0.0667,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "BAC009S0002W0130",
+     "lang": "zh",
+     "text": "财政金融政策紧随其后而来。",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "BAC009S0002W0132",
+     "lang": "zh",
+     "text": "放松了与自需求密切相关的房贷政策。",
+     "err": 0.0588,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "BAC009S0002W0136",
+     "lang": "zh",
+     "text": "这个后来被称为930新政策的措施。",
+     "err": 0.125,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "BAC009S0002W0139",
+     "lang": "zh",
+     "text": "支持缴存职工购买首套和改善型自住住房。",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0001",
+     "lang": "en",
+     "text": "The dews were suffered to exhale, and the sun had dispersed the mists, and was shedding a strong and clear light in the forest, when the travellers resumed their journey.",
+     "err": 0.0333,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0002",
+     "lang": "en",
+     "text": "After proceeding a few miles, the progress of Hawkeye, who led the advance, became more deliberate and watchful.",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0003",
+     "lang": "en",
+     "text": "He often stopped to examine the trees, nor did he cross a rivulet without attentively considering the quantity, the velocity, and the color of its waters.",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0004",
+     "lang": "en",
+     "text": "Distrusting his own judgment, his appeals to the opinion of Chingachgook were frequent and earnest.",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0005",
+     "lang": "en",
+     "text": "Yet here are we within a short range of the scaroons and not a sign of a trail have we crossed.",
+     "err": 0.0,
+     "n_seg": 0,
+     "speakers": [],
+     "has_duration": true
+    }
+   ]
+  },
+  "xingchen-diarize": {
+   "mean_err": 0.127,
+   "n_err": 0,
+   "wall_s": 28.5,
+   "records": [
+    {
+     "id": "BAC009S0002W0122",
+     "lang": "zh",
+     "text": "1: 而对面楼市成交抑制作用最大的限购",
+     "err": 0.1333,
+     "n_seg": 1,
+     "speakers": [
+      "1"
+     ],
+     "has_duration": true
+    },
+    {
+     "id": "BAC009S0002W0130",
+     "lang": "zh",
+     "text": "1: 财政金融政策\n2: 你随\n3: 其后而来。",
+     "err": 0.3333,
+     "n_seg": 3,
+     "speakers": [
+      "1",
+      "2",
+      "3"
+     ],
+     "has_duration": true
+    },
+    {
+     "id": "BAC009S0002W0132",
+     "lang": "zh",
+     "text": "1: 放松了与自往需求密切相关的房贷政策。",
+     "err": 0.0588,
+     "n_seg": 1,
+     "speakers": [
+      "1"
+     ],
+     "has_duration": true
+    },
+    {
+     "id": "BAC009S0002W0136",
+     "lang": "zh",
+     "text": "1: 这个后来被称为930新政策。",
+     "err": 0.375,
+     "n_seg": 1,
+     "speakers": [
+      "1"
+     ],
+     "has_duration": true
+    },
+    {
+     "id": "BAC009S0002W0139",
+     "lang": "zh",
+     "text": "1: 支持缴存职工购买首套和改善型自住住房。",
+     "err": 0.0556,
+     "n_seg": 1,
+     "speakers": [
+      "1"
+     ],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0001",
+     "lang": "en",
+     "text": "1: The dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+     "err": 0.0667,
+     "n_seg": 1,
+     "speakers": [
+      "1"
+     ],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0002",
+     "lang": "en",
+     "text": "1: After proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful.",
+     "err": 0.0556,
+     "n_seg": 1,
+     "speakers": [
+      "1"
+     ],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0003",
+     "lang": "en",
+     "text": "1: He often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the colour of its waters.",
+     "err": 0.0769,
+     "n_seg": 1,
+     "speakers": [
+      "1"
+     ],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0004",
+     "lang": "en",
+     "text": "1: Distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest.",
+     "err": 0.0667,
+     "n_seg": 1,
+     "speakers": [
+      "1"
+     ],
+     "has_duration": true
+    },
+    {
+     "id": "1320-122612-0005",
+     "lang": "en",
+     "text": "1: Yet here are we within a short range of the scaroons and not a sign of a trail have we crossed.",
+     "err": 0.0476,
+     "n_seg": 1,
+     "speakers": [
+      "1"
+     ],
+     "has_duration": true
+    }
+   ]
+  }
+ },
+ "stage2": {
+  "qwen3asr": {
+   "err_before": 0.0173,
+   "err_after": 0.014,
+   "records": [
+    {
+     "id": "BAC009S0002W0122",
+     "lang": "zh",
+     "repeat": 1,
+     "err_before": 0.0667,
+     "err_after": 0.0,
+     "calls": 2
+    },
+    {
+     "id": "BAC009S0002W0122",
+     "lang": "zh",
+     "repeat": 2,
+     "err_before": 0.0667,
+     "err_after": 0.0667,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0130",
+     "lang": "zh",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0130",
+     "lang": "zh",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0132",
+     "lang": "zh",
+     "repeat": 1,
+     "err_before": 0.0588,
+     "err_after": 0.0588,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0132",
+     "lang": "zh",
+     "repeat": 2,
+     "err_before": 0.0588,
+     "err_after": 0.0588,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0136",
+     "lang": "zh",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0136",
+     "lang": "zh",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0139",
+     "lang": "zh",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 2
+    },
+    {
+     "id": "BAC009S0002W0139",
+     "lang": "zh",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "1320-122612-0001",
+     "lang": "en",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "1320-122612-0001",
+     "lang": "en",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 2
+    },
+    {
+     "id": "1320-122612-0002",
+     "lang": "en",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "1320-122612-0002",
+     "lang": "en",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "1320-122612-0003",
+     "lang": "en",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "1320-122612-0003",
+     "lang": "en",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "1320-122612-0004",
+     "lang": "en",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "1320-122612-0004",
+     "lang": "en",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "1320-122612-0005",
+     "lang": "en",
+     "repeat": 1,
+     "err_before": 0.0476,
+     "err_after": 0.0476,
+     "calls": 1
+    },
+    {
+     "id": "1320-122612-0005",
+     "lang": "en",
+     "repeat": 2,
+     "err_before": 0.0476,
+     "err_after": 0.0476,
+     "calls": 1
+    }
+   ]
+  },
+  "xingchen-v32": {
+   "err_before": 0.0225,
+   "err_after": 0.0267,
+   "records": [
+    {
+     "id": "BAC009S0002W0122",
+     "lang": "zh",
+     "repeat": 1,
+     "err_before": 0.0667,
+     "err_after": 0.0667,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0122",
+     "lang": "zh",
+     "repeat": 2,
+     "err_before": 0.0667,
+     "err_after": 0.0667,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0130",
+     "lang": "zh",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0130",
+     "lang": "zh",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0132",
+     "lang": "zh",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0588,
+     "calls": 2
+    },
+    {
+     "id": "BAC009S0002W0132",
+     "lang": "zh",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0588,
+     "calls": 2
+    },
+    {
+     "id": "BAC009S0002W0136",
+     "lang": "zh",
+     "repeat": 1,
+     "err_before": 0.125,
+     "err_after": 0.125,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0136",
+     "lang": "zh",
+     "repeat": 2,
+     "err_before": 0.125,
+     "err_after": 0.125,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0139",
+     "lang": "zh",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "BAC009S0002W0139",
+     "lang": "zh",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "1320-122612-0001",
+     "lang": "en",
+     "repeat": 1,
+     "err_before": 0.0333,
+     "err_after": 0.0333,
+     "calls": 1
+    },
+    {
+     "id": "1320-122612-0001",
+     "lang": "en",
+     "repeat": 2,
+     "err_before": 0.0333,
+     "err_after": 0.0,
+     "calls": 2
+    },
+    {
+     "id": "1320-122612-0002",
+     "lang": "en",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 2
+    },
+    {
+     "id": "1320-122612-0002",
+     "lang": "en",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 2
+    },
+    {
+     "id": "1320-122612-0003",
+     "lang": "en",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 2
+    },
+    {
+     "id": "1320-122612-0003",
+     "lang": "en",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 2
+    },
+    {
+     "id": "1320-122612-0004",
+     "lang": "en",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 2
+    },
+    {
+     "id": "1320-122612-0004",
+     "lang": "en",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 2
+    },
+    {
+     "id": "1320-122612-0005",
+     "lang": "en",
+     "repeat": 1,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    },
+    {
+     "id": "1320-122612-0005",
+     "lang": "en",
+     "repeat": 2,
+     "err_before": 0.0,
+     "err_after": 0.0,
+     "calls": 1
+    }
+   ]
+  }
+ },
+ "top2": [
+  "qwen3asr",
+  "xingchen-v32"
+ ]
+}
