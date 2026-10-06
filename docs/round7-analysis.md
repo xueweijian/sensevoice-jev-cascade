@@ -94,6 +94,13 @@ Round 6/7 脚本默认没有加 `response_format=verbose_json`，因此 V3.2/Ult
 
 所以准确的表格是：V3.2/Ultra 有**整句级时间戳**、无逐句/逐词时间戳、无说话人；要多说话人切分还是只能用 Diarize。
 
+> **长音频补测（15-18 秒拼接音频，2026-10-06）**：V3.2 + `response_format=verbose_json`
+> 返回 **3 个 segments**（每段 `start/end/text`，按静音切分），因此它完全可以
+> 直接做 SRT 字幕（时间轴按静音段切分、无说话人标签）。短音频只有一段，纯粹
+> 是因为音频里只有一句话。结论修正：除 SenseVoiceSmall 外，其余三个免费模型
+> 均有可用的时间戳，均可直接做 SRT；说话人标签仍只有 Diarize。
+
+
 
 ## 生产决策
 
