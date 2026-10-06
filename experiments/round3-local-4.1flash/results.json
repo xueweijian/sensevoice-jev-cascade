@@ -1,0 +1,1689 @@
+{
+ "meta": {
+  "run_utc": "2026-10-06T07:17:20.038797+00:00",
+  "judges": [
+   "Kev-4B",
+   "SemIf",
+   "diffusiongemma",
+   "jev-1.13-free"
+  ],
+  "thresholds": {
+   "gate": 0.35,
+   "suspect": 0.5,
+   "choice_conf": 0.6
+  }
+ },
+ "summary": {
+  "Kev-4B": {
+   "n": 10,
+   "err_A_mean": 0.0736,
+   "err_B_mean": 0.2265,
+   "err_D_mean": 0.0597,
+   "improved": 2,
+   "worsened": 0,
+   "unchanged": 8,
+   "det_tp": 2,
+   "det_fp": 2,
+   "det_fn": 10,
+   "overcorrections_D": 0,
+   "overcorrections_B": 41,
+   "changed_B": 52,
+   "latency_mean_s": 4.18,
+   "edits_by_choice": 0,
+   "edits_by_llm": 2
+  },
+  "SemIf": {
+   "n": 10,
+   "err_A_mean": 0.0736,
+   "err_B_mean": 0.2265,
+   "err_D_mean": 0.0614,
+   "improved": 2,
+   "worsened": 0,
+   "unchanged": 8,
+   "det_tp": 4,
+   "det_fp": 3,
+   "det_fn": 7,
+   "overcorrections_D": 0,
+   "overcorrections_B": 41,
+   "changed_B": 52,
+   "latency_mean_s": 5.24,
+   "edits_by_choice": 0,
+   "edits_by_llm": 4
+  },
+  "diffusiongemma": {
+   "n": 10,
+   "err_A_mean": 0.0736,
+   "err_B_mean": 0.2265,
+   "err_D_mean": 0.0625,
+   "improved": 2,
+   "worsened": 0,
+   "unchanged": 8,
+   "det_tp": 3,
+   "det_fp": 8,
+   "det_fn": 9,
+   "overcorrections_D": 0,
+   "overcorrections_B": 41,
+   "changed_B": 52,
+   "latency_mean_s": 13.04,
+   "edits_by_choice": 0,
+   "edits_by_llm": 3
+  },
+  "jev-1.13-free": {
+   "n": 10,
+   "err_A_mean": 0.0736,
+   "err_B_mean": 0.2265,
+   "err_D_mean": 0.0475,
+   "improved": 4,
+   "worsened": 0,
+   "unchanged": 6,
+   "det_tp": 7,
+   "det_fp": 27,
+   "det_fn": 5,
+   "overcorrections_D": 0,
+   "overcorrections_B": 41,
+   "changed_B": 52,
+   "latency_mean_s": 13.61,
+   "edits_by_choice": 0,
+   "edits_by_llm": 6
+  }
+ },
+ "records": [
+  {
+   "id": "BAC009S0002W0122",
+   "lang": "zh",
+   "model": "Kev-4B",
+   "ref": "而对楼市成交抑制作用最大的限购",
+   "hyp": "而对面楼市成交抑制作用最大的限购",
+   "hyp_raw": "而对面楼市成交抑制作用最大的限购。",
+   "err_A": 0.0667,
+   "err_B": 1.0,
+   "err_D": 0.0667,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 1,
+   "b_changed": 16,
+   "b_overcorrect": 15,
+   "b_raw": "",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.3626,
+    "est_err_count": 0.9,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "1": 0.357,
+     "9": 0.3555
+    },
+    "edits": [],
+    "latency_s": 1.78
+   },
+   "fixed_hyp": "而对面楼市成交抑制作用最大的限购",
+   "b_hyp": ""
+  },
+  {
+   "id": "BAC009S0002W0122",
+   "lang": "zh",
+   "model": "SemIf",
+   "ref": "而对楼市成交抑制作用最大的限购",
+   "hyp": "而对面楼市成交抑制作用最大的限购",
+   "hyp_raw": "而对面楼市成交抑制作用最大的限购。",
+   "err_A": 0.0667,
+   "err_B": 1.0,
+   "err_D": 0.0667,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 1,
+   "det_fn": 1,
+   "b_changed": 16,
+   "b_overcorrect": 15,
+   "b_raw": "",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.852,
+    "est_err_count": 1.24,
+    "chosen": [
+     15
+    ],
+    "suspect_p_wrong": {},
+    "edits": [],
+    "latency_s": 5.61
+   },
+   "fixed_hyp": "而对面楼市成交抑制作用最大的限购",
+   "b_hyp": ""
+  },
+  {
+   "id": "BAC009S0002W0122",
+   "lang": "zh",
+   "model": "diffusiongemma",
+   "ref": "而对楼市成交抑制作用最大的限购",
+   "hyp": "而对面楼市成交抑制作用最大的限购",
+   "hyp_raw": "而对面楼市成交抑制作用最大的限购。",
+   "err_A": 0.0667,
+   "err_B": 1.0,
+   "err_D": 0.0667,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 1,
+   "b_changed": 16,
+   "b_overcorrect": 15,
+   "b_raw": "",
+   "detail": {
+    "gate_open": false,
+    "has_error": 0.0,
+    "est_err_count": 0.0,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "0": 1.0
+    },
+    "edits": [],
+    "latency_s": 7.95
+   },
+   "fixed_hyp": "而对面楼市成交抑制作用最大的限购",
+   "b_hyp": ""
+  },
+  {
+   "id": "BAC009S0002W0122",
+   "lang": "zh",
+   "model": "jev-1.13-free",
+   "ref": "而对楼市成交抑制作用最大的限购",
+   "hyp": "而对面楼市成交抑制作用最大的限购",
+   "hyp_raw": "而对面楼市成交抑制作用最大的限购。",
+   "err_A": 0.0667,
+   "err_B": 1.0,
+   "err_D": 0.0667,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 2,
+   "det_fn": 1,
+   "b_changed": 16,
+   "b_overcorrect": 15,
+   "b_raw": "",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.35,
+    "est_err_count": 0.43,
+    "chosen": [
+     5,
+     3
+    ],
+    "suspect_p_wrong": {
+     "2": 0.49,
+     "3": 0.7,
+     "4": 0.34,
+     "5": 0.72,
+     "7": 0.49,
+     "9": 0.31,
+     "11": 0.41
+    },
+    "edits": [],
+    "latency_s": 17.44
+   },
+   "fixed_hyp": "而对面楼市成交抑制作用最大的限购",
+   "b_hyp": ""
+  },
+  {
+   "id": "BAC009S0002W0130",
+   "lang": "zh",
+   "model": "Kev-4B",
+   "ref": "财政金融政策紧随其后而来",
+   "hyp": "财政金融政策紧随其候而来",
+   "hyp_raw": "财政金融政策紧随其候而来。",
+   "err_A": 0.0833,
+   "err_B": 0.0,
+   "err_D": 0.0,
+   "changed": [
+    9
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 1,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "财政金融政策紧随其后而来",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.5839,
+    "est_err_count": 1.04,
+    "chosen": [
+     9,
+     1
+    ],
+    "suspect_p_wrong": {
+     "1": 0.5036,
+     "2": 0.3533,
+     "9": 0.5221,
+     "10": 0.3739
+    },
+    "edits": [
+     {
+      "i": 9,
+      "from": "候",
+      "to": "后",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 11.92
+   },
+   "fixed_hyp": "财政金融政策紧随其后而来",
+   "b_hyp": "财政金融政策紧随其后而来"
+  },
+  {
+   "id": "BAC009S0002W0130",
+   "lang": "zh",
+   "model": "SemIf",
+   "ref": "财政金融政策紧随其后而来",
+   "hyp": "财政金融政策紧随其候而来",
+   "hyp_raw": "财政金融政策紧随其候而来。",
+   "err_A": 0.0833,
+   "err_B": 0.0,
+   "err_D": 0.0833,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "财政金融政策紧随其后而来",
+   "detail": {
+    "error": "RuntimeError('systemone SemIf HTTP 400: {\"code\":20015,\"message\":\"The parameter is invalid. Please check again.\",\"data\":null}')"
+   },
+   "fixed_hyp": "财政金融政策紧随其候而来",
+   "b_hyp": "财政金融政策紧随其后而来"
+  },
+  {
+   "id": "BAC009S0002W0130",
+   "lang": "zh",
+   "model": "diffusiongemma",
+   "ref": "财政金融政策紧随其后而来",
+   "hyp": "财政金融政策紧随其候而来",
+   "hyp_raw": "财政金融政策紧随其候而来。",
+   "err_A": 0.0833,
+   "err_B": 0.0,
+   "err_D": 0.0833,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 1,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "财政金融政策紧随其后而来",
+   "detail": {
+    "gate_open": false,
+    "has_error": 0.0,
+    "est_err_count": 1.0,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "2": 1.0,
+     "3": 1.0,
+     "8": 1.0,
+     "9": 1.0
+    },
+    "edits": [],
+    "latency_s": 6.63
+   },
+   "fixed_hyp": "财政金融政策紧随其候而来",
+   "b_hyp": "财政金融政策紧随其后而来"
+  },
+  {
+   "id": "BAC009S0002W0130",
+   "lang": "zh",
+   "model": "jev-1.13-free",
+   "ref": "财政金融政策紧随其后而来",
+   "hyp": "财政金融政策紧随其候而来",
+   "hyp_raw": "财政金融政策紧随其候而来。",
+   "err_A": 0.0833,
+   "err_B": 0.0,
+   "err_D": 0.0,
+   "changed": [
+    9
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 3,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "财政金融政策紧随其后而来",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.54,
+    "est_err_count": 0.73,
+    "chosen": [
+     4,
+     2,
+     9,
+     8
+    ],
+    "suspect_p_wrong": {
+     "2": 0.58,
+     "4": 0.67,
+     "5": 0.38,
+     "6": 0.41,
+     "7": 0.39,
+     "8": 0.5,
+     "9": 0.54,
+     "10": 0.48
+    },
+    "edits": [
+     {
+      "i": 9,
+      "from": "候",
+      "to": "后",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 9.93
+   },
+   "fixed_hyp": "财政金融政策紧随其后而来",
+   "b_hyp": "财政金融政策紧随其后而来"
+  },
+  {
+   "id": "BAC009S0002W0132",
+   "lang": "zh",
+   "model": "Kev-4B",
+   "ref": "放松了与自往需求密切相关的房贷政策",
+   "hyp": "放松了与自网需求密切相关的房贷政策",
+   "hyp_raw": "放松了与自网需求密切相关的房贷政策。",
+   "err_A": 0.0588,
+   "err_B": 0.0588,
+   "err_D": 0.0588,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 1,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "放松了与自住需求密切相关的房贷政策",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.3882,
+    "est_err_count": 0.97,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "2": 0.3563,
+     "4": 0.328
+    },
+    "edits": [],
+    "latency_s": 2.99
+   },
+   "fixed_hyp": "放松了与自网需求密切相关的房贷政策",
+   "b_hyp": "放松了与自住需求密切相关的房贷政策"
+  },
+  {
+   "id": "BAC009S0002W0132",
+   "lang": "zh",
+   "model": "SemIf",
+   "ref": "放松了与自往需求密切相关的房贷政策",
+   "hyp": "放松了与自网需求密切相关的房贷政策",
+   "hyp_raw": "放松了与自网需求密切相关的房贷政策。",
+   "err_A": 0.0588,
+   "err_B": 0.0588,
+   "err_D": 0.0588,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 1,
+   "det_fn": 1,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "放松了与自住需求密切相关的房贷政策",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.7058,
+    "est_err_count": 0.79,
+    "chosen": [
+     1
+    ],
+    "suspect_p_wrong": {},
+    "edits": [],
+    "latency_s": 6.04
+   },
+   "fixed_hyp": "放松了与自网需求密切相关的房贷政策",
+   "b_hyp": "放松了与自住需求密切相关的房贷政策"
+  },
+  {
+   "id": "BAC009S0002W0132",
+   "lang": "zh",
+   "model": "diffusiongemma",
+   "ref": "放松了与自往需求密切相关的房贷政策",
+   "hyp": "放松了与自网需求密切相关的房贷政策",
+   "hyp_raw": "放松了与自网需求密切相关的房贷政策。",
+   "err_A": 0.0588,
+   "err_B": 0.0588,
+   "err_D": 0.0588,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 1,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "放松了与自住需求密切相关的房贷政策",
+   "detail": {
+    "gate_open": false,
+    "has_error": 0.0003,
+    "est_err_count": 1.0,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "4": 1.0,
+     "5": 1.0,
+     "6": 1.0
+    },
+    "edits": [],
+    "latency_s": 8.37
+   },
+   "fixed_hyp": "放松了与自网需求密切相关的房贷政策",
+   "b_hyp": "放松了与自住需求密切相关的房贷政策"
+  },
+  {
+   "id": "BAC009S0002W0132",
+   "lang": "zh",
+   "model": "jev-1.13-free",
+   "ref": "放松了与自往需求密切相关的房贷政策",
+   "hyp": "放松了与自网需求密切相关的房贷政策",
+   "hyp_raw": "放松了与自网需求密切相关的房贷政策。",
+   "err_A": 0.0588,
+   "err_B": 0.0588,
+   "err_D": 0.0588,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 3,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "放松了与自住需求密切相关的房贷政策",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.79,
+    "est_err_count": 1.03,
+    "chosen": [
+     5,
+     6,
+     4,
+     8
+    ],
+    "suspect_p_wrong": {
+     "1": 0.41,
+     "2": 0.43,
+     "3": 0.47,
+     "4": 0.62,
+     "5": 0.73,
+     "6": 0.62,
+     "8": 0.52,
+     "10": 0.41
+    },
+    "edits": [],
+    "latency_s": 30.22
+   },
+   "fixed_hyp": "放松了与自网需求密切相关的房贷政策",
+   "b_hyp": "放松了与自住需求密切相关的房贷政策"
+  },
+  {
+   "id": "BAC009S0002W0136",
+   "lang": "zh",
+   "model": "Kev-4B",
+   "ref": "这个后来被称为九三零新政策的措施",
+   "hyp": "这个后来被称为九百三十新政策的措施",
+   "hyp_raw": "这个后来被称为930新政策的措施。",
+   "err_A": 0.125,
+   "err_B": 0.125,
+   "err_D": 0.125,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 2,
+   "b_changed": 4,
+   "b_overcorrect": 2,
+   "b_raw": "这个后来被称为九三零新政策的",
+   "detail": {
+    "gate_open": false,
+    "has_error": 0.3025,
+    "est_err_count": 0.75,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "1": 0.6243,
+     "2": 0.3257
+    },
+    "edits": [],
+    "latency_s": 1.84
+   },
+   "fixed_hyp": "这个后来被称为九百三十新政策的措施",
+   "b_hyp": "这个后来被称为九三零新政策的"
+  },
+  {
+   "id": "BAC009S0002W0136",
+   "lang": "zh",
+   "model": "SemIf",
+   "ref": "这个后来被称为九三零新政策的措施",
+   "hyp": "这个后来被称为九百三十新政策的措施",
+   "hyp_raw": "这个后来被称为930新政策的措施。",
+   "err_A": 0.125,
+   "err_B": 0.125,
+   "err_D": 0.125,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 1,
+   "det_fn": 2,
+   "b_changed": 4,
+   "b_overcorrect": 2,
+   "b_raw": "这个后来被称为九三零新政策的",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.6225,
+    "est_err_count": 0.73,
+    "chosen": [
+     3
+    ],
+    "suspect_p_wrong": {
+     "1": 0.3486,
+     "3": 0.6225,
+     "6": 0.4378
+    },
+    "edits": [],
+    "latency_s": 6.0
+   },
+   "fixed_hyp": "这个后来被称为九百三十新政策的措施",
+   "b_hyp": "这个后来被称为九三零新政策的"
+  },
+  {
+   "id": "BAC009S0002W0136",
+   "lang": "zh",
+   "model": "diffusiongemma",
+   "ref": "这个后来被称为九三零新政策的措施",
+   "hyp": "这个后来被称为九百三十新政策的措施",
+   "hyp_raw": "这个后来被称为930新政策的措施。",
+   "err_A": 0.125,
+   "err_B": 0.125,
+   "err_D": 0.125,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 2,
+   "b_changed": 4,
+   "b_overcorrect": 2,
+   "b_raw": "这个后来被称为九三零新政策的",
+   "detail": {
+    "gate_open": false,
+    "has_error": 0.0,
+    "est_err_count": 1.5,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "3": 1.0,
+     "4": 1.0,
+     "15": 1.0
+    },
+    "edits": [],
+    "latency_s": 8.51
+   },
+   "fixed_hyp": "这个后来被称为九百三十新政策的措施",
+   "b_hyp": "这个后来被称为九三零新政策的"
+  },
+  {
+   "id": "BAC009S0002W0136",
+   "lang": "zh",
+   "model": "jev-1.13-free",
+   "ref": "这个后来被称为九三零新政策的措施",
+   "hyp": "这个后来被称为九百三十新政策的措施",
+   "hyp_raw": "这个后来被称为930新政策的措施。",
+   "err_A": 0.125,
+   "err_B": 0.125,
+   "err_D": 0.125,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 2,
+   "b_changed": 4,
+   "b_overcorrect": 2,
+   "b_raw": "这个后来被称为九三零新政策的",
+   "detail": {
+    "gate_open": false,
+    "has_error": 0.33,
+    "est_err_count": 0.39,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "1": 0.35,
+     "2": 0.35,
+     "4": 0.54,
+     "7": 0.49,
+     "8": 0.33,
+     "9": 0.59,
+     "11": 0.39
+    },
+    "edits": [],
+    "latency_s": 1.36
+   },
+   "fixed_hyp": "这个后来被称为九百三十新政策的措施",
+   "b_hyp": "这个后来被称为九三零新政策的"
+  },
+  {
+   "id": "BAC009S0002W0139",
+   "lang": "zh",
+   "model": "Kev-4B",
+   "ref": "支持缴存职工购买首套和改善型自住住房",
+   "hyp": "支持缴存职工购买手套和改善型自住住房",
+   "hyp_raw": "支持缴存职工购买手套和改善型自住住房。",
+   "err_A": 0.0556,
+   "err_B": 0.0,
+   "err_D": 0.0556,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 1,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "支持缴存职工购买首套和改善型自住住房",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.4701,
+    "est_err_count": 1.03,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "1": 0.3312,
+     "8": 0.3339,
+     "15": 0.3816,
+     "16": 0.379
+    },
+    "edits": [],
+    "latency_s": 2.35
+   },
+   "fixed_hyp": "支持缴存职工购买手套和改善型自住住房",
+   "b_hyp": "支持缴存职工购买首套和改善型自住住房"
+  },
+  {
+   "id": "BAC009S0002W0139",
+   "lang": "zh",
+   "model": "SemIf",
+   "ref": "支持缴存职工购买首套和改善型自住住房",
+   "hyp": "支持缴存职工购买手套和改善型自住住房",
+   "hyp_raw": "支持缴存职工购买手套和改善型自住住房。",
+   "err_A": 0.0556,
+   "err_B": 0.0,
+   "err_D": 0.0556,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 1,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "支持缴存职工购买首套和改善型自住住房",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.4688,
+    "est_err_count": 0.49,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "1": 0.3775,
+     "7": 0.3775,
+     "13": 0.3775
+    },
+    "edits": [],
+    "latency_s": 1.25
+   },
+   "fixed_hyp": "支持缴存职工购买手套和改善型自住住房",
+   "b_hyp": "支持缴存职工购买首套和改善型自住住房"
+  },
+  {
+   "id": "BAC009S0002W0139",
+   "lang": "zh",
+   "model": "diffusiongemma",
+   "ref": "支持缴存职工购买首套和改善型自住住房",
+   "hyp": "支持缴存职工购买手套和改善型自住住房",
+   "hyp_raw": "支持缴存职工购买手套和改善型自住住房。",
+   "err_A": 0.0556,
+   "err_B": 0.0,
+   "err_D": 0.0,
+   "changed": [
+    8
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 1,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "支持缴存职工购买首套和改善型自住住房",
+   "detail": {
+    "gate_open": true,
+    "has_error": 1.0,
+    "est_err_count": 2.0,
+    "chosen": [
+     13,
+     8
+    ],
+    "suspect_p_wrong": {
+     "8": 1.0,
+     "13": 1.0
+    },
+    "edits": [
+     {
+      "i": 8,
+      "from": "手",
+      "to": "首",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 15.76
+   },
+   "fixed_hyp": "支持缴存职工购买首套和改善型自住住房",
+   "b_hyp": "支持缴存职工购买首套和改善型自住住房"
+  },
+  {
+   "id": "BAC009S0002W0139",
+   "lang": "zh",
+   "model": "jev-1.13-free",
+   "ref": "支持缴存职工购买首套和改善型自住住房",
+   "hyp": "支持缴存职工购买手套和改善型自住住房",
+   "hyp_raw": "支持缴存职工购买手套和改善型自住住房。",
+   "err_A": 0.0556,
+   "err_B": 0.0,
+   "err_D": 0.0,
+   "changed": [
+    8
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 6,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "支持缴存职工购买首套和改善型自住住房",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.88,
+    "est_err_count": 1.27,
+    "chosen": [
+     4,
+     8,
+     9,
+     2,
+     10,
+     6,
+     16
+    ],
+    "suspect_p_wrong": {
+     "1": 0.45,
+     "2": 0.57,
+     "3": 0.37,
+     "4": 0.65,
+     "6": 0.52,
+     "8": 0.64,
+     "9": 0.59,
+     "10": 0.55,
+     "11": 0.34,
+     "14": 0.32,
+     "16": 0.51
+    },
+    "edits": [
+     {
+      "i": 8,
+      "from": "手",
+      "to": "首",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 17.4
+   },
+   "fixed_hyp": "支持缴存职工购买首套和改善型自住住房",
+   "b_hyp": "支持缴存职工购买首套和改善型自住住房"
+  },
+  {
+   "id": "1320-122612-0001",
+   "lang": "en",
+   "model": "Kev-4B",
+   "ref": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travelers resumed their journey",
+   "hyp": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+   "hyp_raw": "The dews were suffered to exhale, and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey.",
+   "err_A": 0.0333,
+   "err_B": 0.0333,
+   "err_D": 0.0333,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 1,
+   "det_fn": 1,
+   "b_changed": 0,
+   "b_overcorrect": 0,
+   "b_raw": "The dews were suffered to exhale, and the sun had dispersed the mists and was shedding a strong and clear light in the forest, when the travellers resumed their journey.",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.3847,
+    "est_err_count": 0.94,
+    "chosen": [
+     3
+    ],
+    "suspect_p_wrong": {
+     "2": 0.3334,
+     "3": 0.5858,
+     "11": 0.314,
+     "25": 0.3047
+    },
+    "edits": [],
+    "latency_s": 10.58
+   },
+   "fixed_hyp": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+   "b_hyp": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey"
+  },
+  {
+   "id": "1320-122612-0001",
+   "lang": "en",
+   "model": "SemIf",
+   "ref": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travelers resumed their journey",
+   "hyp": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+   "hyp_raw": "The dews were suffered to exhale, and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey.",
+   "err_A": 0.0333,
+   "err_B": 0.0333,
+   "err_D": 0.0333,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 1,
+   "b_changed": 0,
+   "b_overcorrect": 0,
+   "b_raw": "The dews were suffered to exhale, and the sun had dispersed the mists and was shedding a strong and clear light in the forest, when the travellers resumed their journey.",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.5622,
+    "est_err_count": 0.84,
+    "chosen": [],
+    "suspect_p_wrong": {},
+    "edits": [],
+    "latency_s": 2.14
+   },
+   "fixed_hyp": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+   "b_hyp": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey"
+  },
+  {
+   "id": "1320-122612-0001",
+   "lang": "en",
+   "model": "diffusiongemma",
+   "ref": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travelers resumed their journey",
+   "hyp": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+   "hyp_raw": "The dews were suffered to exhale, and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey.",
+   "err_A": 0.0333,
+   "err_B": 0.0333,
+   "err_D": 0.0333,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 1,
+   "b_changed": 0,
+   "b_overcorrect": 0,
+   "b_raw": "The dews were suffered to exhale, and the sun had dispersed the mists and was shedding a strong and clear light in the forest, when the travellers resumed their journey.",
+   "detail": {
+    "gate_open": false,
+    "has_error": 0.0,
+    "est_err_count": 1.0,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "1": 1.0,
+     "2": 1.0
+    },
+    "edits": [],
+    "latency_s": 12.79
+   },
+   "fixed_hyp": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+   "b_hyp": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey"
+  },
+  {
+   "id": "1320-122612-0001",
+   "lang": "en",
+   "model": "jev-1.13-free",
+   "ref": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travelers resumed their journey",
+   "hyp": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+   "hyp_raw": "The dews were suffered to exhale, and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey.",
+   "err_A": 0.0333,
+   "err_B": 0.0333,
+   "err_D": 0.0333,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 4,
+   "det_fn": 1,
+   "b_changed": 0,
+   "b_overcorrect": 0,
+   "b_raw": "The dews were suffered to exhale, and the sun had dispersed the mists and was shedding a strong and clear light in the forest, when the travellers resumed their journey.",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.4,
+    "est_err_count": 0.54,
+    "chosen": [
+     3,
+     1,
+     4,
+     2
+    ],
+    "suspect_p_wrong": {
+     "1": 0.57,
+     "2": 0.5,
+     "3": 0.61,
+     "4": 0.5,
+     "5": 0.42,
+     "18": 0.39,
+     "20": 0.4,
+     "29": 0.33
+    },
+    "edits": [],
+    "latency_s": 11.15
+   },
+   "fixed_hyp": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+   "b_hyp": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey"
+  },
+  {
+   "id": "1320-122612-0002",
+   "lang": "en",
+   "model": "Kev-4B",
+   "ref": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+   "hyp": "after proceedcing a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+   "hyp_raw": "After proceedcing a few miles, the progress of Hawkeye, who LED the advance, became more deliberate and watchful.",
+   "err_A": 0.0556,
+   "err_B": 0.0,
+   "err_D": 0.0,
+   "changed": [
+    1
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 0,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "After proceeding a few miles, the progress of Hawkeye, who led the advance, became more deliberate and watchful.",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.5809,
+    "est_err_count": 1.06,
+    "chosen": [
+     1
+    ],
+    "suspect_p_wrong": {
+     "1": 0.5081,
+     "2": 0.3785
+    },
+    "edits": [
+     {
+      "i": 1,
+      "from": "proceedcing",
+      "to": "proceeding",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 5.08
+   },
+   "fixed_hyp": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+   "b_hyp": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful"
+  },
+  {
+   "id": "1320-122612-0002",
+   "lang": "en",
+   "model": "SemIf",
+   "ref": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+   "hyp": "after proceedcing a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+   "hyp_raw": "After proceedcing a few miles, the progress of Hawkeye, who LED the advance, became more deliberate and watchful.",
+   "err_A": 0.0556,
+   "err_B": 0.0,
+   "err_D": 0.0,
+   "changed": [
+    1
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 0,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "After proceeding a few miles, the progress of Hawkeye, who led the advance, became more deliberate and watchful.",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.9981,
+    "est_err_count": 1.04,
+    "chosen": [
+     1
+    ],
+    "suspect_p_wrong": {
+     "1": 0.9466
+    },
+    "edits": [
+     {
+      "i": 1,
+      "from": "proceedcing",
+      "to": "proceeding",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 3.99
+   },
+   "fixed_hyp": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+   "b_hyp": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful"
+  },
+  {
+   "id": "1320-122612-0002",
+   "lang": "en",
+   "model": "diffusiongemma",
+   "ref": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+   "hyp": "after proceedcing a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+   "hyp_raw": "After proceedcing a few miles, the progress of Hawkeye, who LED the advance, became more deliberate and watchful.",
+   "err_A": 0.0556,
+   "err_B": 0.0,
+   "err_D": 0.0,
+   "changed": [
+    1
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 0,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "After proceeding a few miles, the progress of Hawkeye, who led the advance, became more deliberate and watchful.",
+   "detail": {
+    "gate_open": true,
+    "has_error": 1.0,
+    "est_err_count": 1.0,
+    "chosen": [
+     1
+    ],
+    "suspect_p_wrong": {
+     "1": 1.0
+    },
+    "edits": [
+     {
+      "i": 1,
+      "from": "proceedcing",
+      "to": "proceeding",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 12.73
+   },
+   "fixed_hyp": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+   "b_hyp": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful"
+  },
+  {
+   "id": "1320-122612-0002",
+   "lang": "en",
+   "model": "jev-1.13-free",
+   "ref": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+   "hyp": "after proceedcing a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+   "hyp_raw": "After proceedcing a few miles, the progress of Hawkeye, who LED the advance, became more deliberate and watchful.",
+   "err_A": 0.0556,
+   "err_B": 0.0,
+   "err_D": 0.0,
+   "changed": [
+    1
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 2,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "After proceeding a few miles, the progress of Hawkeye, who led the advance, became more deliberate and watchful.",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.96,
+    "est_err_count": 1.05,
+    "chosen": [
+     1,
+     9,
+     5
+    ],
+    "suspect_p_wrong": {
+     "1": 0.96,
+     "3": 0.34,
+     "4": 0.43,
+     "5": 0.55,
+     "6": 0.36,
+     "7": 0.32,
+     "8": 0.45,
+     "9": 0.57
+    },
+    "edits": [
+     {
+      "i": 1,
+      "from": "proceedcing",
+      "to": "proceeding",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 5.23
+   },
+   "fixed_hyp": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+   "b_hyp": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful"
+  },
+  {
+   "id": "1320-122612-0003",
+   "lang": "en",
+   "model": "Kev-4B",
+   "ref": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters",
+   "hyp": "he often stopped to examine the trees nor did he cross aivulet without attentively considering the quantity the velocity and the color of its waters",
+   "hyp_raw": "He often stopped to examine the trees, nor did he cross aivulet without attentively considering the quantity, the velocity and the color of its waters.",
+   "err_A": 0.0769,
+   "err_B": 1.0,
+   "err_D": 0.0769,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 1,
+   "b_changed": 25,
+   "b_overcorrect": 24,
+   "b_raw": "",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.4996,
+    "est_err_count": 1.14,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "11": 0.4467
+    },
+    "edits": [],
+    "latency_s": 4.04
+   },
+   "fixed_hyp": "he often stopped to examine the trees nor did he cross aivulet without attentively considering the quantity the velocity and the color of its waters",
+   "b_hyp": ""
+  },
+  {
+   "id": "1320-122612-0003",
+   "lang": "en",
+   "model": "SemIf",
+   "ref": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters",
+   "hyp": "he often stopped to examine the trees nor did he cross aivulet without attentively considering the quantity the velocity and the color of its waters",
+   "hyp_raw": "He often stopped to examine the trees, nor did he cross aivulet without attentively considering the quantity, the velocity and the color of its waters.",
+   "err_A": 0.0769,
+   "err_B": 1.0,
+   "err_D": 0.0769,
+   "changed": [
+    11
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 0,
+   "det_fn": 0,
+   "b_changed": 25,
+   "b_overcorrect": 24,
+   "b_raw": "",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.9954,
+    "est_err_count": 1.34,
+    "chosen": [
+     11
+    ],
+    "suspect_p_wrong": {
+     "11": 0.852
+    },
+    "edits": [
+     {
+      "i": 11,
+      "from": "aivulet",
+      "to": "a rivulet",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 12.17
+   },
+   "fixed_hyp": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters",
+   "b_hyp": ""
+  },
+  {
+   "id": "1320-122612-0003",
+   "lang": "en",
+   "model": "diffusiongemma",
+   "ref": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters",
+   "hyp": "he often stopped to examine the trees nor did he cross aivulet without attentively considering the quantity the velocity and the color of its waters",
+   "hyp_raw": "He often stopped to examine the trees, nor did he cross aivulet without attentively considering the quantity, the velocity and the color of its waters.",
+   "err_A": 0.0769,
+   "err_B": 1.0,
+   "err_D": 0.0769,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 2,
+   "det_fn": 1,
+   "b_changed": 25,
+   "b_overcorrect": 24,
+   "b_raw": "",
+   "detail": {
+    "gate_open": true,
+    "has_error": 1.0,
+    "est_err_count": 1.0,
+    "chosen": [
+     7,
+     5
+    ],
+    "suspect_p_wrong": {
+     "5": 0.5,
+     "7": 1.0
+    },
+    "edits": [],
+    "latency_s": 32.67
+   },
+   "fixed_hyp": "he often stopped to examine the trees nor did he cross aivulet without attentively considering the quantity the velocity and the color of its waters",
+   "b_hyp": ""
+  },
+  {
+   "id": "1320-122612-0003",
+   "lang": "en",
+   "model": "jev-1.13-free",
+   "ref": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters",
+   "hyp": "he often stopped to examine the trees nor did he cross aivulet without attentively considering the quantity the velocity and the color of its waters",
+   "hyp_raw": "He often stopped to examine the trees, nor did he cross aivulet without attentively considering the quantity, the velocity and the color of its waters.",
+   "err_A": 0.0769,
+   "err_B": 1.0,
+   "err_D": 0.0769,
+   "changed": [
+    11
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 2,
+   "det_fn": 0,
+   "b_changed": 25,
+   "b_overcorrect": 24,
+   "b_raw": "",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.95,
+    "est_err_count": 1.81,
+    "chosen": [
+     11,
+     7,
+     2
+    ],
+    "suspect_p_wrong": {
+     "2": 0.52,
+     "3": 0.37,
+     "4": 0.36,
+     "7": 0.6,
+     "8": 0.42,
+     "9": 0.3,
+     "11": 0.93,
+     "12": 0.42,
+     "15": 0.34,
+     "16": 0.44,
+     "17": 0.37,
+     "24": 0.4
+    },
+    "edits": [
+     {
+      "i": 11,
+      "from": "aivulet",
+      "to": "a rivulet",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 14.95
+   },
+   "fixed_hyp": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters",
+   "b_hyp": ""
+  },
+  {
+   "id": "1320-122612-0004",
+   "lang": "en",
+   "model": "Kev-4B",
+   "ref": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest",
+   "hyp": "disistrusting his own judgment his appeals to the opinion of chingachchguk were frequent and earnest",
+   "hyp_raw": "Disistrusting his own judgment, his appeals to the opinion of Chingachchguk were frequent and earnest.",
+   "err_A": 0.1333,
+   "err_B": 0.0,
+   "err_D": 0.1333,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 2,
+   "b_changed": 2,
+   "b_overcorrect": 0,
+   "b_raw": "distrusting his own judgment his appeals to the opinion of Chingachgook were frequent and earnest",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.5139,
+    "est_err_count": 1.07,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "0": 0.3739,
+     "4": 0.3901
+    },
+    "edits": [],
+    "latency_s": 0.61
+   },
+   "fixed_hyp": "disistrusting his own judgment his appeals to the opinion of chingachchguk were frequent and earnest",
+   "b_hyp": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest"
+  },
+  {
+   "id": "1320-122612-0004",
+   "lang": "en",
+   "model": "SemIf",
+   "ref": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest",
+   "hyp": "disistrusting his own judgment his appeals to the opinion of chingachchguk were frequent and earnest",
+   "hyp_raw": "Disistrusting his own judgment, his appeals to the opinion of Chingachchguk were frequent and earnest.",
+   "err_A": 0.1333,
+   "err_B": 0.0,
+   "err_D": 0.0667,
+   "changed": [
+    0
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 0,
+   "det_fn": 1,
+   "b_changed": 2,
+   "b_overcorrect": 0,
+   "b_raw": "distrusting his own judgment his appeals to the opinion of Chingachgook were frequent and earnest",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.9399,
+    "est_err_count": 0.98,
+    "chosen": [
+     0
+    ],
+    "suspect_p_wrong": {
+     "0": 0.4378
+    },
+    "edits": [
+     {
+      "i": 0,
+      "from": "disistrusting",
+      "to": "distrusting",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 4.3
+   },
+   "fixed_hyp": "distrusting his own judgment his appeals to the opinion of chingachchguk were frequent and earnest",
+   "b_hyp": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest"
+  },
+  {
+   "id": "1320-122612-0004",
+   "lang": "en",
+   "model": "diffusiongemma",
+   "ref": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest",
+   "hyp": "disistrusting his own judgment his appeals to the opinion of chingachchguk were frequent and earnest",
+   "hyp_raw": "Disistrusting his own judgment, his appeals to the opinion of Chingachchguk were frequent and earnest.",
+   "err_A": 0.1333,
+   "err_B": 0.0,
+   "err_D": 0.1333,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 2,
+   "b_changed": 2,
+   "b_overcorrect": 0,
+   "b_raw": "distrusting his own judgment his appeals to the opinion of Chingachgook were frequent and earnest",
+   "detail": {
+    "gate_open": false,
+    "has_error": 0.0001,
+    "est_err_count": 0.0,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "0": 1.0,
+     "4": 1.0
+    },
+    "edits": [],
+    "latency_s": 8.06
+   },
+   "fixed_hyp": "disistrusting his own judgment his appeals to the opinion of chingachchguk were frequent and earnest",
+   "b_hyp": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest"
+  },
+  {
+   "id": "1320-122612-0004",
+   "lang": "en",
+   "model": "jev-1.13-free",
+   "ref": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest",
+   "hyp": "disistrusting his own judgment his appeals to the opinion of chingachchguk were frequent and earnest",
+   "hyp_raw": "Disistrusting his own judgment, his appeals to the opinion of Chingachchguk were frequent and earnest.",
+   "err_A": 0.1333,
+   "err_B": 0.0,
+   "err_D": 0.0667,
+   "changed": [
+    0
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 2,
+   "det_fn": 1,
+   "b_changed": 2,
+   "b_overcorrect": 0,
+   "b_raw": "distrusting his own judgment his appeals to the opinion of Chingachgook were frequent and earnest",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.91,
+    "est_err_count": 1.02,
+    "chosen": [
+     0,
+     3,
+     4
+    ],
+    "suspect_p_wrong": {
+     "0": 0.87,
+     "2": 0.32,
+     "3": 0.55,
+     "4": 0.51,
+     "5": 0.4,
+     "6": 0.44,
+     "8": 0.45,
+     "10": 0.38,
+     "11": 0.46,
+     "12": 0.34
+    },
+    "edits": [
+     {
+      "i": 0,
+      "from": "disistrusting",
+      "to": "distrusting",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 17.08
+   },
+   "fixed_hyp": "distrusting his own judgment his appeals to the opinion of chingachchguk were frequent and earnest",
+   "b_hyp": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest"
+  },
+  {
+   "id": "1320-122612-0005",
+   "lang": "en",
+   "model": "Kev-4B",
+   "ref": "yet here are we within a short range of the scaroons and not a sign of a trail have we crossed",
+   "hyp": "yet here are we within a short range of the scoonons and not a sign of a trail have we crossed",
+   "hyp_raw": "Yet here are we within a short range of the Scoonons and not a sign of a trail have we crossed.",
+   "err_A": 0.0476,
+   "err_B": 0.0476,
+   "err_D": 0.0476,
+   "changed": [],
+   "overcorrect_positions": [],
+   "det_tp": 0,
+   "det_fp": 0,
+   "det_fn": 1,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "yet here are we within a short range of the schooner and not a sign of a trail have we crossed",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.4883,
+    "est_err_count": 1.05,
+    "chosen": [],
+    "suspect_p_wrong": {
+     "10": 0.4001,
+     "15": 0.3154
+    },
+    "edits": [],
+    "latency_s": 0.57
+   },
+   "fixed_hyp": "yet here are we within a short range of the scoonons and not a sign of a trail have we crossed",
+   "b_hyp": "yet here are we within a short range of the schooner and not a sign of a trail have we crossed"
+  },
+  {
+   "id": "1320-122612-0005",
+   "lang": "en",
+   "model": "SemIf",
+   "ref": "yet here are we within a short range of the scaroons and not a sign of a trail have we crossed",
+   "hyp": "yet here are we within a short range of the scoonons and not a sign of a trail have we crossed",
+   "hyp_raw": "Yet here are we within a short range of the Scoonons and not a sign of a trail have we crossed.",
+   "err_A": 0.0476,
+   "err_B": 0.0476,
+   "err_D": 0.0476,
+   "changed": [
+    10
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 0,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "yet here are we within a short range of the schooner and not a sign of a trail have we crossed",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.9859,
+    "est_err_count": 1.57,
+    "chosen": [
+     10
+    ],
+    "suspect_p_wrong": {
+     "10": 0.867
+    },
+    "edits": [
+     {
+      "i": 10,
+      "from": "scoonons",
+      "to": "schooners",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 5.68
+   },
+   "fixed_hyp": "yet here are we within a short range of the schooners and not a sign of a trail have we crossed",
+   "b_hyp": "yet here are we within a short range of the schooner and not a sign of a trail have we crossed"
+  },
+  {
+   "id": "1320-122612-0005",
+   "lang": "en",
+   "model": "diffusiongemma",
+   "ref": "yet here are we within a short range of the scaroons and not a sign of a trail have we crossed",
+   "hyp": "yet here are we within a short range of the scoonons and not a sign of a trail have we crossed",
+   "hyp_raw": "Yet here are we within a short range of the Scoonons and not a sign of a trail have we crossed.",
+   "err_A": 0.0476,
+   "err_B": 0.0476,
+   "err_D": 0.0476,
+   "changed": [
+    10
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 5,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "yet here are we within a short range of the schooner and not a sign of a trail have we crossed",
+   "detail": {
+    "gate_open": true,
+    "has_error": 1.0,
+    "est_err_count": 1.0,
+    "chosen": [
+     17,
+     15,
+     12,
+     10,
+     16,
+     4
+    ],
+    "suspect_p_wrong": {
+     "4": 0.5,
+     "10": 1.0,
+     "12": 1.0,
+     "15": 1.0,
+     "16": 0.9997,
+     "17": 1.0
+    },
+    "edits": [
+     {
+      "i": 10,
+      "from": "scoonons",
+      "to": "schooners",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 16.97
+   },
+   "fixed_hyp": "yet here are we within a short range of the schooners and not a sign of a trail have we crossed",
+   "b_hyp": "yet here are we within a short range of the schooner and not a sign of a trail have we crossed"
+  },
+  {
+   "id": "1320-122612-0005",
+   "lang": "en",
+   "model": "jev-1.13-free",
+   "ref": "yet here are we within a short range of the scaroons and not a sign of a trail have we crossed",
+   "hyp": "yet here are we within a short range of the scoonons and not a sign of a trail have we crossed",
+   "hyp_raw": "Yet here are we within a short range of the Scoonons and not a sign of a trail have we crossed.",
+   "err_A": 0.0476,
+   "err_B": 0.0476,
+   "err_D": 0.0476,
+   "changed": [
+    10
+   ],
+   "overcorrect_positions": [],
+   "det_tp": 1,
+   "det_fp": 3,
+   "det_fn": 0,
+   "b_changed": 1,
+   "b_overcorrect": 0,
+   "b_raw": "yet here are we within a short range of the schooner and not a sign of a trail have we crossed",
+   "detail": {
+    "gate_open": true,
+    "has_error": 0.75,
+    "est_err_count": 1.16,
+    "chosen": [
+     10,
+     4,
+     2,
+     3
+    ],
+    "suspect_p_wrong": {
+     "2": 0.52,
+     "3": 0.5,
+     "4": 0.59,
+     "5": 0.37,
+     "6": 0.39,
+     "7": 0.47,
+     "8": 0.48,
+     "10": 0.72,
+     "11": 0.4,
+     "12": 0.3,
+     "18": 0.46,
+     "19": 0.41,
+     "20": 0.46
+    },
+    "edits": [
+     {
+      "i": 10,
+      "from": "scoonons",
+      "to": "schooners",
+      "by": "llm:deepseek"
+     }
+    ],
+    "latency_s": 11.29
+   },
+   "fixed_hyp": "yet here are we within a short range of the schooners and not a sign of a trail have we crossed",
+   "b_hyp": "yet here are we within a short range of the schooner and not a sign of a trail have we crossed"
+  }
+ ]
+}
