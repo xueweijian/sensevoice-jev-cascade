@@ -19,6 +19,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--work", default="/tmp/work")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--pinyin-out", default="")
     ap.add_argument("--need", type=int, default=5, help="clean clips per language")
     ap.add_argument("--budget", type=int, default=60)
     args = ap.parse_args()
@@ -66,6 +67,25 @@ def main():
     n_clean = len(clean["zh"]) + len(clean["en"])
     print(f"manifest: {args.out} rows={len(out_rows)} dirty={len(dirty)} clean={n_clean}",
           flush=True)
+
+    if args.pinyin_out:
+        from pypinyin import lazy_pinyin
+        zh_ref = {}
+        for line in open(os.path.join(args.work, "dl", "aishell_transcript_v0.8.txt"),
+                         encoding="utf-8"):
+            p = line.strip().split()
+            if len(p) >= 2:
+                zh_ref[p[0]] = "".join(p[1:])
+        charset = sorted(set("".join(zh_ref.values())) - {" "})
+        idx = {}
+        for ch in charset:
+            try:
+                idx.setdefault(lazy_pinyin(ch)[0], []).append(ch)
+            except Exception:  # noqa: BLE001
+                pass
+        with open(args.pinyin_out, "w", encoding="utf-8") as f:
+            json.dump(idx, f, ensure_ascii=False)
+        print(f"pinyin index: {args.pinyin_out} groups={len(idx)}", flush=True)
 
 
 if __name__ == "__main__":

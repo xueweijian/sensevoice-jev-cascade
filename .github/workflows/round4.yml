@@ -36,26 +36,10 @@ jobs:
           restore-keys: aishell-
       - name: Prep datasets (cached, idempotent)
         run: python scripts/prep_data.py --work /tmp/work
-      - name: Screen clean clips + merge dirty archive
-        run: python scripts/prep_round4.py --work /tmp/work --out /tmp/work/manifest.round4.jsonl --need 5 --budget 60
+      - name: Screen clean clips + merge dirty archive + pinyin index
+        run: python scripts/prep_round4.py --work /tmp/work --out /tmp/work/manifest.round4.jsonl --pinyin-out /tmp/work/pinyin_index.json --need 5 --budget 60
         env:
           SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
-      - name: Build pinyin index
-        run: python -c "
-import json
-from pypinyin import lazy_pinyin
-zh_ref={}
-for line in open('/tmp/work/dl/aishell_transcript_v0.8.txt',encoding='utf-8'):
-    p=line.strip().split()
-    if len(p)>=2: zh_ref[p[0]]=''.join(p[1:])
-charset=sorted(set(''.join(zh_ref.values()))-{' '})
-idx={}
-for ch in charset:
-    try: idx.setdefault(lazy_pinyin(ch)[0],[]).append(ch)
-    except Exception: pass
-json.dump(idx,open('/tmp/work/pinyin_index.json','w',encoding='utf-8'),ensure_ascii=False)
-print('pinyin groups:',len(idx))
-"
       - uses: actions/upload-artifact@v4
         with:
           name: r4-manifest
