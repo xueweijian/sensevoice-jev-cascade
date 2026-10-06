@@ -149,6 +149,15 @@ def correct_sentence(sentence, cfg, log=print):
             res["guards"].append(f"pass1@{model_id}:{why}")
             log(f"  [guard] pass1 {model_id} rejected: {why}")
             continue
+        if fixed == sentence:
+            # pass 1 proposed no edits -> nothing to audit, skip verify pass
+            # (production transcripts are mostly-clean; this halves their cost)
+            res["final"] = sentence
+            res["edits"] = []
+            res["models"] = [model_id]
+            res["used_fallback"] = model_id != cfg.llm_primary
+            res["skipped_verify"] = True
+            return res
         # -------- pass 2: verify --------
         if cfg.verify_enabled:
             vmodel = cfg.llm_verify if cfg.has_key(cfg.llm_verify) else model_id
