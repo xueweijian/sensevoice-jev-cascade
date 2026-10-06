@@ -23,13 +23,16 @@ python -m asr_correct *.wav -o out/ --workers 3
 #       out/diff.md（人读对照表）
 ```
 
-## 架构
+## 架构（含 R5 新增 Layer-0 门控）
 
 ```
 音频 ──ffmpeg 静音检测（>60s 才切）──→ SenseVoice API（硅基流动）
         ↓ 转写文本
       分句（中英自适应，长句硬切；默认单句粒度 = R4 实测最优）
-        ↓ 每句并发（--workers）
+        ↓
+      Layer-0 门控（R5：调用 -55%，质量零损失）
+      zh: MacBERT4CSC 逐字疑点 / en: 词表查非词 → 无疑点直接放行（0 调用）
+        ↓ 疑点句
       Pass1 裸改：4.1flash（reasoning_effort:"none"）
         ↓ 护栏①：空输出重试 / 长度比窗口 [0.75, 1.4] / 编辑量预算
       Pass2 验证：同模型当审计员，逐项复核改动，恢复误改

@@ -18,7 +18,8 @@ def write_outputs(result, outdir, json_path=None, quiet=False):
         "sentences": [
             {"i": i, "orig": s["orig"], "final": s["final"],
              "edits": s.get("edits", []), "guards": s.get("guards", []),
-             "models": s.get("models", []), "calls": s.get("calls", 0)}
+             "models": s.get("models", []), "calls": s.get("calls", 0),
+             "gated": bool(s.get("gated"))}
             for i, s in enumerate(result["sentences"])],
     }
     jp = json_path or os.path.join(outdir, "report.json")

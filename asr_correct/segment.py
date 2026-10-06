@@ -50,6 +50,10 @@ def _hard_split_words(seg, n):
     return [" ".join(words[i:i + n]) for i in range(0, len(words), n)]
 
 
+def lang_of(text):
+    return "en" if _is_latin(text) else "zh"
+
+
 def windows(sentences, size=1, overlap=1):
     """Yield (editable_indices, context_indices) windows.
     size=1 -> plain per-sentence mode (R4-proven optimum)."""

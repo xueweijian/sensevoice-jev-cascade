@@ -20,6 +20,8 @@ def main(argv=None):
     ap.add_argument("--no-verify", action="store_true", help="跳过验证遍（快但少一道保险）")
     ap.add_argument("--no-fallback", action="store_true")
     ap.add_argument("--window", type=int, default=1, help="每词调用句子数（默认1，R4最优）")
+    ap.add_argument("--no-gate", action="store_true", help="关闭 Layer-0 门控（R5 默认开）")
+    ap.add_argument("--gate-threshold", type=float, default=0.5)
     ap.add_argument("--workers", type=int, default=2)
     ap.add_argument("--max-chunk-sec", type=float, default=60.0)
     ap.add_argument("--quiet", action="store_true")
@@ -33,6 +35,8 @@ def main(argv=None):
     if args.no_fallback:
         cfg.llm_fallback = ""
     cfg.verify_enabled = not args.no_verify
+    cfg.gate_enabled = not args.no_gate
+    cfg.gate_threshold = args.gate_threshold
     cfg.window = max(1, args.window)
     cfg.workers = max(1, args.workers)
     cfg.chunk_max_seconds = args.max_chunk_sec

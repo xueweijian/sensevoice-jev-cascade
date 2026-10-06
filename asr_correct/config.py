@@ -31,6 +31,11 @@ class Config:
     window: int = 1                   # sentences per correction call
     window_overlap: int = 1           # context-only sentences at both ends
 
+    # ---- Layer-0 gate (R5: -55% LLM calls, zero quality delta) ----
+    gate_enabled: bool = True
+    gate_threshold: float = 0.5       # CSC per-char confidence to flag
+    gate_en_min_len: int = 4          # en: ignore words shorter than this
+
     # ---- runtime ----
     workers: int = 2
     retries: int = 3

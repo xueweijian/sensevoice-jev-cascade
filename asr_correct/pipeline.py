@@ -6,7 +6,8 @@ import time
 from .asr import transcribe
 from .config import Config
 from .correct import correct_sentence
-from .segment import split_sentences, windows
+from .gates import build_gates
+from .segment import lang_of, split_sentences, windows
 
 
 def run(text=None, audio_path=None, cfg=None, log=print):
@@ -25,21 +26,28 @@ def run(text=None, audio_path=None, cfg=None, log=print):
 
     sents = split_sentences(text, cfg.sentence_max_chars, cfg.sentence_max_words)
     result["n_sentences"] = len(sents)
+    gz, ge = build_gates(cfg, log=log)
     log(f"[segment] {len(sents)} sentences, window={cfg.window}")
 
     def work(win):
         editable, context = win
-        ctx_map = {i: s for i, s in sents if i in context}
         out = {}
         for i in editable:
             sentence = dict(sents)[i]
-            if cfg.window > 1 and ctx_map:
-                ctx = " ".join(ctx_map[j] for j in sorted(ctx_map))
-                # context is advisory only: correct the single editable sentence
+            gate = gz if lang_of(sentence) == "zh" else ge
+            if gate is not None:
+                flagged, marks, g_ms = gate.check(sentence)
+                if not flagged:
+                    out[i] = {"orig": sentence, "final": sentence, "edits": [],
+                              "guards": [], "calls": 0, "models": [], "lat": [],
+                              "pass2": False, "gated": True, "gate_ms": g_ms}
+                    continue
                 r = correct_sentence(sentence, cfg, log=log)
-                r["context_used"] = True
+                r["gated"] = False
+                r["gate_ms"] = g_ms
             else:
                 r = correct_sentence(sentence, cfg, log=log)
+                r["gated"] = False
             out[i] = r
         return out
 
@@ -79,6 +87,7 @@ def _stats(result, t_start):
     return {
         "total_edits": sum(len(s.get("edits", [])) for s in sents),
         "corrected_sentences": sum(1 for s in sents if s["final"] != s["orig"]),
+        "gated_out": sum(1 for s in sents if s.get("gated")),
         "guard_events": sum(len(s.get("guards", [])) for s in sents),
         "fallback_events": sum(1 for s in sents if s.get("used_fallback")),
         "llm_calls": sum(s.get("calls", 0) for s in sents),
