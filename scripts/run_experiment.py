@@ -20,7 +20,8 @@ import time
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from asr_ec import (systemone, suanli_chat, bad_positions, err_rate, oc_usage_snippet)  # noqa: E402
+from asr_ec import (systemone, suanli_chat, bad_positions, changed_positions,  # noqa: E402
+                    err_rate, oc_usage_snippet)
 
 HAS_ERROR_GATE = 0.35   # below this -> clip passes through uncorrected
 SUSPECT_TH = 0.5        # per-unit P(wrong) threshold
@@ -221,6 +222,16 @@ def md_table(headers, rows):
     return "\n".join(out)
 
 
+def probe_judges():
+    for model, provider in JUDGES:
+        try:
+            a = systemone(model, "连通性测试：一加一等于二", {
+                "ok": {"type": "noul", "instructions": "一加一等于二"}}, provider)
+            print(f"probe {model}: OK noul={((a or {}).get('ok') or {}).get('noul')}")
+        except Exception as e:  # noqa: BLE001
+            print(f"probe {model}: FAIL {e!r}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--manifest", required=True)
@@ -235,6 +246,7 @@ def main():
 
     clips = [json.loads(l) for l in open(args.manifest, encoding="utf-8")]
     print("clips:", len(clips))
+    probe_judges()
 
     oc_before = oc_usage_snippet() if os.environ.get("OPENCODE_API_KEY") else None
 
@@ -248,7 +260,7 @@ def main():
         try:
             b_units, b_raw = control_b(rec, units)
             b_err = err_rate(ref_units, b_units)
-            b_changed = [i for i in range(min(len(units), len(b_units))) if units[i] != b_units[i]]
+            b_changed = changed_positions(units, b_units)
             b_over = [i for i in b_changed if i not in bad]
         except Exception as ex:  # noqa: BLE001
             b_units, b_err, b_changed, b_over, b_raw = units, base_err, [], [], f"fail: {ex}"
@@ -280,6 +292,13 @@ def main():
                 "b_hyp": ("".join(b_units) if rec["lang"] == "zh" else " ".join(b_units)),
             }
             records.append(rec_out)
+            if detail.get("error"):
+                print(f"    !! {model} cascade error: {detail['error']}")
+            for e in detail.get("edits", []):
+                if e.get("by") == "llm:error":
+                    print(f"    !! llm note: {str(e.get('note'))[:200]}")
+            with open(os.path.join(args.out, "results.partial.json"), "w", encoding="utf-8") as pf:
+                json.dump({"records": records}, pf, ensure_ascii=False)
             d = detail.get("edits", [])
             print(f"[D:{model}] {rec['lang']} {rec['id']} err {base_err:.3f} -> {new_err:.3f} "
                   f"edits={[(e.get('i'), e.get('from'), e.get('to'), e.get('by')) for e in d]} "
@@ -332,9 +351,9 @@ def main():
              "", "## Aggregate (all clips)", "",
              md_table(["condition", "n", "err A→(B)/D", "impr/same/worse", "det P", "det R",
                        "overcorr D", "overcorr B", "edits choice/llm", "latency s"],
-                      [["A raw ASR", summary.get(JUDGES[0][0], {}).get("n"),
-                        f"{summary.get(JUDGES[0][0], {}).get('err_A_mean')}", "-", "-", "-", "-", "-", "-", "-"]] +
-                      [[f"D {m}", s["n"], f"{s['err_A_mean']} -> {s['err_D']}",
+                      [["A raw ASR", (summary.get(JUDGES[0][0]) or {}).get("n"),
+                        f"{(summary.get(JUDGES[0][0]) or {}).get('err_A_mean')}", "-", "-", "-", "-", "-", "-", "-"]] +
+                      [[f"D {m}", s["n"], f"{s['err_A_mean']} -> {s['err_D_mean']}",
                         f"{s['improved']}/{s['unchanged']}/{s['worsened']}",
                         prec(s["det_tp"], s["det_fp"]), rec_(s["det_tp"], s["det_fn"]),
                         s["overcorrections_D"], s["overcorrections_B"],

@@ -64,8 +64,12 @@ def systemone(model, state, questions, provider="siliconflow"):
             json={"model": model, "state": state, "questions": questions},
             timeout=(10, 180),
         )
-        r.raise_for_status()
-        return r.json()["answers"]
+        if r.status_code != 200:
+            raise RuntimeError(f"systemone {model} HTTP {r.status_code}: {r.text[:300]}")
+        body = r.json()
+        if "answers" not in body:
+            raise RuntimeError(f"systemone {model} no answers: {json.dumps(body, ensure_ascii=False)[:300]}")
+        return body["answers"]
 
     return _retry(call)
 
@@ -172,14 +176,28 @@ def norm_en(text):
 # ---------------------------------------------------------------- alignment / metrics
 
 def bad_positions(hyp_seq, ref_seq):
-    """Indices of hyp_seq involved in any non-equal alignment block (= ground-truth error positions)."""
+    """Ground-truth error positions in hyp: non-equal blocks + deletion adjacency."""
     import difflib
     sm = difflib.SequenceMatcher(None, ref_seq, hyp_seq, autojunk=False)
     bad = set()
     for tag, i1, i2, j1, j2 in sm.get_opcodes():
-        if tag != "equal":
-            bad.update(range(j1, j2))
+        if tag == "equal":
+            continue
+        bad.update(range(j1, j2))            # replace / insert positions in hyp
+        if tag == "delete" and hyp_seq:       # ref-side chars missing in hyp
+            bad.add(min(j1, len(hyp_seq) - 1))
     return sorted(bad)
+
+
+def changed_positions(old_seq, new_seq):
+    """Positions of old_seq that changed (aligned), for over-correction counting."""
+    import difflib
+    sm = difflib.SequenceMatcher(None, old_seq, new_seq, autojunk=False)
+    ch = set()
+    for tag, i1, i2, j1, j2 in sm.get_opcodes():
+        if tag in ("replace", "delete"):
+            ch.update(range(i1, i2))
+    return sorted(ch)
 
 
 def levenshtein(a, b):
