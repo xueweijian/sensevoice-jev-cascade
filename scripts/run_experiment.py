@@ -125,7 +125,12 @@ def llm_fix(rec, units, positions, py_index):
     edits = []
     try:
         m = re.search(r"\[.*\]", raw, re.S)
-        for e in json.loads(m.group()):
+        if m:
+            arr = json.loads(m.group())
+        else:
+            m2 = re.search(r"\{.*\}", raw, re.S)
+            arr = [json.loads(m2.group())] if m2 else []
+        for e in arr:
             i, to = int(e.get("i", -1)), str(e.get("to", ""))
             if i not in positions or not to or to == units[i]:
                 continue
@@ -223,13 +228,17 @@ def md_table(headers, rows):
 
 
 def probe_judges():
+    """Pre-flight: keep only reachable judges (e.g. siliconflow /v1/systemone 404s from non-CN IPs)."""
+    alive = []
     for model, provider in JUDGES:
         try:
             a = systemone(model, "连通性测试：一加一等于二", {
                 "ok": {"type": "noul", "instructions": "一加一等于二"}}, provider)
             print(f"probe {model}: OK noul={((a or {}).get('ok') or {}).get('noul')}")
+            alive.append((model, provider))
         except Exception as e:  # noqa: BLE001
-            print(f"probe {model}: FAIL {e!r}")
+            print(f"probe {model}: FAIL {e!r} -> SKIPPED for this run")
+    return alive
 
 
 def main():
@@ -246,7 +255,9 @@ def main():
 
     clips = [json.loads(l) for l in open(args.manifest, encoding="utf-8")]
     print("clips:", len(clips))
-    probe_judges()
+    judges = probe_judges()
+    if not judges:
+        print("FATAL: no reachable judge models")
 
     oc_before = oc_usage_snippet() if os.environ.get("OPENCODE_API_KEY") else None
 
@@ -268,7 +279,7 @@ def main():
               f"changed={len(b_changed)} over={len(b_over)}")
 
         # ---- cascade D per judge ----
-        for model, provider in JUDGES:
+        for model, provider in judges:
             try:
                 new_units, detail = run_cascade(rec, model, provider, py_index)
                 new_err = err_rate(ref_units, new_units)
@@ -335,7 +346,7 @@ def main():
         }
 
     summary = {}
-    for model, _ in JUDGES:
+    for model, _ in judges:
         summary[model] = agg(lambda r, m=model: r["model"] == m)
 
     def prec(tp, fp):
@@ -351,14 +362,14 @@ def main():
              "", "## Aggregate (all clips)", "",
              md_table(["condition", "n", "err A→(B)/D", "impr/same/worse", "det P", "det R",
                        "overcorr D", "overcorr B", "edits choice/llm", "latency s"],
-                      [["A raw ASR", (summary.get(JUDGES[0][0]) or {}).get("n"),
-                        f"{(summary.get(JUDGES[0][0]) or {}).get('err_A_mean')}", "-", "-", "-", "-", "-", "-", "-"]] +
+                      [["A raw ASR", (summary.get(judges[0][0]) or {}).get("n"),
+                        f"{(summary.get(judges[0][0]) or {}).get('err_A_mean')}", "-", "-", "-", "-", "-", "-", "-"]] +
                       [[f"D {m}", s["n"], f"{s['err_A_mean']} -> {s['err_D_mean']}",
                         f"{s['improved']}/{s['unchanged']}/{s['worsened']}",
                         prec(s["det_tp"], s["det_fp"]), rec_(s["det_tp"], s["det_fn"]),
                         s["overcorrections_D"], s["overcorrections_B"],
                         f"{s['edits_by_choice']}/{s['edits_by_llm']}", s["latency_mean_s"]]
-                       for m, s in ((m, summary[m]) for m, _ in JUDGES if summary.get(m))]),
+                       for m, s in ((m, summary[m]) for m, _ in judges if summary.get(m))]),
              "", "## Per-language err means", ""]
     for lang in ["zh", "en"]:
         s = agg(lambda r, l=lang: r["lang"] == l and r["model"] == "SemIf")
@@ -382,7 +393,7 @@ def main():
         f.write("\n".join(lines))
     with open(os.path.join(args.out, "results.json"), "w", encoding="utf-8") as f:
         json.dump({"meta": {"run_utc": datetime.now(timezone.utc).isoformat(),
-                            "judges": [m for m, _ in JUDGES],
+                            "judges": [m for m, _ in judges],
                             "thresholds": {"gate": HAS_ERROR_GATE, "suspect": SUSPECT_TH,
                                            "choice_conf": CHOICE_CONF}},
                    "summary": summary, "records": records}, f, ensure_ascii=False, indent=1)
