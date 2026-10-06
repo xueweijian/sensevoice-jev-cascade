@@ -79,9 +79,16 @@ python -m asr_correct *.wav -o out/ --workers 3
 - 离线批处理：直接 `python -m asr_correct`，输出 report.json 入库审计
 - 准实时（字幕）：`--no-fallback`（少一层重试延迟）+ workers=1~2，
   p99 < 3s
-- ASR 选择：默认 `FunAudioLLM/SenseVoiceSmall`（免费，现有链路最成熟）。Round6
-  的免费模型中 `XingChenAGI/XingChenASR-V3.2` 质量更好，可手动试用：
-  `--asr-model XingChenAGI/XingChenASR-V3.2`；但先用净句考卷验证业务安全性。
+- ASR 选择（Round 7 定版）：默认 `FunAudioLLM/SenseVoiceSmall`（免费，链路
+  最成熟）+ 门控 + 冠军两遍。追求免费最低错误率可用
+  `--asr-model XingChenAGI/XingChenASR-V3.2`，但必须遵守它的 R7 行为：
+  **中文默认只出建议不自动改，英文可继续自动纠错**；先用净句考卷验证。
+  “必须统一自动纠错”时选 `--asr-model XingChenAGI/XingChenASR-V3.2-Ultra`
+  （本轮自动纠错零恶化，但终值仍不如 V3.2 原始）。
+- 日韩音频走 SenseVoice（XingChen 日文崩成单字）；方言走 XingChen（60 种）；
+  `language` 参数装饰性无效，不要读返回的 language 字段做路由。
+- 字幕 SRT：XingChen V3.2/Ultra + `response_format=verbose_json`（长音频自动
+  按静音切多段）；说话人：Diarize 专用。
 - `Qwen/Qwen3-ASR-1.7B` 质量最高但收费 ¥0.000220/秒输入音频时长；本项目只保留
   一次付费实验结果，后续不自动调用。
 - 需要时间戳+说话人日志时可试 `XingChenAGI/XingChenASR-Diarize-V3.0`；
