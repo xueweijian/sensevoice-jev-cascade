@@ -79,9 +79,11 @@ python -m asr_correct *.wav -o out/ --workers 3
 - 离线批处理：直接 `python -m asr_correct`，输出 report.json 入库审计
 - 准实时（字幕）：`--no-fallback`（少一层重试延迟）+ workers=1~2，
   p99 < 3s
-- ASR 选择：默认 `FunAudioLLM/SenseVoiceSmall`（免费）；质量优先且明确接受
-  按量费用时，可用 `--asr-model Qwen/Qwen3-ASR-1.7B`（¥0.000220/秒输入音频时长）。
-  Round6 只做过一次付费质量实验，后续不自动调用 Qwen。
+- ASR 选择：默认 `FunAudioLLM/SenseVoiceSmall`（免费，现有链路最成熟）。Round6
+  的免费模型中 `XingChenAGI/XingChenASR-V3.2` 质量更好，可手动试用：
+  `--asr-model XingChenAGI/XingChenASR-V3.2`；但先用净句考卷验证业务安全性。
+- `Qwen/Qwen3-ASR-1.7B` 质量最高但收费 ¥0.000220/秒输入音频时长；本项目只保留
+  一次付费实验结果，后续不自动调用。
 - 需要时间戳+说话人日志时可试 `XingChenAGI/XingChenASR-Diarize-V3.0`；
   但 Round6 测试显示其中文识别质量明显差，不建议作为默认识别底座。
 - 升级路径：①业务口语音频进来后先测"去口癖"需求 ②若真实音频错误率高到

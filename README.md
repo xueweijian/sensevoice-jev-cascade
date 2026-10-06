@@ -105,6 +105,14 @@ SenseVoiceSmall；Round6 的 Qwen3-ASR-1.7B 虽然质量更高，但按 **¥0.00
 [docs/production-pipeline.md](docs/production-pipeline.md)，工程实现
 `asr_correct/`（含 20 个离线单测 + 长音频静音切分 + 兜底链 + 审计报告）。
 
+## Round 6：换 ASR 底座
+
+Round 6 发现：**换免费 ASR 比事后纠错更能提升质量**。免费模型中，
+`XingChenAGI/XingChenASR-V3.2` 在同 10 条脏音频上 zh 错误率 0.0383、en 0.0067，
+综合错误率 0.0225；原 SenseVoice 为 0.0736。Qwen3-ASR-1.7B 质量更高，但按
+¥0.000220/秒音频收费，仅保留为付费实验，不再调用。Diarize 版有时间戳+说话人，
+但不适合纯转写质量竞争。完整分析见 [docs/round6-analysis.md](docs/round6-analysis.md)。
+
 ## License
 
 MIT
