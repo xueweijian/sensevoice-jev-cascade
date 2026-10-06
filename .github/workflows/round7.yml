@@ -1,0 +1,85 @@
+name: round7-free-asr
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: round7-free-asr
+  cancel-in-progress: true
+
+jobs:
+  free-asr-correction:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache dataset downloads
+        uses: actions/cache@v4
+        with:
+          path: /tmp/work/dl
+          key: aishell-S0002-S0003-libri1272-v1
+          restore-keys: aishell-
+
+      - name: Install dependencies
+        run: pip install requests pypinyin opencc-python-reimplemented
+
+      - name: Materialize audio paths
+        run: python scripts/prep_data.py --work /tmp/work
+
+      - name: Run free ASR backends through champion correction
+        run: |
+          python scripts/round7.py \
+            --manifest experiments/round4/manifest.round4.jsonl \
+            --out results \
+            --repeats 2
+        env:
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+
+      - name: Job summary
+        if: always()
+        run: cat results/round7-summary.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: round7-free-asr
+          path: results/
+
+      # Deliberate guard: validate the actual result manifest contains only
+      # the four free engine keys. This does not call any model.
+      - name: Assert free-only result manifest
+        if: success()
+        run: |
+          python - <<'PY'
+          import json
+          d = json.load(open('results/round7.json', encoding='utf-8'))
+          expected = {'sensevoice', 'xingchen-v32', 'xingchen-ultra', 'xingchen-diarize'}
+          actual = set(d['free_engines'])
+          assert actual == expected, (actual, expected)
+          assert 'qwen3asr' not in actual
+          print('free-only assertion passed:', sorted(actual))
+          PY
+
+      - name: Archive results on main
+        if: success()
+        run: |
+          git config user.name "ci-bot"
+          git config user.email "ci-bot@users.noreply.github.com"
+          mkdir -p experiments/round7
+          cp results/round7.json results/round7-summary.md experiments/round7/
+          git add -A experiments/round7
+          if ! git diff --cached --quiet; then
+            git commit -m "round7 results: free ASR backends through champion correction"
+            git push origin HEAD:main
+          fi
