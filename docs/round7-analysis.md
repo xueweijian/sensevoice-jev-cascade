@@ -88,6 +88,13 @@
 
 Diarize 需要保留每个 segment 的 `text` 才能公平评分，但它的分段文本本身会出现严重切分/漏词；它的价值是 `start/end/speaker`，不是纯转写精度。
 
+## 时间戳能力更正（Round 7 补测）
+
+Round 6/7 脚本默认没有加 `response_format=verbose_json`，因此 V3.2/Ultra 只显示了一个顶层 `duration`。补测发现：给 XingChen-V3.2/Ultra 加上 `response_format=verbose_json` 后，会返回一个整句 segment：`{start, end, text}`，没有 `speaker`。SenseVoiceSmall 无论加什么参数都只返回纯文本 + `usage.seconds`。Diarize 默认就返回多段 `segments[start/end/text/speaker]`。
+
+所以准确的表格是：V3.2/Ultra 有**整句级时间戳**、无逐句/逐词时间戳、无说话人；要多说话人切分还是只能用 Diarize。
+
+
 ## 生产决策
 
 ### 如果目标是“免费 + 最低错误率”
