@@ -66,6 +66,31 @@ python scripts/run_experiment.py --manifest /tmp/work/manifest.smoke.jsonl \
 5–10 条 clip 是管线打通 + 方向性信号，**不是统计证明**。规模结论需要
 500–2000 句的二期实验。
 
+## Smoke 结果（2026-10-06，10 clips：zh AISHELL-1 ×5 + en LibriSpeech ×5，全部经筛查确认含真实 ASR 错误）
+
+| 条件 | err（10 clips 均值） | 说明 |
+|---|---|---|
+| A 原始 ASR | 0.0736 | 基线 |
+| B 裸 LLM 全文纠错 | **0.0118 (zh) / 0.0286 (en)** | 9/10 修到零错；但 1 句爆雷（0.048→0.143，过度纠错） |
+| D 级联（jev-1.13-free 定位 + 同音约束回填） | **0.0495（-33%）** | 5 改善/4 持平/1 恶化；det P=0.28 R=0.58 |
+
+分语言：**en -46%**（拼写型错误文本可判，定位准，`proceedcing→proceeding`、
+`disistrusting→distrusting` 全中）；**zh -21%**（同音型错误是纯文本判别盲区，
+定位 P≈0.25，`自→资`、`网→望` 式误改出现 1 句净恶化）。
+
+### 结论
+
+1. 级联方向成立但增益有限；瓶颈精确落在 SoftCorrect 预言的位置——**同音字
+   定位精度**（看不到声学证据的先天盲区）。
+2. 读稿语料是裸 LLM 的舒适区，B 几乎无敌；级联的价值主张只剩"防爆雷"，
+   smoke 规模下不足以证明。
+3. `jev-1.13-free` 经用量护栏验证**真免费**（全程跑完 Go 套餐 5h 窗口 0%）。
+4. 坑：硅基流动 `/v1/systemone` 对海外 IP 返回 404（ASR 端点不受影响），
+   Kev-4B/SemIf/diffusiongemma 三款只能在 CN 网络调用；CI 里自动探测并跳过。
+
+二期建议：zh 需要 acoustic 证据（本地 logits 或双 ASR 分歧）才有戏；
+en 纯文本级联已可直接产品化验证。
+
 ## License
 
 MIT
