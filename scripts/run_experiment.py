@@ -128,8 +128,8 @@ def llm_fix(rec, units, positions, py_index):
         if m:
             arr = json.loads(m.group())
         else:
-            m2 = re.search(r"\{.*\}", raw, re.S)
-            arr = [json.loads(m2.group())] if m2 else []
+            objs = re.findall(r"\{[^{}]*\}", raw)
+            arr = [json.loads(o) for o in objs if o.strip().startswith("{\"i")]
         for e in arr:
             i, to = int(e.get("i", -1)), str(e.get("to", ""))
             if i not in positions or not to or to == units[i]:

@@ -80,4 +80,4 @@ jobs:
           cp results/results.md history/ 2>/dev/null || true
           git add -A history
           git commit -m "results: $(date -u +%FT%TZ)" || echo "nothing to commit"
-          git push origin results
+          git push origin results --force
