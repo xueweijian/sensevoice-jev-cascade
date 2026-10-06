@@ -1,0 +1,73 @@
+name: round6
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/round6.py"
+      - ".github/workflows/round6.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: round6
+  cancel-in-progress: true
+
+jobs:
+  asr-swap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache datasets
+        uses: actions/cache@v4
+        with:
+          path: /tmp/work/dl
+          key: aishell-S0002-S0003-libri1272-v1
+          restore-keys: aishell-
+
+      - name: Prep datasets (materialize wavs from dl cache)
+        run: python scripts/prep_data.py --work /tmp/work
+
+      - name: Install deps
+        run: pip install requests pypinyin opencc-python-reimplemented
+
+      - name: Run round6
+        run: python scripts/round6.py
+          --manifest experiments/round4/manifest.round4.jsonl
+          --out results --repeats 2
+        env:
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+
+      - name: Job summary
+        if: always()
+        run: cat results/round6-summary.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: round6
+          path: results/
+
+      - name: Archive to main
+        if: success()
+        run: |
+          git config user.name "ci-bot"
+          git config user.email "ci-bot@users.noreply.github.com"
+          mkdir -p experiments/round6
+          cp results/round6.json results/round6-summary.md experiments/round6/ 2>/dev/null || true
+          git add -A experiments/round6
+          if ! git diff --cached --quiet; then
+            git commit -m "round6 results: $(date -u +%FT%TZ)"
+            git push origin HEAD:main
+          fi
