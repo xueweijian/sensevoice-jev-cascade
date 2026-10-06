@@ -22,6 +22,9 @@ def main(argv=None):
     ap.add_argument("--window", type=int, default=1, help="每词调用句子数（默认1，R4最优）")
     ap.add_argument("--no-gate", action="store_true", help="关闭 Layer-0 门控（R5 默认开）")
     ap.add_argument("--gate-threshold", type=float, default=0.5)
+    ap.add_argument("--asr-model", default=None,
+                    help="ASR engine (default FunAudioLLM/SenseVoiceSmall；R6 推荐 "
+                         "Qwen/Qwen3-ASR-1.7B（付费实验模型；zh -68%/en -86%）)")
     ap.add_argument("--workers", type=int, default=2)
     ap.add_argument("--max-chunk-sec", type=float, default=60.0)
     ap.add_argument("--quiet", action="store_true")
@@ -37,6 +40,8 @@ def main(argv=None):
     cfg.verify_enabled = not args.no_verify
     cfg.gate_enabled = not args.no_gate
     cfg.gate_threshold = args.gate_threshold
+    if args.asr_model:
+        cfg.asr_model = args.asr_model
     cfg.window = max(1, args.window)
     cfg.workers = max(1, args.workers)
     cfg.chunk_max_seconds = args.max_chunk_sec

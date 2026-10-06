@@ -99,9 +99,11 @@ python -m asr_correct transcript.txt -o out/   # 已有转写→纠错
 ```
 
 **4.1flash（关思考）两遍流**：裸改 → 验证官复核 → 三重护栏。R4 实测脏句
--62%、零恶化、净句零损伤、p99 < 3s、全程免费额度。详见
+-62%、零恶化、净句零损伤、p99 < 3s、全程免费额度。默认 ASR 是免费的
+SenseVoiceSmall；Round6 的 Qwen3-ASR-1.7B 虽然质量更高，但按 **¥0.000220/秒
+输入音频时长**收费，只作为付费实验结果保留，不默认调用。详见
 [docs/production-pipeline.md](docs/production-pipeline.md)，工程实现
-`asr_correct/`（含 14 个离线单测 + 长音频静音切分 + 兜底链 + 审计报告）。
+`asr_correct/`（含 20 个离线单测 + 长音频静音切分 + 兜底链 + 审计报告）。
 
 ## License
 

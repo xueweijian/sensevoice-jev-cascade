@@ -1,7 +1,12 @@
-# 生产管线 asr_correct（Round 4 冠军方案的工程化）
+# 生产管线 asr_correct（Round 4/5 冠军方案的工程化）
 
-两遍纠错流水线：**SenseVoice 转写 → 4.1flash(关思考) 裸改 → 同模型验证官复核
+两遍纠错流水线：**ASR 转写 → 4.1flash(关思考) 裸改 → 同模型验证官复核
 → 三重护栏**。R4 实测：脏句 -62%、零恶化句、净句零损伤、p50 1.3s / p99 2.9s。
+
+默认 ASR 仍是硅基流动的免费 `FunAudioLLM/SenseVoiceSmall`。Round 6 验证了
+`Qwen/Qwen3-ASR-1.7B` 质量明显更高，但它是**付费模型**（在线推理价格
+¥0.000220/秒输入音频时长），不是默认选项；只有明确批准成本时才用
+`--asr-model Qwen/Qwen3-ASR-1.7B`。
 
 ## 快速上手
 
@@ -74,5 +79,10 @@ python -m asr_correct *.wav -o out/ --workers 3
 - 离线批处理：直接 `python -m asr_correct`，输出 report.json 入库审计
 - 准实时（字幕）：`--no-fallback`（少一层重试延迟）+ workers=1~2，
   p99 < 3s
+- ASR 选择：默认 `FunAudioLLM/SenseVoiceSmall`（免费）；质量优先且明确接受
+  按量费用时，可用 `--asr-model Qwen/Qwen3-ASR-1.7B`（¥0.000220/秒输入音频时长）。
+  Round6 只做过一次付费质量实验，后续不自动调用 Qwen。
+- 需要时间戳+说话人日志时可试 `XingChenAGI/XingChenASR-Diarize-V3.0`；
+  但 Round6 测试显示其中文识别质量明显差，不建议作为默认识别底座。
 - 升级路径：①业务口语音频进来后先测"去口癖"需求 ②若真实音频错误率高到
   提示词路线失灵（ASR-EC 预警线），启动 LoRA 微调二期

@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """Round 6: swap the ASR backend. Does a better ASR lower the FLOOR?
 
-Stage 1: all 5 SiliconFlow ASR engines transcribe the same 10 clips
+Stage 1: four free + one paid SiliconFlow ASR engines transcribe the same 10 clips
          (5 zh AISHELL-1 + 5 en LibriSpeech), base err rate per engine.
 Stage 2: top-2 engines' transcripts -> champion correction (asr_correct,
          gate disabled to keep the ASR comparison clean, 2 repeats).
 
 Also catalogs engine capabilities (timestamps / speaker / duration).
+
+Cost note: Qwen/Qwen3-ASR-1.7B is paid (¥0.000220/audio second); do not rerun
+this workflow unless paid usage is explicitly approved. The other four are free.
 """
 import argparse
 import json
