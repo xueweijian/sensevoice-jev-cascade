@@ -91,6 +91,18 @@ python scripts/run_experiment.py --manifest /tmp/work/manifest.smoke.jsonl \
 - 零容忍改错（纪要/存证）：jev-1.13-free 定位 + 4.1flash 约束回填
 - 英文场景：级联可直接产品化
 
+## 生产管线（Round 4 冠军方案，可直接部署）
+
+```bash
+python -m asr_correct meeting.wav -o out/      # 音频→纠错文本
+python -m asr_correct transcript.txt -o out/   # 已有转写→纠错
+```
+
+**4.1flash（关思考）两遍流**：裸改 → 验证官复核 → 三重护栏。R4 实测脏句
+-62%、零恶化、净句零损伤、p99 < 3s、全程免费额度。详见
+[docs/production-pipeline.md](docs/production-pipeline.md)，工程实现
+`asr_correct/`（含 14 个离线单测 + 长音频静音切分 + 兜底链 + 审计报告）。
+
 ## License
 
 MIT

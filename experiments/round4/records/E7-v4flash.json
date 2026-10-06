@@ -1,0 +1,890 @@
+{
+ "condition": "E7",
+ "model": "v4flash",
+ "repeats": 2,
+ "wall_min": 11.5,
+ "summary": {
+  "n_ok": 40,
+  "n_err": 0,
+  "dirty_n": 20,
+  "dirty_err_before": 0.0736,
+  "dirty_err_after": 0.052,
+  "dirty_improved": 10,
+  "dirty_worsened": 3,
+  "clean_n": 20,
+  "clean_damaged": 5,
+  "clean_changed_chars": 9,
+  "min_len_ratio": 1.0,
+  "calls_mean": 1.7,
+  "lat_p50": 12.79,
+  "lat_p99": 93.0,
+  "safe": false
+ },
+ "records": [
+  {
+   "id": "BAC009S0002W0122",
+   "lang": "zh",
+   "dirty": true,
+   "repeat": 1,
+   "err_before": 0.0667,
+   "err_after": 0.2,
+   "changed": [
+    0,
+    4
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    17.38,
+    21.62
+   ],
+   "wall": 39.0,
+   "notes": [
+    "det:3",
+    "edits:2"
+   ],
+   "out": "对对面楼是成交抑制作用最大的限购"
+  },
+  {
+   "id": "BAC009S0002W0130",
+   "lang": "zh",
+   "dirty": true,
+   "repeat": 1,
+   "err_before": 0.0833,
+   "err_after": 0.0,
+   "changed": [
+    9
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    7.92,
+    9.0
+   ],
+   "wall": 16.92,
+   "notes": [
+    "det:1",
+    "edits:1"
+   ],
+   "out": "财政金融政策紧随其后而来"
+  },
+  {
+   "id": "BAC009S0002W0132",
+   "lang": "zh",
+   "dirty": true,
+   "repeat": 1,
+   "err_before": 0.0588,
+   "err_after": 0.0588,
+   "changed": [
+    5
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    12.79,
+    12.84
+   ],
+   "wall": 25.63,
+   "notes": [
+    "det:2",
+    "edits:1"
+   ],
+   "out": "放松了与自身需求密切相关的房贷政策"
+  },
+  {
+   "id": "BAC009S0002W0136",
+   "lang": "zh",
+   "dirty": true,
+   "repeat": 1,
+   "err_before": 0.125,
+   "err_after": 0.125,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 1,
+   "lat": [
+    56.43
+   ],
+   "wall": 56.43,
+   "notes": [
+    "det:0"
+   ],
+   "out": "这个后来被称为九百三十新政策的措施"
+  },
+  {
+   "id": "BAC009S0002W0139",
+   "lang": "zh",
+   "dirty": true,
+   "repeat": 1,
+   "err_before": 0.0556,
+   "err_after": 0.0,
+   "changed": [
+    8
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    12.37,
+    9.61
+   ],
+   "wall": 21.99,
+   "notes": [
+    "det:2",
+    "edits:1"
+   ],
+   "out": "支持缴存职工购买首套和改善型自住住房"
+  },
+  {
+   "id": "1320-122612-0001",
+   "lang": "en",
+   "dirty": true,
+   "repeat": 1,
+   "err_before": 0.0333,
+   "err_after": 0.0333,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    6.79,
+    36.1
+   ],
+   "wall": 42.88,
+   "notes": [
+    "det:1",
+    "edits:0"
+   ],
+   "out": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey"
+  },
+  {
+   "id": "1320-122612-0002",
+   "lang": "en",
+   "dirty": true,
+   "repeat": 1,
+   "err_before": 0.0556,
+   "err_after": 0.0,
+   "changed": [
+    1
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    10.21,
+    76.54
+   ],
+   "wall": 86.75,
+   "notes": [
+    "det:2",
+    "edits:2"
+   ],
+   "out": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful"
+  },
+  {
+   "id": "1320-122612-0003",
+   "lang": "en",
+   "dirty": true,
+   "repeat": 1,
+   "err_before": 0.0769,
+   "err_after": 0.0385,
+   "changed": [
+    11
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    23.19,
+    34.16
+   ],
+   "wall": 57.35,
+   "notes": [
+    "det:1",
+    "edits:1"
+   ],
+   "out": "he often stopped to examine the trees nor did he cross rivulet without attentively considering the quantity the velocity and the color of its waters"
+  },
+  {
+   "id": "1320-122612-0004",
+   "lang": "en",
+   "dirty": true,
+   "repeat": 1,
+   "err_before": 0.1333,
+   "err_after": 0.0,
+   "changed": [
+    0,
+    10
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    14.7,
+    31.66
+   ],
+   "wall": 46.36,
+   "notes": [
+    "det:2",
+    "edits:2"
+   ],
+   "out": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest"
+  },
+  {
+   "id": "1320-122612-0005",
+   "lang": "en",
+   "dirty": true,
+   "repeat": 1,
+   "err_before": 0.0476,
+   "err_after": 0.0476,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    5.12,
+    18.08
+   ],
+   "wall": 23.19,
+   "notes": [
+    "det:1",
+    "edits:0"
+   ],
+   "out": "yet here are we within a short range of the scoonons and not a sign of a trail have we crossed"
+  },
+  {
+   "id": "BAC009S0002W0123",
+   "lang": "zh",
+   "dirty": false,
+   "repeat": 1,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 1,
+   "lat": [
+    3.08
+   ],
+   "wall": 3.08,
+   "notes": [
+    "det:0"
+   ],
+   "out": "也成为地方政府的眼中钉"
+  },
+  {
+   "id": "BAC009S0002W0124",
+   "lang": "zh",
+   "dirty": false,
+   "repeat": 1,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 1,
+   "lat": [
+    2.95
+   ],
+   "wall": 2.95,
+   "notes": [
+    "det:0"
+   ],
+   "out": "自六月底呼和浩特市率先宣布取消限购后"
+  },
+  {
+   "id": "BAC009S0002W0125",
+   "lang": "zh",
+   "dirty": false,
+   "repeat": 1,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 1,
+   "lat": [
+    2.21
+   ],
+   "wall": 2.21,
+   "notes": [
+    "det:0"
+   ],
+   "out": "各地政府便纷纷跟进"
+  },
+  {
+   "id": "BAC009S0002W0126",
+   "lang": "zh",
+   "dirty": false,
+   "repeat": 1,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 1,
+   "lat": [
+    1.38
+   ],
+   "wall": 1.38,
+   "notes": [
+    "det:0"
+   ],
+   "out": "仅一个多月的时间里"
+  },
+  {
+   "id": "BAC009S0002W0127",
+   "lang": "zh",
+   "dirty": false,
+   "repeat": 1,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 1,
+   "lat": [
+    14.18
+   ],
+   "wall": 14.18,
+   "notes": [
+    "det:0"
+   ],
+   "out": "除了北京上海广州深圳四个一线城市和三亚之外"
+  },
+  {
+   "id": "1320-122612-0000",
+   "lang": "en",
+   "dirty": false,
+   "repeat": 1,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    25.86,
+    20.78
+   ],
+   "wall": 46.64,
+   "notes": [
+    "det:3",
+    "edits:0"
+   ],
+   "out": "since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild recesses"
+  },
+  {
+   "id": "1320-122612-0006",
+   "lang": "en",
+   "dirty": false,
+   "repeat": 1,
+   "err_before": 0.0,
+   "err_after": 0.0769,
+   "changed": [
+    0
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    27.43,
+    16.85
+   ],
+   "wall": 44.28,
+   "notes": [
+    "det:4",
+    "edits:1"
+   ],
+   "out": "lets us retrace our steps and examine as we go with keener eyes"
+  },
+  {
+   "id": "1320-122612-0008",
+   "lang": "en",
+   "dirty": false,
+   "repeat": 1,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    17.14,
+    13.89
+   ],
+   "wall": 31.03,
+   "notes": [
+    "det:2",
+    "edits:0"
+   ],
+   "out": "the eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed"
+  },
+  {
+   "id": "1320-122612-0009",
+   "lang": "en",
+   "dirty": false,
+   "repeat": 1,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    13.08,
+    7.17
+   ],
+   "wall": 20.25,
+   "notes": [
+    "det:1",
+    "edits:0"
+   ],
+   "out": "it would have been more wonderful had he spoken without a bidding"
+  },
+  {
+   "id": "1320-122612-0013",
+   "lang": "en",
+   "dirty": false,
+   "repeat": 1,
+   "err_before": 0.0,
+   "err_after": 0.0909,
+   "changed": [
+    0,
+    6
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    21.92,
+    20.49
+   ],
+   "wall": 42.41,
+   "notes": [
+    "det:4",
+    "edits:2"
+   ],
+   "out": "the circle of a few hundred fit in circumference was drawn and each of the party took a segment for his portion"
+  },
+  {
+   "id": "BAC009S0002W0122",
+   "lang": "zh",
+   "dirty": true,
+   "repeat": 2,
+   "err_before": 0.0667,
+   "err_after": 0.2,
+   "changed": [
+    2,
+    5,
+    9
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    52.24,
+    62.39
+   ],
+   "wall": 114.63,
+   "notes": [
+    "det:11",
+    "edits:3"
+   ],
+   "out": "而对于楼市呈交抑制用用最大的限购"
+  },
+  {
+   "id": "BAC009S0002W0130",
+   "lang": "zh",
+   "dirty": true,
+   "repeat": 2,
+   "err_before": 0.0833,
+   "err_after": 0.0,
+   "changed": [
+    9
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    6.88,
+    8.78
+   ],
+   "wall": 15.66,
+   "notes": [
+    "det:1",
+    "edits:1"
+   ],
+   "out": "财政金融政策紧随其后而来"
+  },
+  {
+   "id": "BAC009S0002W0132",
+   "lang": "zh",
+   "dirty": true,
+   "repeat": 2,
+   "err_before": 0.0588,
+   "err_after": 0.0588,
+   "changed": [
+    5
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    10.39,
+    19.16
+   ],
+   "wall": 29.56,
+   "notes": [
+    "det:2",
+    "edits:1"
+   ],
+   "out": "放松了与自身需求密切相关的房贷政策"
+  },
+  {
+   "id": "BAC009S0002W0136",
+   "lang": "zh",
+   "dirty": true,
+   "repeat": 2,
+   "err_before": 0.125,
+   "err_after": 0.125,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 1,
+   "lat": [
+    1.42
+   ],
+   "wall": 1.42,
+   "notes": [
+    "det:0"
+   ],
+   "out": "这个后来被称为九百三十新政策的措施"
+  },
+  {
+   "id": "BAC009S0002W0139",
+   "lang": "zh",
+   "dirty": true,
+   "repeat": 2,
+   "err_before": 0.0556,
+   "err_after": 0.0,
+   "changed": [
+    8
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    8.01,
+    11.75
+   ],
+   "wall": 19.76,
+   "notes": [
+    "det:2",
+    "edits:1"
+   ],
+   "out": "支持缴存职工购买首套和改善型自住住房"
+  },
+  {
+   "id": "1320-122612-0001",
+   "lang": "en",
+   "dirty": true,
+   "repeat": 2,
+   "err_before": 0.0333,
+   "err_after": 0.0667,
+   "changed": [
+    0
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    4.39,
+    6.75
+   ],
+   "wall": 11.14,
+   "notes": [
+    "det:1",
+    "edits:1"
+   ],
+   "out": "they dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey"
+  },
+  {
+   "id": "1320-122612-0002",
+   "lang": "en",
+   "dirty": true,
+   "repeat": 2,
+   "err_before": 0.0556,
+   "err_after": 0.0,
+   "changed": [
+    1
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    106.92,
+    9.15
+   ],
+   "wall": 116.08,
+   "notes": [
+    "det:2",
+    "edits:2"
+   ],
+   "out": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful"
+  },
+  {
+   "id": "1320-122612-0003",
+   "lang": "en",
+   "dirty": true,
+   "repeat": 2,
+   "err_before": 0.0769,
+   "err_after": 0.0385,
+   "changed": [
+    11
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    5.14,
+    8.26
+   ],
+   "wall": 13.4,
+   "notes": [
+    "det:1",
+    "edits:1"
+   ],
+   "out": "he often stopped to examine the trees nor did he cross rivulet without attentively considering the quantity the velocity and the color of its waters"
+  },
+  {
+   "id": "1320-122612-0004",
+   "lang": "en",
+   "dirty": true,
+   "repeat": 2,
+   "err_before": 0.1333,
+   "err_after": 0.0,
+   "changed": [
+    0,
+    10
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    10.9,
+    11.93
+   ],
+   "wall": 22.83,
+   "notes": [
+    "det:2",
+    "edits:2"
+   ],
+   "out": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest"
+  },
+  {
+   "id": "1320-122612-0005",
+   "lang": "en",
+   "dirty": true,
+   "repeat": 2,
+   "err_before": 0.0476,
+   "err_after": 0.0476,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    8.08,
+    10.46
+   ],
+   "wall": 18.55,
+   "notes": [
+    "det:2",
+    "edits:0"
+   ],
+   "out": "yet here are we within a short range of the scoonons and not a sign of a trail have we crossed"
+  },
+  {
+   "id": "BAC009S0002W0123",
+   "lang": "zh",
+   "dirty": false,
+   "repeat": 2,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 1,
+   "lat": [
+    57.86
+   ],
+   "wall": 57.86,
+   "notes": [
+    "det:0"
+   ],
+   "out": "也成为地方政府的眼中钉"
+  },
+  {
+   "id": "BAC009S0002W0124",
+   "lang": "zh",
+   "dirty": false,
+   "repeat": 2,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 1,
+   "lat": [
+    2.1
+   ],
+   "wall": 2.1,
+   "notes": [
+    "det:0"
+   ],
+   "out": "自六月底呼和浩特市率先宣布取消限购后"
+  },
+  {
+   "id": "BAC009S0002W0125",
+   "lang": "zh",
+   "dirty": false,
+   "repeat": 2,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 1,
+   "lat": [
+    13.83
+   ],
+   "wall": 13.83,
+   "notes": [
+    "det:0"
+   ],
+   "out": "各地政府便纷纷跟进"
+  },
+  {
+   "id": "BAC009S0002W0126",
+   "lang": "zh",
+   "dirty": false,
+   "repeat": 2,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 1,
+   "lat": [
+    1.4
+   ],
+   "wall": 1.4,
+   "notes": [
+    "det:0"
+   ],
+   "out": "仅一个多月的时间里"
+  },
+  {
+   "id": "BAC009S0002W0127",
+   "lang": "zh",
+   "dirty": false,
+   "repeat": 2,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 1,
+   "lat": [
+    4.3
+   ],
+   "wall": 4.3,
+   "notes": [
+    "det:0"
+   ],
+   "out": "除了北京上海广州深圳四个一线城市和三亚之外"
+  },
+  {
+   "id": "1320-122612-0000",
+   "lang": "en",
+   "dirty": false,
+   "repeat": 2,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    93.0,
+    56.15
+   ],
+   "wall": 149.16,
+   "notes": [
+    "det:18",
+    "edits:0"
+   ],
+   "out": "since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild recesses"
+  },
+  {
+   "id": "1320-122612-0006",
+   "lang": "en",
+   "dirty": false,
+   "repeat": 2,
+   "err_before": 0.0,
+   "err_after": 0.0769,
+   "changed": [
+    0
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    55.76,
+    36.85
+   ],
+   "wall": 92.61,
+   "notes": [
+    "det:13",
+    "edits:1"
+   ],
+   "out": "lets us retrace our steps and examine as we go with keener eyes"
+  },
+  {
+   "id": "1320-122612-0008",
+   "lang": "en",
+   "dirty": false,
+   "repeat": 2,
+   "err_before": 0.0,
+   "err_after": 0.0435,
+   "changed": [
+    11
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    6.73,
+    6.6
+   ],
+   "wall": 13.33,
+   "notes": [
+    "det:1",
+    "edits:1"
+   ],
+   "out": "the eyes of the whole party followed the unexpected movement and saw their success in the air of triumph that the youth assumed"
+  },
+  {
+   "id": "1320-122612-0009",
+   "lang": "en",
+   "dirty": false,
+   "repeat": 2,
+   "err_before": 0.0,
+   "err_after": 0.0,
+   "changed": [],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    8.35,
+    5.29
+   ],
+   "wall": 13.64,
+   "notes": [
+    "det:1",
+    "edits:0"
+   ],
+   "out": "it would have been more wonderful had he spoken without a bidding"
+  },
+  {
+   "id": "1320-122612-0013",
+   "lang": "en",
+   "dirty": false,
+   "repeat": 2,
+   "err_before": 0.0,
+   "err_after": 0.1818,
+   "changed": [
+    0,
+    6,
+    15,
+    18
+   ],
+   "len_ratio": 1.0,
+   "calls": 2,
+   "lat": [
+    17.82,
+    14.11
+   ],
+   "wall": 31.93,
+   "notes": [
+    "det:5",
+    "edits:4"
+   ],
+   "out": "the circle of a few hundred fit in circumference was drawn and each of the part took a sect for his portion"
+  }
+ ]
+}
