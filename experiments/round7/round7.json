@@ -1,0 +1,5144 @@
+{
+ "free_engines": {
+  "sensevoice": "FunAudioLLM/SenseVoiceSmall",
+  "xingchen-v32": "XingChenAGI/XingChenASR-V3.2",
+  "xingchen-ultra": "XingChenAGI/XingChenASR-V3.2-Ultra",
+  "xingchen-diarize": "XingChenAGI/XingChenASR-Diarize-V3.0"
+ },
+ "stage1": {
+  "sensevoice": [
+   {
+    "id": "BAC009S0002W0122",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "而对面楼市成交抑制作用最大的限购。",
+    "raw_text": "而对面楼市成交抑制作用最大的限购。",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0667,
+    "asr_wall_s": 12.79
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "财政金融政策紧随其候而来。",
+    "raw_text": "财政金融政策紧随其候而来。",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0833,
+    "asr_wall_s": 5.39
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "放松了与自网需求密切相关的房贷政策。",
+    "raw_text": "放松了与自网需求密切相关的房贷政策。",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0588,
+    "asr_wall_s": 9.53
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "这个后来被称为930新政策的措施。",
+    "raw_text": "这个后来被称为930新政策的措施。",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.125,
+    "asr_wall_s": 1.99
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "支持缴存职工购买手套和改善型自住住房。",
+    "raw_text": "支持缴存职工购买手套和改善型自住住房。",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0556,
+    "asr_wall_s": 2.1
+   },
+   {
+    "id": "1320-122612-0001",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "text": "The dews were suffered to exhale, and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey.",
+    "raw_text": "The dews were suffered to exhale, and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey.",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0333,
+    "asr_wall_s": 2.3
+   },
+   {
+    "id": "1320-122612-0002",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "text": "After proceeding a few miles, the progress of Hawkeye, who LED the advance, became more deliberate and watchful.",
+    "raw_text": "After proceeding a few miles, the progress of Hawkeye, who LED the advance, became more deliberate and watchful.",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 8.77
+   },
+   {
+    "id": "1320-122612-0003",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "text": "He often stopped to examine the trees, nor did he cross aivulet without attentively considering the quantity, the velocity and the color of its waters.",
+    "raw_text": "He often stopped to examine the trees, nor did he cross aivulet without attentively considering the quantity, the velocity and the color of its waters.",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0769,
+    "asr_wall_s": 2.27
+   },
+   {
+    "id": "1320-122612-0004",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "text": "Disistrusting his own judgment, his appeals to the opinion of Chingachchguk were frequent and earnest.",
+    "raw_text": "Disistrusting his own judgment, his appeals to the opinion of Chingachchguk were frequent and earnest.",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.1333,
+    "asr_wall_s": 1.85
+   },
+   {
+    "id": "1320-122612-0005",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "text": "Yet here are we within a short range of the Scoonons and not a sign of a trail have we crossed.",
+    "raw_text": "Yet here are we within a short range of the Scoonons and not a sign of a trail have we crossed.",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0476,
+    "asr_wall_s": 1.76
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "也成为地方政府的眼中钉。",
+    "raw_text": "也成为地方政府的眼中钉。",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 1.6
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "自6月底，呼和浩特市率先宣布取消限购后。",
+    "raw_text": "自6月底，呼和浩特市率先宣布取消限购后。",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 1.75
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "各地政府便纷纷跟进。",
+    "raw_text": "各地政府便纷纷跟进。",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 19.55
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "仅一个多月的时间里。",
+    "raw_text": "仅一个多月的时间里。",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 9.75
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "除了北京、上海、广州、深圳4个一线城市和三亚之外。",
+    "raw_text": "除了北京、上海、广州、深圳4个一线城市和三亚之外。",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 3.11
+   },
+   {
+    "id": "1320-122612-0000",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "text": "Since the period of our tale, the active spirit of the country has surrounded it with a belt of rich and thriving settlements, though none. But the hunter or the savage is ever known even now to penetrate its wild recesses.",
+    "raw_text": "Since the period of our tale, the active spirit of the country has surrounded it with a belt of rich and thriving settlements, though none. But the hunter or the savage is ever known even now to penetrate its wild recesses.",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 4.36
+   },
+   {
+    "id": "1320-122612-0006",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "text": "Let us retrace our steps and examine as we go, with keener eyes.",
+    "raw_text": "Let us retrace our steps and examine as we go, with keener eyes.",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 11.79
+   },
+   {
+    "id": "1320-122612-0008",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "text": "The eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed.",
+    "raw_text": "The eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed.",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 10.25
+   },
+   {
+    "id": "1320-122612-0009",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "text": "It would have been more wonderful had he spoken without a bidding.",
+    "raw_text": "It would have been more wonderful had he spoken without a bidding.",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.25
+   },
+   {
+    "id": "1320-122612-0013",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "text": "A circle of a few hundred feet in circumference was drawn, and each of the party took a segment for his portion.",
+    "raw_text": "A circle of a few hundred feet in circumference was drawn, and each of the party took a segment for his portion.",
+    "meta": {
+     "duration": null,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 1.87
+   }
+  ],
+  "xingchen-v32": [
+   {
+    "id": "BAC009S0002W0122",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "而对面楼市成交抑制作用最大的限购",
+    "raw_text": "而对面楼市成交抑制作用最大的限购",
+    "meta": {
+     "duration": 5.999,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0667,
+    "asr_wall_s": 2.17
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "财政金融政策紧随其后而来",
+    "raw_text": "财政金融政策紧随其后而来",
+    "meta": {
+     "duration": 4.13,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.16
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "放松了与自往需求密切相关的房贷政策。",
+    "raw_text": "放松了与自往需求密切相关的房贷政策。",
+    "meta": {
+     "duration": 6.766,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.27
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "这个后来被称为930新政策的措施。",
+    "raw_text": "这个后来被称为930新政策的措施。",
+    "meta": {
+     "duration": 6.323,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.125,
+    "asr_wall_s": 2.34
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "支持缴存职工购买首套和改善型自住住房。",
+    "raw_text": "支持缴存职工购买首套和改善型自住住房。",
+    "meta": {
+     "duration": 6.834,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.47
+   },
+   {
+    "id": "1320-122612-0001",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "text": "The dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+    "raw_text": "The dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+    "meta": {
+     "duration": 9.52,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0333,
+    "asr_wall_s": 3.75
+   },
+   {
+    "id": "1320-122612-0002",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "text": "After proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful.",
+    "raw_text": "After proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful.",
+    "meta": {
+     "duration": 7.46,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.67
+   },
+   {
+    "id": "1320-122612-0003",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "text": "He often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters.",
+    "raw_text": "He often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters.",
+    "meta": {
+     "duration": 9.865,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.5
+   },
+   {
+    "id": "1320-122612-0004",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "text": "Distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest.",
+    "raw_text": "Distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest.",
+    "meta": {
+     "duration": 6.425,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.5
+   },
+   {
+    "id": "1320-122612-0005",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "text": "Yet here are we within a short range of the scaroons and not a sign of a trail have we crossed.",
+    "raw_text": "Yet here are we within a short range of the scaroons and not a sign of a trail have we crossed.",
+    "meta": {
+     "duration": 5.915,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.15
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "也成为地方政府的眼中钉",
+    "raw_text": "也成为地方政府的眼中钉",
+    "meta": {
+     "duration": 3.865,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.2
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "自6月底呼和浩特市率先宣布取消限购后。",
+    "raw_text": "自6月底呼和浩特市率先宣布取消限购后。",
+    "meta": {
+     "duration": 5.409,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.14
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "各地政府便纷纷跟进。",
+    "raw_text": "各地政府便纷纷跟进。",
+    "meta": {
+     "duration": 3.167,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 1.94
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "仅一个多月的时间里。",
+    "raw_text": "仅一个多月的时间里。",
+    "meta": {
+     "duration": 2.576,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 1.85
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "除了北京上海广州深圳4个一线城市和三亚之外。",
+    "raw_text": "除了北京上海广州深圳4个一线城市和三亚之外。",
+    "meta": {
+     "duration": 5.89,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.24
+   },
+   {
+    "id": "1320-122612-0000",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "text": "Since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild recesses",
+    "raw_text": "Since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild recesses",
+    "meta": {
+     "duration": 13.48,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 3.35
+   },
+   {
+    "id": "1320-122612-0006",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "text": "Let us retrace our steps and examine as we go with keener eyes.",
+    "raw_text": "Let us retrace our steps and examine as we go with keener eyes.",
+    "meta": {
+     "duration": 4.845,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.3
+   },
+   {
+    "id": "1320-122612-0008",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "text": "The eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed.",
+    "raw_text": "The eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed.",
+    "meta": {
+     "duration": 7.875,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.69
+   },
+   {
+    "id": "1320-122612-0009",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "text": "It would have been more wonderful had he spoken without a bidding.",
+    "raw_text": "It would have been more wonderful had he spoken without a bidding.",
+    "meta": {
+     "duration": 3.88,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.32
+   },
+   {
+    "id": "1320-122612-0013",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "text": "A circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion.",
+    "raw_text": "A circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion.",
+    "meta": {
+     "duration": 6.55,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.36
+   }
+  ],
+  "xingchen-ultra": [
+   {
+    "id": "BAC009S0002W0122",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "而对面楼市成交抑制作用最大的限购",
+    "raw_text": "而对面楼市成交抑制作用最大的限购",
+    "meta": {
+     "duration": 5.999,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0667,
+    "asr_wall_s": 5.83
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "财政金融政策紧随其后而来。",
+    "raw_text": "财政金融政策紧随其后而来。",
+    "meta": {
+     "duration": 4.13,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 3.87
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "放松了与自需求密切相关的房贷政策。",
+    "raw_text": "放松了与自需求密切相关的房贷政策。",
+    "meta": {
+     "duration": 6.766,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0588,
+    "asr_wall_s": 8.15
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "这个后来被称为930新政策的措施。",
+    "raw_text": "这个后来被称为930新政策的措施。",
+    "meta": {
+     "duration": 6.323,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.125,
+    "asr_wall_s": 5.47
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "支持缴存职工购买首套和改善型自住住房。",
+    "raw_text": "支持缴存职工购买首套和改善型自住住房。",
+    "meta": {
+     "duration": 6.834,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 5.41
+   },
+   {
+    "id": "1320-122612-0001",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "text": "The dews were suffered to exhale, and the sun had dispersed the mists, and was shedding a strong and clear light in the forest, when the travellers resumed their journey.",
+    "raw_text": "The dews were suffered to exhale, and the sun had dispersed the mists, and was shedding a strong and clear light in the forest, when the travellers resumed their journey.",
+    "meta": {
+     "duration": 9.52,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0333,
+    "asr_wall_s": 10.07
+   },
+   {
+    "id": "1320-122612-0002",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "text": "After proceeding a few miles, the progress of Hawkeye, who led the advance, became more deliberate and watchful.",
+    "raw_text": "After proceeding a few miles, the progress of Hawkeye, who led the advance, became more deliberate and watchful.",
+    "meta": {
+     "duration": 7.46,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 6.32
+   },
+   {
+    "id": "1320-122612-0003",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "text": "He often stopped to examine the trees, nor did he cross a rivulet without attentively considering the quantity, the velocity, and the color of its waters.",
+    "raw_text": "He often stopped to examine the trees, nor did he cross a rivulet without attentively considering the quantity, the velocity, and the color of its waters.",
+    "meta": {
+     "duration": 9.865,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 5.23
+   },
+   {
+    "id": "1320-122612-0004",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "text": "Distrusting his own judgment, his appeals to the opinion of Chingachgook were frequent and earnest.",
+    "raw_text": "Distrusting his own judgment, his appeals to the opinion of Chingachgook were frequent and earnest.",
+    "meta": {
+     "duration": 6.425,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 5.13
+   },
+   {
+    "id": "1320-122612-0005",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "text": "Yet here are we within a short range of the scaroons and not a sign of a trail have we crossed.",
+    "raw_text": "Yet here are we within a short range of the scaroons and not a sign of a trail have we crossed.",
+    "meta": {
+     "duration": 5.915,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 9.89
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "也成为地方政府的眼中钉。",
+    "raw_text": "也成为地方政府的眼中钉。",
+    "meta": {
+     "duration": 3.865,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 7.13
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "自六月底呼和浩特市率先宣布取消限购后，",
+    "raw_text": "自六月底呼和浩特市率先宣布取消限购后，",
+    "meta": {
+     "duration": 5.409,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 4.16
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "各地政府便纷纷跟进。",
+    "raw_text": "各地政府便纷纷跟进。",
+    "meta": {
+     "duration": 3.167,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 7.94
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "仅一个多月的时间里，",
+    "raw_text": "仅一个多月的时间里，",
+    "meta": {
+     "duration": 2.576,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 4.26
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "除了北京上海广州深圳四个一线城市和三亚之外",
+    "raw_text": "除了北京上海广州深圳四个一线城市和三亚之外",
+    "meta": {
+     "duration": 5.89,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 6.84
+   },
+   {
+    "id": "1320-122612-0000",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "text": "Since the period of our tale, the active spirit of the country has surrounded it with a belt of rich and thriving settlements, though none but the hunter or the savage is ever known even now to penetrate its wild recesses.",
+    "raw_text": "Since the period of our tale, the active spirit of the country has surrounded it with a belt of rich and thriving settlements, though none but the hunter or the savage is ever known even now to penetrate its wild recesses.",
+    "meta": {
+     "duration": 13.48,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 5.25
+   },
+   {
+    "id": "1320-122612-0006",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "text": "Let us retrace our steps and examine as we go with keener eyes.",
+    "raw_text": "Let us retrace our steps and examine as we go with keener eyes.",
+    "meta": {
+     "duration": 4.845,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 5.28
+   },
+   {
+    "id": "1320-122612-0008",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "text": "The eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed.",
+    "raw_text": "The eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed.",
+    "meta": {
+     "duration": 7.875,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 5.24
+   },
+   {
+    "id": "1320-122612-0009",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "text": "It would have been more wonderful had he spoken without a bidding.",
+    "raw_text": "It would have been more wonderful had he spoken without a bidding.",
+    "meta": {
+     "duration": 3.88,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 4.67
+   },
+   {
+    "id": "1320-122612-0013",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "text": "A circle of a few hundred feet in circumference was drawn, and each of the party took a segment for his portion.",
+    "raw_text": "A circle of a few hundred feet in circumference was drawn, and each of the party took a segment for his portion.",
+    "meta": {
+     "duration": 6.55,
+     "segments": [],
+     "speakers": [],
+     "has_timestamps": false
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 16.68
+   }
+  ],
+  "xingchen-diarize": [
+   {
+    "id": "BAC009S0002W0122",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "而对面楼市成交抑制作用最大的限购",
+    "raw_text": "1: 而对面楼市成交抑制作用最大的限购",
+    "meta": {
+     "duration": 5.999,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.48,
+       "end": 5.73,
+       "text": "而对面楼市成交抑制作用最大的限购",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0667,
+    "asr_wall_s": 2.6
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "财政金融政策 你随 其后而来。",
+    "raw_text": "1: 财政金融政策\n2: 你随\n3: 其后而来。",
+    "meta": {
+     "duration": 4.13,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.53,
+       "end": 2.03,
+       "text": "财政金融政策",
+       "speaker": "1"
+      },
+      {
+       "type": "transcript.text.segment",
+       "id": "1",
+       "start": 2.23,
+       "end": 2.67,
+       "text": "你随",
+       "speaker": "2"
+      },
+      {
+       "type": "transcript.text.segment",
+       "id": "2",
+       "start": 2.78,
+       "end": 3.42,
+       "text": "其后而来。",
+       "speaker": "3"
+      }
+     ],
+     "speakers": [
+      "1",
+      "2",
+      "3"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0833,
+    "asr_wall_s": 2.04
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "放松了与自往需求密切相关的房贷政策。",
+    "raw_text": "1: 放松了与自往需求密切相关的房贷政策。",
+    "meta": {
+     "duration": 6.766,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.52,
+       "end": 5.96,
+       "text": "放松了与自往需求密切相关的房贷政策。",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.67
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "这个后来被称为930新政策。",
+    "raw_text": "1: 这个后来被称为930新政策。",
+    "meta": {
+     "duration": 6.323,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.49,
+       "end": 4.97,
+       "text": "这个后来被称为930新政策。",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.3125,
+    "asr_wall_s": 2.62
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "text": "支持缴存职工购买首套和改善型自住住房。",
+    "raw_text": "1: 支持缴存职工购买首套和改善型自住住房。",
+    "meta": {
+     "duration": 6.834,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.5,
+       "end": 6.259,
+       "text": "支持缴存职工购买首套和改善型自住住房。",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 5.88
+   },
+   {
+    "id": "1320-122612-0001",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "text": "The dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+    "raw_text": "1: The dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+    "meta": {
+     "duration": 9.52,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.29,
+       "end": 9.25,
+       "text": "The dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0333,
+    "asr_wall_s": 3.0
+   },
+   {
+    "id": "1320-122612-0002",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "text": "After proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful.",
+    "raw_text": "1: After proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful.",
+    "meta": {
+     "duration": 7.46,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.55,
+       "end": 7.27,
+       "text": "After proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful.",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.73
+   },
+   {
+    "id": "1320-122612-0003",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "text": "He often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the colour of its waters.",
+    "raw_text": "1: He often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the colour of its waters.",
+    "meta": {
+     "duration": 9.865,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.36,
+       "end": 9.32,
+       "text": "He often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the colour of its waters.",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0385,
+    "asr_wall_s": 3.34
+   },
+   {
+    "id": "1320-122612-0004",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "text": "Distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest.",
+    "raw_text": "1: Distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest.",
+    "meta": {
+     "duration": 6.425,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.31,
+       "end": 6.069,
+       "text": "Distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest.",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 5.75
+   },
+   {
+    "id": "1320-122612-0005",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "text": "Yet here are we within a short range of the scaroons and not a sign of a trail have we crossed.",
+    "raw_text": "1: Yet here are we within a short range of the scaroons and not a sign of a trail have we crossed.",
+    "meta": {
+     "duration": 5.915,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.25,
+       "end": 5.5,
+       "text": "Yet here are we within a short range of the scaroons and not a sign of a trail have we crossed.",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.32
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "也成 不得眼",
+    "raw_text": "1: 也成\n2: 不得眼",
+    "meta": {
+     "duration": 3.865,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.51,
+       "end": 1.15,
+       "text": "也成",
+       "speaker": "1"
+      },
+      {
+       "type": "transcript.text.segment",
+       "id": "1",
+       "start": 2.21,
+       "end": 2.65,
+       "text": "不得眼",
+       "speaker": "2"
+      }
+     ],
+     "speakers": [
+      "1",
+      "2"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.7273,
+    "asr_wall_s": 2.12
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "自6月底呼和浩特市率先宣布取消限购后。",
+    "raw_text": "1: 自6月底呼和浩特市率先宣布取消限购后。",
+    "meta": {
+     "duration": 5.409,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.51,
+       "end": 4.99,
+       "text": "自6月底呼和浩特市率先宣布取消限购后。",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.25
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "各地政府便纷纷",
+    "raw_text": "1: 各地政府便纷纷",
+    "meta": {
+     "duration": 3.167,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.51,
+       "end": 2.01,
+       "text": "各地政府便纷纷",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.2222,
+    "asr_wall_s": 2.07
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "仅一个多月的时间里。",
+    "raw_text": "1: 仅一个多月的时间里。",
+    "meta": {
+     "duration": 2.576,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.47,
+       "end": 1.97,
+       "text": "仅一个多月的时间里。",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 1.86
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "text": "除了北京上海广州深圳4个一线城市和三亚。",
+    "raw_text": "1: 除了北京上海广州深圳4个一线城市和三亚。",
+    "meta": {
+     "duration": 5.89,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.47,
+       "end": 4.95,
+       "text": "除了北京上海广州深圳4个一线城市和三亚。",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0952,
+    "asr_wall_s": 2.95
+   },
+   {
+    "id": "1320-122612-0000",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "text": "Since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild reason",
+    "raw_text": "1: Since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild reason",
+    "meta": {
+     "duration": 13.48,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.39,
+       "end": 12.23,
+       "text": "Since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild reason",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0244,
+    "asr_wall_s": 3.98
+   },
+   {
+    "id": "1320-122612-0006",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "text": "Let us retrace our steps and examine as we go. With keener eyes",
+    "raw_text": "1: Let us retrace our steps and examine as we go.\n2: With keener eyes",
+    "meta": {
+     "duration": 4.845,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.27,
+       "end": 3.149,
+       "text": "Let us retrace our steps and examine as we go.",
+       "speaker": "1"
+      },
+      {
+       "type": "transcript.text.segment",
+       "id": "1",
+       "start": 3.27,
+       "end": 4.77,
+       "text": "With keener eyes",
+       "speaker": "2"
+      }
+     ],
+     "speakers": [
+      "1",
+      "2"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.08
+   },
+   {
+    "id": "1320-122612-0008",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "text": "The eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed.",
+    "raw_text": "1: The eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed.",
+    "meta": {
+     "duration": 7.875,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.25,
+       "end": 7.609,
+       "text": "The eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed.",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 4.01
+   },
+   {
+    "id": "1320-122612-0009",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "text": "It would have been More wonderful had he spoken Without a bit",
+    "raw_text": "1: It would have been\n2: More wonderful had he spoken\n3: Without a bit",
+    "meta": {
+     "duration": 3.88,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.46,
+       "end": 1.1,
+       "text": "It would have been",
+       "speaker": "1"
+      },
+      {
+       "type": "transcript.text.segment",
+       "id": "1",
+       "start": 1.21,
+       "end": 2.71,
+       "text": "More wonderful had he spoken",
+       "speaker": "2"
+      },
+      {
+       "type": "transcript.text.segment",
+       "id": "2",
+       "start": 2.71,
+       "end": 3.35,
+       "text": "Without a bit",
+       "speaker": "3"
+      }
+     ],
+     "speakers": [
+      "1",
+      "2",
+      "3"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0833,
+    "asr_wall_s": 1.96
+   },
+   {
+    "id": "1320-122612-0013",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "text": "A circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion.",
+    "raw_text": "1: A circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion.",
+    "meta": {
+     "duration": 6.55,
+     "segments": [
+      {
+       "type": "transcript.text.segment",
+       "id": "0",
+       "start": 0.21,
+       "end": 5.969,
+       "text": "A circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion.",
+       "speaker": "1"
+      }
+     ],
+     "speakers": [
+      "1"
+     ],
+     "has_timestamps": true
+    },
+    "err_raw": 0.0,
+    "asr_wall_s": 2.38
+   }
+  ]
+ },
+ "stage2": {
+  "sensevoice": [
+   {
+    "id": "BAC009S0002W0122",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0667,
+    "err_after": 0.0667,
+    "output": "而对面楼市成交抑制作用最大的限购",
+    "calls": 1,
+    "lat": [
+     2.46
+    ],
+    "wall_s": 2.48,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0122",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0667,
+    "err_after": 0.0,
+    "output": "而对楼市成交抑制作用最大的限购",
+    "calls": 2,
+    "lat": [
+     1.71,
+     1.12
+    ],
+    "wall_s": 2.83,
+    "guards": [],
+    "edits": [
+     [
+      2,
+      "面",
+      ""
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0833,
+    "err_after": 0.0,
+    "output": "财政金融政策紧随其后而来",
+    "calls": 2,
+    "lat": [
+     1.6,
+     1.32
+    ],
+    "wall_s": 2.93,
+    "guards": [],
+    "edits": [
+     [
+      9,
+      "候",
+      "后"
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0833,
+    "err_after": 0.0,
+    "output": "财政金融政策紧随其后而来",
+    "calls": 2,
+    "lat": [
+     1.19,
+     1.39
+    ],
+    "wall_s": 2.57,
+    "guards": [],
+    "edits": [
+     [
+      9,
+      "候",
+      "后"
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0588,
+    "err_after": 0.0588,
+    "output": "放松了与自网需求密切相关的房贷政策",
+    "calls": 1,
+    "lat": [
+     1.2
+    ],
+    "wall_s": 1.2,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0588,
+    "err_after": 0.0588,
+    "output": "放松了与自网需求密切相关的房贷政策",
+    "calls": 1,
+    "lat": [
+     1.12
+    ],
+    "wall_s": 1.12,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.125,
+    "err_after": 0.125,
+    "output": "这个后来被称为九百三十新政策的措施",
+    "calls": 1,
+    "lat": [
+     1.53
+    ],
+    "wall_s": 1.53,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.125,
+    "err_after": 0.125,
+    "output": "这个后来被称为九百三十新政策的措施",
+    "calls": 1,
+    "lat": [
+     1.38
+    ],
+    "wall_s": 1.38,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0556,
+    "err_after": 0.0,
+    "output": "支持缴存职工购买首套和改善型自住住房",
+    "calls": 2,
+    "lat": [
+     1.47,
+     1.27
+    ],
+    "wall_s": 2.75,
+    "guards": [],
+    "edits": [
+     [
+      8,
+      "手",
+      "首"
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0556,
+    "err_after": 0.0,
+    "output": "支持缴存职工购买首套和改善型自住住房",
+    "calls": 2,
+    "lat": [
+     1.44,
+     1.59
+    ],
+    "wall_s": 3.04,
+    "guards": [],
+    "edits": [
+     [
+      8,
+      "手",
+      "首"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0001",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0333,
+    "err_after": 0.0333,
+    "output": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+    "calls": 1,
+    "lat": [
+     1.65
+    ],
+    "wall_s": 1.65,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0001",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0333,
+    "err_after": 0.0333,
+    "output": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+    "calls": 2,
+    "lat": [
+     1.23,
+     1.29
+    ],
+    "wall_s": 2.53,
+    "guards": [],
+    "edits": [
+     [
+      125,
+      "",
+      [
+       ","
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0002",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+    "calls": 2,
+    "lat": [
+     1.91,
+     1.3
+    ],
+    "wall_s": 3.22,
+    "guards": [],
+    "edits": [
+     [
+      59,
+      "L",
+      "l"
+     ],
+     [
+      60,
+      "E",
+      "e"
+     ],
+     [
+      61,
+      "D",
+      "d"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0002",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+    "calls": 2,
+    "lat": [
+     1.33,
+     1.61
+    ],
+    "wall_s": 2.94,
+    "guards": [],
+    "edits": [
+     [
+      59,
+      "L",
+      "l"
+     ],
+     [
+      60,
+      "E",
+      "e"
+     ],
+     [
+      61,
+      "D",
+      "d"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0003",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0769,
+    "err_after": 0.0,
+    "output": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters",
+    "calls": 2,
+    "lat": [
+     1.51,
+     1.33
+    ],
+    "wall_s": 2.84,
+    "guards": [],
+    "edits": [
+     [
+      57,
+      "",
+      [
+       " ",
+       "r"
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0003",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0769,
+    "err_after": 0.0,
+    "output": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters",
+    "calls": 2,
+    "lat": [
+     1.86,
+     1.51
+    ],
+    "wall_s": 3.37,
+    "guards": [],
+    "edits": [
+     [
+      57,
+      "",
+      [
+       " ",
+       "r"
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0004",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.1333,
+    "err_after": 0.0,
+    "output": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest",
+    "calls": 2,
+    "lat": [
+     1.4,
+     1.22
+    ],
+    "wall_s": 2.62,
+    "guards": [],
+    "edits": [
+     [
+      1,
+      "i",
+      ""
+     ],
+     [
+      2,
+      "s",
+      ""
+     ],
+     [
+      70,
+      "c",
+      ""
+     ],
+     [
+      71,
+      "h",
+      ""
+     ],
+     [
+      73,
+      "u",
+      "o"
+     ],
+     [
+      73,
+      "",
+      "o"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0004",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.1333,
+    "err_after": 0.0,
+    "output": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest",
+    "calls": 2,
+    "lat": [
+     1.37,
+     1.69
+    ],
+    "wall_s": 3.07,
+    "guards": [],
+    "edits": [
+     [
+      1,
+      "i",
+      ""
+     ],
+     [
+      2,
+      "s",
+      ""
+     ],
+     [
+      70,
+      "c",
+      ""
+     ],
+     [
+      71,
+      "h",
+      ""
+     ],
+     [
+      73,
+      "u",
+      "o"
+     ],
+     [
+      73,
+      "",
+      "o"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0005",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0476,
+    "err_after": 0.0476,
+    "output": "yet here are we within a short range of the scoonons and not a sign of a trail have we crossed",
+    "calls": 2,
+    "lat": [
+     1.42,
+     2.25
+    ],
+    "wall_s": 3.67,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0005",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0476,
+    "err_after": 0.0476,
+    "output": "yet here are we within a short range of the skoonons and not a sign of a trail have we crossed",
+    "calls": 2,
+    "lat": [
+     1.58,
+     2.56
+    ],
+    "wall_s": 4.14,
+    "guards": [],
+    "edits": [
+     [
+      45,
+      "c",
+      "k"
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "也成为地方政府的眼中钉",
+    "calls": 1,
+    "lat": [
+     1.25
+    ],
+    "wall_s": 1.25,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "也成为地方政府的眼中钉",
+    "calls": 1,
+    "lat": [
+     1.47
+    ],
+    "wall_s": 1.47,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "自六月底呼和浩特市率先宣布取消限购后",
+    "calls": 1,
+    "lat": [
+     1.25
+    ],
+    "wall_s": 1.25,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "自六月底呼和浩特市率先宣布取消限购后",
+    "calls": 1,
+    "lat": [
+     1.29
+    ],
+    "wall_s": 1.29,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "各地政府便纷纷跟进",
+    "calls": 1,
+    "lat": [
+     1.44
+    ],
+    "wall_s": 1.44,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "各地政府便纷纷跟进",
+    "calls": 1,
+    "lat": [
+     2.02
+    ],
+    "wall_s": 2.02,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "仅一个多月的时间里",
+    "calls": 1,
+    "lat": [
+     1.37
+    ],
+    "wall_s": 1.37,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "仅一个多月的时间里",
+    "calls": 1,
+    "lat": [
+     1.44
+    ],
+    "wall_s": 1.44,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "除了北京上海广州深圳四个一线城市和三亚之外",
+    "calls": 1,
+    "lat": [
+     1.39
+    ],
+    "wall_s": 1.39,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "engine": "sensevoice",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "除了北京上海广州深圳四个一线城市和三亚之外",
+    "calls": 1,
+    "lat": [
+     1.3
+    ],
+    "wall_s": 1.3,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild recesses",
+    "calls": 2,
+    "lat": [
+     2.07,
+     1.44
+    ],
+    "wall_s": 3.52,
+    "guards": [],
+    "edits": [
+     [
+      138,
+      ".",
+      ""
+     ],
+     [
+      140,
+      "B",
+      "b"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0000",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild recesses",
+    "calls": 2,
+    "lat": [
+     1.5,
+     2.43
+    ],
+    "wall_s": 3.94,
+    "guards": [],
+    "edits": [
+     [
+      138,
+      ".",
+      ""
+     ],
+     [
+      140,
+      "B",
+      "b"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0006",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "let us retrace our steps and examine as we go with keener eyes",
+    "calls": 1,
+    "lat": [
+     1.35
+    ],
+    "wall_s": 1.36,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "let us retrace our steps and examine as we go with keener eyes",
+    "calls": 1,
+    "lat": [
+     1.27
+    ],
+    "wall_s": 1.27,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "the eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed",
+    "calls": 1,
+    "lat": [
+     1.43
+    ],
+    "wall_s": 1.43,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "the eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed",
+    "calls": 1,
+    "lat": [
+     1.27
+    ],
+    "wall_s": 1.28,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "it would have been more wonderful had he spoken without a bidding",
+    "calls": 1,
+    "lat": [
+     1.63
+    ],
+    "wall_s": 1.64,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "it would have been more wonderful had he spoken without a bidding",
+    "calls": 1,
+    "lat": [
+     1.25
+    ],
+    "wall_s": 1.25,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "a circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion",
+    "calls": 1,
+    "lat": [
+     1.25
+    ],
+    "wall_s": 1.25,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "engine": "sensevoice",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "a circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion",
+    "calls": 1,
+    "lat": [
+     1.31
+    ],
+    "wall_s": 1.31,
+    "guards": [],
+    "edits": []
+   }
+  ],
+  "xingchen-v32": [
+   {
+    "id": "BAC009S0002W0122",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0667,
+    "err_after": 0.0667,
+    "output": "而对面楼市成交抑制作用最大的限购",
+    "calls": 1,
+    "lat": [
+     1.72
+    ],
+    "wall_s": 1.72,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0122",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0667,
+    "err_after": 0.0667,
+    "output": "而对面楼市成交抑制作用最大的限购",
+    "calls": 1,
+    "lat": [
+     1.62
+    ],
+    "wall_s": 1.62,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "财政金融政策紧随其后而来",
+    "calls": 1,
+    "lat": [
+     1.3
+    ],
+    "wall_s": 1.3,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "财政金融政策紧随其后而来",
+    "calls": 1,
+    "lat": [
+     1.68
+    ],
+    "wall_s": 1.68,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0588,
+    "output": "放松了与自住需求密切相关的房贷政策",
+    "calls": 2,
+    "lat": [
+     1.21,
+     2.33
+    ],
+    "wall_s": 3.55,
+    "guards": [],
+    "edits": [
+     [
+      5,
+      "往",
+      "住"
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0588,
+    "output": "放松了与自住需求密切相关的房贷政策",
+    "calls": 2,
+    "lat": [
+     1.28,
+     1.46
+    ],
+    "wall_s": 2.74,
+    "guards": [],
+    "edits": [
+     [
+      5,
+      "往",
+      "住"
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.125,
+    "err_after": 0.125,
+    "output": "这个后来被称为九百三十新政策的措施",
+    "calls": 2,
+    "lat": [
+     1.38,
+     1.21
+    ],
+    "wall_s": 2.59,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.125,
+    "err_after": 0.125,
+    "output": "这个后来被称为九百三十新政策的措施",
+    "calls": 1,
+    "lat": [
+     1.27
+    ],
+    "wall_s": 1.27,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "支持缴存职工购买首套和改善型自住住房",
+    "calls": 1,
+    "lat": [
+     1.4
+    ],
+    "wall_s": 1.4,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "支持缴存职工购买首套和改善型自住住房",
+    "calls": 1,
+    "lat": [
+     1.56
+    ],
+    "wall_s": 1.56,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0001",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0333,
+    "err_after": 0.0333,
+    "output": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+    "calls": 1,
+    "lat": [
+     1.65
+    ],
+    "wall_s": 1.65,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0001",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0333,
+    "err_after": 0.0,
+    "output": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travelers resumed their journey",
+    "calls": 2,
+    "lat": [
+     1.4,
+     1.48
+    ],
+    "wall_s": 2.89,
+    "guards": [],
+    "edits": [
+     [
+      140,
+      "l",
+      ""
+     ],
+     [
+      166,
+      "",
+      [
+       "."
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0002",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+    "calls": 2,
+    "lat": [
+     1.45,
+     1.3
+    ],
+    "wall_s": 2.75,
+    "guards": [],
+    "edits": [
+     [
+      28,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      45,
+      "h",
+      "H"
+     ],
+     [
+      52,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      72,
+      "",
+      [
+       ","
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0002",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+    "calls": 2,
+    "lat": [
+     1.52,
+     1.35
+    ],
+    "wall_s": 2.87,
+    "guards": [],
+    "edits": [
+     [
+      28,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      45,
+      "h",
+      "H"
+     ],
+     [
+      52,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      72,
+      "",
+      [
+       ","
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0003",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters",
+    "calls": 2,
+    "lat": [
+     1.46,
+     1.36
+    ],
+    "wall_s": 2.83,
+    "guards": [],
+    "edits": [
+     [
+      37,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      109,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      122,
+      "",
+      [
+       ","
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0003",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters",
+    "calls": 2,
+    "lat": [
+     1.6,
+     2.03
+    ],
+    "wall_s": 3.63,
+    "guards": [],
+    "edits": [
+     [
+      37,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      109,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      122,
+      "",
+      [
+       ","
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0004",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest",
+    "calls": 2,
+    "lat": [
+     1.8,
+     1.44
+    ],
+    "wall_s": 3.24,
+    "guards": [],
+    "edits": [
+     [
+      28,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      59,
+      "c",
+      "C"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0004",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest",
+    "calls": 2,
+    "lat": [
+     1.31,
+     1.46
+    ],
+    "wall_s": 2.78,
+    "guards": [],
+    "edits": [
+     [
+      28,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      59,
+      "c",
+      "C"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0005",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "yet here are we within a short range of the scaroons and not a sign of a trail have we crossed",
+    "calls": 1,
+    "lat": [
+     1.6
+    ],
+    "wall_s": 1.6,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0005",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "yet here are we within a short range of the scaroons and not a sign of a trail have we crossed",
+    "calls": 2,
+    "lat": [
+     1.59,
+     1.26
+    ],
+    "wall_s": 2.85,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "也成为地方政府的眼中钉",
+    "calls": 1,
+    "lat": [
+     1.17
+    ],
+    "wall_s": 1.17,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "也成为地方政府的眼中钉",
+    "calls": 1,
+    "lat": [
+     1.22
+    ],
+    "wall_s": 1.22,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "自六月底呼和浩特市率先宣布取消限购后",
+    "calls": 1,
+    "lat": [
+     1.35
+    ],
+    "wall_s": 1.35,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "自六月底呼和浩特市率先宣布取消限购后",
+    "calls": 1,
+    "lat": [
+     1.33
+    ],
+    "wall_s": 1.33,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "各地政府便纷纷跟进",
+    "calls": 1,
+    "lat": [
+     1.27
+    ],
+    "wall_s": 1.27,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "各地政府便纷纷跟进",
+    "calls": 1,
+    "lat": [
+     1.57
+    ],
+    "wall_s": 1.57,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "仅一个多月的时间里",
+    "calls": 1,
+    "lat": [
+     1.3
+    ],
+    "wall_s": 1.3,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "仅一个多月的时间里",
+    "calls": 1,
+    "lat": [
+     1.15
+    ],
+    "wall_s": 1.15,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "除了北京上海广州深圳四个一线城市和三亚之外",
+    "calls": 1,
+    "lat": [
+     1.4
+    ],
+    "wall_s": 1.4,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "engine": "xingchen-v32",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "除了北京上海广州深圳四个一线城市和三亚之外",
+    "calls": 1,
+    "lat": [
+     1.29
+    ],
+    "wall_s": 1.29,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild recesses",
+    "calls": 1,
+    "lat": [
+     1.6
+    ],
+    "wall_s": 1.6,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild recesses",
+    "calls": 1,
+    "lat": [
+     1.47
+    ],
+    "wall_s": 1.47,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "let us retrace our steps and examine as we go with keener eyes",
+    "calls": 1,
+    "lat": [
+     1.41
+    ],
+    "wall_s": 1.41,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "let us retrace our steps and examine as we go with keener eyes",
+    "calls": 1,
+    "lat": [
+     1.14
+    ],
+    "wall_s": 1.14,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "the eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed",
+    "calls": 1,
+    "lat": [
+     1.32
+    ],
+    "wall_s": 1.32,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "the eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed",
+    "calls": 1,
+    "lat": [
+     1.47
+    ],
+    "wall_s": 1.47,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "it would have been more wonderful had he spoken without a bidding",
+    "calls": 1,
+    "lat": [
+     1.09
+    ],
+    "wall_s": 1.09,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "it would have been more wonderful had he spoken without a bidding",
+    "calls": 1,
+    "lat": [
+     1.62
+    ],
+    "wall_s": 1.62,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "a circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion",
+    "calls": 1,
+    "lat": [
+     2.07
+    ],
+    "wall_s": 2.07,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "engine": "xingchen-v32",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "a circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion",
+    "calls": 1,
+    "lat": [
+     1.37
+    ],
+    "wall_s": 1.37,
+    "guards": [],
+    "edits": []
+   }
+  ],
+  "xingchen-ultra": [
+   {
+    "id": "BAC009S0002W0122",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0667,
+    "err_after": 0.0667,
+    "output": "而对面楼市成交抑制作用最大的限购",
+    "calls": 1,
+    "lat": [
+     1.45
+    ],
+    "wall_s": 1.46,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0122",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0667,
+    "err_after": 0.0667,
+    "output": "而对面楼市成交抑制作用最大的限购",
+    "calls": 1,
+    "lat": [
+     1.63
+    ],
+    "wall_s": 1.63,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "财政金融政策紧随其后而来",
+    "calls": 1,
+    "lat": [
+     1.6
+    ],
+    "wall_s": 1.6,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "财政金融政策紧随其后而来",
+    "calls": 1,
+    "lat": [
+     1.29
+    ],
+    "wall_s": 1.29,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0588,
+    "err_after": 0.0588,
+    "output": "放松了与自身需求密切相关的房贷政策",
+    "calls": 2,
+    "lat": [
+     1.92,
+     1.31
+    ],
+    "wall_s": 3.23,
+    "guards": [],
+    "edits": [
+     [
+      5,
+      "",
+      [
+       "身"
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0588,
+    "err_after": 0.0588,
+    "output": "放松了与自身需求密切相关的房贷政策",
+    "calls": 2,
+    "lat": [
+     1.21,
+     1.18
+    ],
+    "wall_s": 2.4,
+    "guards": [],
+    "edits": [
+     [
+      5,
+      "",
+      [
+       "身"
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.125,
+    "err_after": 0.125,
+    "output": "这个后来被称为九百三十新政策的措施",
+    "calls": 1,
+    "lat": [
+     1.12
+    ],
+    "wall_s": 1.13,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.125,
+    "err_after": 0.125,
+    "output": "这个后来被称为九百三十新政策的措施",
+    "calls": 1,
+    "lat": [
+     1.16
+    ],
+    "wall_s": 1.16,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "支持缴存职工购买首套和改善型自住住房",
+    "calls": 1,
+    "lat": [
+     1.29
+    ],
+    "wall_s": 1.29,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "支持缴存职工购买首套和改善型自住住房",
+    "calls": 1,
+    "lat": [
+     1.2
+    ],
+    "wall_s": 1.2,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0001",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0333,
+    "err_after": 0.0,
+    "output": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travelers resumed their journey",
+    "calls": 2,
+    "lat": [
+     1.34,
+     1.85
+    ],
+    "wall_s": 3.19,
+    "guards": [],
+    "edits": [
+     [
+      143,
+      "l",
+      ""
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0001",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0333,
+    "err_after": 0.0333,
+    "output": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+    "calls": 1,
+    "lat": [
+     1.33
+    ],
+    "wall_s": 1.34,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0002",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+    "calls": 1,
+    "lat": [
+     1.35
+    ],
+    "wall_s": 1.35,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0002",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+    "calls": 1,
+    "lat": [
+     1.69
+    ],
+    "wall_s": 1.69,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0003",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters",
+    "calls": 1,
+    "lat": [
+     1.37
+    ],
+    "wall_s": 1.37,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0003",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the color of its waters",
+    "calls": 1,
+    "lat": [
+     1.5
+    ],
+    "wall_s": 1.5,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0004",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest",
+    "calls": 1,
+    "lat": [
+     1.5
+    ],
+    "wall_s": 1.5,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0004",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest",
+    "calls": 1,
+    "lat": [
+     1.56
+    ],
+    "wall_s": 1.56,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0005",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "yet here are we within a short range of the scaroons and not a sign of a trail have we crossed",
+    "calls": 2,
+    "lat": [
+     1.49,
+     1.89
+    ],
+    "wall_s": 3.38,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0005",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "yet here are we within a short range of the scaroons and not a sign of a trail have we crossed",
+    "calls": 1,
+    "lat": [
+     1.8
+    ],
+    "wall_s": 1.8,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "也成为地方政府的眼中钉",
+    "calls": 1,
+    "lat": [
+     1.22
+    ],
+    "wall_s": 1.22,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "也成为地方政府的眼中钉",
+    "calls": 1,
+    "lat": [
+     1.48
+    ],
+    "wall_s": 1.48,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "自六月底呼和浩特市率先宣布取消限购后",
+    "calls": 1,
+    "lat": [
+     1.2
+    ],
+    "wall_s": 1.2,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "自六月底呼和浩特市率先宣布取消限购后",
+    "calls": 1,
+    "lat": [
+     1.54
+    ],
+    "wall_s": 1.55,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "各地政府便纷纷跟进",
+    "calls": 1,
+    "lat": [
+     1.34
+    ],
+    "wall_s": 1.34,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "各地政府便纷纷跟进",
+    "calls": 1,
+    "lat": [
+     1.37
+    ],
+    "wall_s": 1.37,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "仅一个多月的时间里",
+    "calls": 1,
+    "lat": [
+     1.24
+    ],
+    "wall_s": 1.24,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "仅一个多月的时间里",
+    "calls": 1,
+    "lat": [
+     1.35
+    ],
+    "wall_s": 1.35,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "除了北京上海广州深圳四个一线城市和三亚之外",
+    "calls": 1,
+    "lat": [
+     1.34
+    ],
+    "wall_s": 1.34,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "engine": "xingchen-ultra",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "除了北京上海广州深圳四个一线城市和三亚之外",
+    "calls": 1,
+    "lat": [
+     1.65
+    ],
+    "wall_s": 1.65,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild recesses",
+    "calls": 1,
+    "lat": [
+     1.36
+    ],
+    "wall_s": 1.36,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild recesses",
+    "calls": 1,
+    "lat": [
+     1.33
+    ],
+    "wall_s": 1.33,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "let us retrace our steps and examine as we go with keener eyes",
+    "calls": 1,
+    "lat": [
+     1.55
+    ],
+    "wall_s": 1.55,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "let us retrace our steps and examine as we go with keener eyes",
+    "calls": 1,
+    "lat": [
+     1.14
+    ],
+    "wall_s": 1.14,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "the eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed",
+    "calls": 1,
+    "lat": [
+     1.42
+    ],
+    "wall_s": 1.42,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "the eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed",
+    "calls": 1,
+    "lat": [
+     1.39
+    ],
+    "wall_s": 1.39,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "it would have been more wonderful had he spoken without a bidding",
+    "calls": 1,
+    "lat": [
+     1.26
+    ],
+    "wall_s": 1.26,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "it would have been more wonderful had he spoken without a bidding",
+    "calls": 1,
+    "lat": [
+     1.16
+    ],
+    "wall_s": 1.16,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "a circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion",
+    "calls": 1,
+    "lat": [
+     1.9
+    ],
+    "wall_s": 1.9,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "engine": "xingchen-ultra",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "a circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion",
+    "calls": 1,
+    "lat": [
+     1.32
+    ],
+    "wall_s": 1.32,
+    "guards": [],
+    "edits": []
+   }
+  ],
+  "xingchen-diarize": [
+   {
+    "id": "BAC009S0002W0122",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0667,
+    "err_after": 0.0667,
+    "output": "而对面楼市成交抑制作用最大的限购",
+    "calls": 1,
+    "lat": [
+     1.21
+    ],
+    "wall_s": 1.21,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0122",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0667,
+    "err_after": 0.0667,
+    "output": "而对面楼市成交抑制作用最大的限购",
+    "calls": 1,
+    "lat": [
+     1.2
+    ],
+    "wall_s": 1.2,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0833,
+    "err_after": 0.25,
+    "output": "财政金融政策随之而来",
+    "calls": 2,
+    "lat": [
+     1.34,
+     1.25
+    ],
+    "wall_s": 2.59,
+    "guards": [],
+    "edits": [
+     [
+      7,
+      "你",
+      ""
+     ],
+     [
+      9,
+      " ",
+      "之"
+     ],
+     [
+      10,
+      "其",
+      ""
+     ],
+     [
+      11,
+      "后",
+      ""
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0833,
+    "err_after": 0.0833,
+    "output": "财政金融政策随其后而来",
+    "calls": 2,
+    "lat": [
+     1.26,
+     1.26
+    ],
+    "wall_s": 2.53,
+    "guards": [],
+    "edits": [
+     [
+      7,
+      "你",
+      ""
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0588,
+    "output": "放松了与自住需求密切相关的房贷政策",
+    "calls": 2,
+    "lat": [
+     1.41,
+     1.12
+    ],
+    "wall_s": 2.54,
+    "guards": [],
+    "edits": [
+     [
+      5,
+      "往",
+      "住"
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0588,
+    "output": "放松了与自住需求密切相关的房贷政策",
+    "calls": 2,
+    "lat": [
+     1.28,
+     1.35
+    ],
+    "wall_s": 2.63,
+    "guards": [],
+    "edits": [
+     [
+      5,
+      "往",
+      "住"
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.3125,
+    "err_after": 0.3125,
+    "output": "这个后来被称为九百三十新政策",
+    "calls": 2,
+    "lat": [
+     1.7,
+     1.54
+    ],
+    "wall_s": 3.24,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.3125,
+    "err_after": 0.3125,
+    "output": "这个后来被称为九百三十新政策",
+    "calls": 2,
+    "lat": [
+     1.27,
+     1.23
+    ],
+    "wall_s": 2.5,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "支持缴存职工购买首套和改善型自住住房",
+    "calls": 1,
+    "lat": [
+     1.15
+    ],
+    "wall_s": 1.15,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "支持缴存职工购买首套和改善型自住住房",
+    "calls": 1,
+    "lat": [
+     2.07
+    ],
+    "wall_s": 2.08,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0001",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0333,
+    "err_after": 0.0333,
+    "output": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+    "calls": 1,
+    "lat": [
+     1.39
+    ],
+    "wall_s": 1.39,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0001",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0333,
+    "err_after": 0.0333,
+    "output": "the dews were suffered to exhale and the sun had dispersed the mists and was shedding a strong and clear light in the forest when the travellers resumed their journey",
+    "calls": 2,
+    "lat": [
+     1.42,
+     1.43
+    ],
+    "wall_s": 2.85,
+    "guards": [],
+    "edits": [
+     [
+      166,
+      "",
+      [
+       "."
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0002",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+    "calls": 2,
+    "lat": [
+     1.54,
+     1.27
+    ],
+    "wall_s": 2.82,
+    "guards": [],
+    "edits": [
+     [
+      28,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      45,
+      "h",
+      "H"
+     ],
+     [
+      52,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      72,
+      "",
+      [
+       ","
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0002",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "after proceeding a few miles the progress of hawkeye who led the advance became more deliberate and watchful",
+    "calls": 2,
+    "lat": [
+     1.64,
+     1.29
+    ],
+    "wall_s": 2.94,
+    "guards": [],
+    "edits": [
+     [
+      28,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      45,
+      "h",
+      "H"
+     ],
+     [
+      52,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      72,
+      "",
+      [
+       ","
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0003",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0385,
+    "err_after": 0.0385,
+    "output": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the colour of its waters",
+    "calls": 2,
+    "lat": [
+     1.42,
+     1.52
+    ],
+    "wall_s": 2.94,
+    "guards": [],
+    "edits": [
+     [
+      109,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      122,
+      "",
+      [
+       ","
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0003",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0385,
+    "err_after": 0.0385,
+    "output": "he often stopped to examine the trees nor did he cross a rivulet without attentively considering the quantity the velocity and the colour of its waters",
+    "calls": 2,
+    "lat": [
+     1.3,
+     1.47
+    ],
+    "wall_s": 2.77,
+    "guards": [],
+    "edits": [
+     [
+      37,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      109,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      122,
+      "",
+      [
+       ","
+      ]
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0004",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest",
+    "calls": 2,
+    "lat": [
+     1.25,
+     1.16
+    ],
+    "wall_s": 2.42,
+    "guards": [],
+    "edits": [
+     [
+      28,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      59,
+      "c",
+      "C"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0004",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "distrusting his own judgment his appeals to the opinion of chingachgook were frequent and earnest",
+    "calls": 2,
+    "lat": [
+     1.25,
+     1.38
+    ],
+    "wall_s": 2.63,
+    "guards": [],
+    "edits": [
+     [
+      28,
+      "",
+      [
+       ","
+      ]
+     ],
+     [
+      59,
+      "c",
+      "C"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0005",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "yet here are we within a short range of the scaroons and not a sign of a trail have we crossed",
+    "calls": 2,
+    "lat": [
+     1.07,
+     1.23
+    ],
+    "wall_s": 2.3,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0005",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": false,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0476,
+    "output": "yet here are we within a short range of the sierras and not a sign of a trail have we crossed",
+    "calls": 2,
+    "lat": [
+     1.27,
+     1.5
+    ],
+    "wall_s": 2.77,
+    "guards": [],
+    "edits": [
+     [
+      45,
+      "c",
+      "i"
+     ],
+     [
+      45,
+      "",
+      "e"
+     ],
+     [
+      45,
+      "",
+      "r"
+     ],
+     [
+      45,
+      "",
+      "r"
+     ],
+     [
+      47,
+      "r",
+      ""
+     ],
+     [
+      48,
+      "o",
+      ""
+     ],
+     [
+      49,
+      "o",
+      ""
+     ],
+     [
+      50,
+      "n",
+      ""
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.7273,
+    "err_after": 0.7273,
+    "output": "也成不得眼",
+    "calls": 1,
+    "lat": [
+     1.16
+    ],
+    "wall_s": 1.16,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.7273,
+    "err_after": 0.7273,
+    "output": "也成不碍眼",
+    "calls": 2,
+    "lat": [
+     1.22,
+     1.46
+    ],
+    "wall_s": 2.68,
+    "guards": [],
+    "edits": [
+     [
+      4,
+      "得",
+      "碍"
+     ]
+    ]
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "自六月底呼和浩特市率先宣布取消限购后",
+    "calls": 1,
+    "lat": [
+     1.3
+    ],
+    "wall_s": 1.31,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "自六月底呼和浩特市率先宣布取消限购后",
+    "calls": 1,
+    "lat": [
+     1.97
+    ],
+    "wall_s": 1.97,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.2222,
+    "err_after": 0.2222,
+    "output": "各地政府便纷纷",
+    "calls": 1,
+    "lat": [
+     1.52
+    ],
+    "wall_s": 1.52,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.2222,
+    "err_after": 0.2222,
+    "output": "各地政府便纷纷",
+    "calls": 1,
+    "lat": [
+     1.26
+    ],
+    "wall_s": 1.26,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "仅一个多月的时间里",
+    "calls": 1,
+    "lat": [
+     1.34
+    ],
+    "wall_s": 1.35,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "仅一个多月的时间里",
+    "calls": 1,
+    "lat": [
+     1.81
+    ],
+    "wall_s": 1.81,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0952,
+    "err_after": 0.0952,
+    "output": "除了北京上海广州深圳四个一线城市和三亚",
+    "calls": 1,
+    "lat": [
+     1.37
+    ],
+    "wall_s": 1.37,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "engine": "xingchen-diarize",
+    "lang": "zh",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0952,
+    "err_after": 0.0952,
+    "output": "除了北京上海广州深圳四个一线城市和三亚",
+    "calls": 1,
+    "lat": [
+     1.24
+    ],
+    "wall_s": 1.24,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0244,
+    "err_after": 0.0,
+    "output": "since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild recesses",
+    "calls": 2,
+    "lat": [
+     1.33,
+     1.19
+    ],
+    "wall_s": 2.52,
+    "guards": [],
+    "edits": [
+     [
+      213,
+      "a",
+      "c"
+     ],
+     [
+      213,
+      "",
+      "e"
+     ],
+     [
+      215,
+      "o",
+      "s"
+     ],
+     [
+      216,
+      "n",
+      "e"
+     ],
+     [
+      216,
+      "",
+      "s"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0000",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0244,
+    "err_after": 0.0,
+    "output": "since the period of our tale the active spirit of the country has surrounded it with a belt of rich and thriving settlements though none but the hunter or the savage is ever known even now to penetrate its wild recesses",
+    "calls": 2,
+    "lat": [
+     1.51,
+     1.47
+    ],
+    "wall_s": 2.98,
+    "guards": [],
+    "edits": [
+     [
+      213,
+      "a",
+      "c"
+     ],
+     [
+      213,
+      "",
+      "e"
+     ],
+     [
+      215,
+      "o",
+      "s"
+     ],
+     [
+      216,
+      "n",
+      "e"
+     ],
+     [
+      216,
+      "",
+      "s"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0006",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "let us retrace our steps and examine as we go with keener eyes",
+    "calls": 2,
+    "lat": [
+     1.57,
+     1.34
+    ],
+    "wall_s": 2.91,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "let us retrace our steps and examine as we go with keener eyes",
+    "calls": 2,
+    "lat": [
+     1.29,
+     1.95
+    ],
+    "wall_s": 3.24,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "the eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed",
+    "calls": 1,
+    "lat": [
+     1.57
+    ],
+    "wall_s": 1.57,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "the eyes of the whole party followed the unexpected movement and read their success in the air of triumph that the youth assumed",
+    "calls": 1,
+    "lat": [
+     1.55
+    ],
+    "wall_s": 1.55,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0833,
+    "err_after": 0.0833,
+    "output": "it would have been more wonderful had he spoken without a bit",
+    "calls": 2,
+    "lat": [
+     1.38,
+     1.22
+    ],
+    "wall_s": 2.61,
+    "guards": [],
+    "edits": [
+     [
+      19,
+      "M",
+      "m"
+     ],
+     [
+      48,
+      "W",
+      "w"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0009",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0833,
+    "err_after": 0.0833,
+    "output": "it would have been more wonderful had he spoken without a bit",
+    "calls": 2,
+    "lat": [
+     1.17,
+     1.19
+    ],
+    "wall_s": 2.36,
+    "guards": [],
+    "edits": [
+     [
+      19,
+      "M",
+      "m"
+     ],
+     [
+      48,
+      "W",
+      "w"
+     ]
+    ]
+   },
+   {
+    "id": "1320-122612-0013",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 1,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "a circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion",
+    "calls": 1,
+    "lat": [
+     1.49
+    ],
+    "wall_s": 1.49,
+    "guards": [],
+    "edits": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "engine": "xingchen-diarize",
+    "lang": "en",
+    "source_clean": true,
+    "repeat": 2,
+    "err_raw": 0.0,
+    "err_after": 0.0,
+    "output": "a circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion",
+    "calls": 1,
+    "lat": [
+     1.24
+    ],
+    "wall_s": 1.24,
+    "guards": [],
+    "edits": []
+   }
+  ]
+ },
+ "summary": {
+  "sensevoice": {
+   "all": {
+    "n": 40,
+    "raw": 0.034,
+    "after": 0.0149,
+    "relative_change_pct": -56.2,
+    "improved": 9,
+    "same": 31,
+    "worsened": 0,
+    "calls_mean": 1.4,
+    "wall_p50": 1.64
+   },
+   "dirty_source": {
+    "n": 20,
+    "raw": 0.068,
+    "after": 0.0298,
+    "relative_change_pct": -56.2,
+    "improved": 9,
+    "same": 11,
+    "worsened": 0,
+    "calls_mean": 1.7,
+    "wall_p50": 2.83
+   },
+   "clean_source": {
+    "n": 20,
+    "raw": 0.0,
+    "after": 0.0,
+    "relative_change_pct": 0.0,
+    "improved": 0,
+    "same": 20,
+    "worsened": 0,
+    "calls_mean": 1.1,
+    "wall_p50": 1.37
+   },
+   "errors": 0,
+   "clean_after_nonzero": 0,
+   "clean_worsened_vs_raw": 0
+  },
+  "xingchen-v32": {
+   "all": {
+    "n": 40,
+    "raw": 0.0112,
+    "after": 0.0134,
+    "relative_change_pct": 19.6,
+    "improved": 1,
+    "same": 37,
+    "worsened": 2,
+    "calls_mean": 1.275,
+    "wall_p50": 1.57
+   },
+   "dirty_source": {
+    "n": 20,
+    "raw": 0.0225,
+    "after": 0.0267,
+    "relative_change_pct": 18.7,
+    "improved": 1,
+    "same": 17,
+    "worsened": 2,
+    "calls_mean": 1.55,
+    "wall_p50": 2.74
+   },
+   "clean_source": {
+    "n": 20,
+    "raw": 0.0,
+    "after": 0.0,
+    "relative_change_pct": 0.0,
+    "improved": 0,
+    "same": 20,
+    "worsened": 0,
+    "calls_mean": 1,
+    "wall_p50": 1.35
+   },
+   "errors": 0,
+   "clean_after_nonzero": 0,
+   "clean_worsened_vs_raw": 0
+  },
+  "xingchen-ultra": {
+   "all": {
+    "n": 40,
+    "raw": 0.0142,
+    "after": 0.0134,
+    "relative_change_pct": -5.6,
+    "improved": 1,
+    "same": 39,
+    "worsened": 0,
+    "calls_mean": 1.1,
+    "wall_p50": 1.37
+   },
+   "dirty_source": {
+    "n": 20,
+    "raw": 0.0284,
+    "after": 0.0267,
+    "relative_change_pct": -6.0,
+    "improved": 1,
+    "same": 19,
+    "worsened": 0,
+    "calls_mean": 1.2,
+    "wall_p50": 1.5
+   },
+   "clean_source": {
+    "n": 20,
+    "raw": 0.0,
+    "after": 0.0,
+    "relative_change_pct": 0.0,
+    "improved": 0,
+    "same": 20,
+    "worsened": 0,
+    "calls_mean": 1,
+    "wall_p50": 1.35
+   },
+   "errors": 0,
+   "clean_after_nonzero": 0,
+   "clean_worsened_vs_raw": 0
+  },
+  "xingchen-diarize": {
+   "all": {
+    "n": 40,
+    "raw": 0.0843,
+    "after": 0.0914,
+    "relative_change_pct": 8.4,
+    "improved": 2,
+    "same": 34,
+    "worsened": 4,
+    "calls_mean": 1.55,
+    "wall_p50": 2.42
+   },
+   "dirty_source": {
+    "n": 20,
+    "raw": 0.0534,
+    "after": 0.07,
+    "relative_change_pct": 31.1,
+    "improved": 0,
+    "same": 16,
+    "worsened": 4,
+    "calls_mean": 1.75,
+    "wall_p50": 2.59
+   },
+   "clean_source": {
+    "n": 20,
+    "raw": 0.1152,
+    "after": 0.1128,
+    "relative_change_pct": -2.1,
+    "improved": 2,
+    "same": 18,
+    "worsened": 0,
+    "calls_mean": 1.35,
+    "wall_p50": 1.57
+   },
+   "errors": 0,
+   "clean_after_nonzero": 8,
+   "clean_worsened_vs_raw": 0
+  }
+ },
+ "note": "Qwen3-ASR-1.7B intentionally excluded: paid model."
+}
