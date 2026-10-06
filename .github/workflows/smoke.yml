@@ -1,0 +1,83 @@
+name: smoke
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: smoke
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install requests pypinyin
+
+      - name: Cache dataset downloads
+        uses: actions/cache@v4
+        with:
+          path: /tmp/work/dl
+          key: aishell-S0002-S0003-libri1272-v1
+          restore-keys: aishell-
+
+      - name: Prep labeled data (AISHELL-1 zh + LibriSpeech test-clean en)
+        run: python scripts/prep_data.py --work /tmp/work
+
+      - name: Screen clips with real ASR errors
+        run: |
+          python scripts/screen.py --work /tmp/work --out /tmp/work/manifest.smoke.jsonl --need 5 --budget 60
+          echo "=== screened clips ==="
+          cat /tmp/work/manifest.smoke.jsonl
+        env:
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+
+      - name: Run experiment (A/B/D, all judge models)
+        run: python scripts/run_experiment.py --manifest /tmp/work/manifest.smoke.jsonl --pinyin-index /tmp/work/pinyin_index.json --out results
+        env:
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          SUANLI_API_KEY: ${{ secrets.SUANLI_API_KEY }}
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+
+      - name: Job summary
+        if: always()
+        run: |
+          [ -f results/results.md ] && cat results/results.md >> "$GITHUB_STEP_SUMMARY" || echo "no results" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload screening log + results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: results
+          path: |
+            results/
+            /tmp/work/screen_log.jsonl
+            /tmp/work/manifest.smoke.jsonl
+          if-no-files-found: warn
+
+      - name: Persist results branch
+        if: success()
+        run: |
+          git config user.name "ci-bot"
+          git config user.email "ci-bot@users.noreply.github.com"
+          git checkout -B results
+          mkdir -p history
+          cp results/results.json "history/results-$(date -u +%Y%m%d-%H%M%S).json"
+          cp results/results.md history/ 2>/dev/null || true
+          git add -A history
+          git commit -m "results: $(date -u +%FT%TZ)" || echo "nothing to commit"
+          git push origin results
