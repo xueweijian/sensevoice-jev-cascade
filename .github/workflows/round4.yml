@@ -1,0 +1,161 @@
+name: round4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/round4.py"
+      - "scripts/prep_round4.py"
+      - "scripts/agg_round4.py"
+      - ".github/workflows/round4.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: round4
+  cancel-in-progress: true
+
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    outputs:
+      done: ${{ steps.set.outputs.done }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pypinyin
+      - uses: actions/cache@v4
+        with:
+          path: /tmp/work/dl
+          key: aishell-S0002-S0003-libri1272-v1
+          restore-keys: aishell-
+      - name: Prep datasets (cached, idempotent)
+        run: python scripts/prep_data.py --work /tmp/work
+      - name: Screen clean clips + merge dirty archive
+        run: python scripts/prep_round4.py --work /tmp/work --out /tmp/work/manifest.round4.jsonl --need 5 --budget 60
+        env:
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+      - name: Build pinyin index
+        run: python -c "
+import json
+from pypinyin import lazy_pinyin
+zh_ref={}
+for line in open('/tmp/work/dl/aishell_transcript_v0.8.txt',encoding='utf-8'):
+    p=line.strip().split()
+    if len(p)>=2: zh_ref[p[0]]=''.join(p[1:])
+charset=sorted(set(''.join(zh_ref.values()))-{' '})
+idx={}
+for ch in charset:
+    try: idx.setdefault(lazy_pinyin(ch)[0],[]).append(ch)
+    except Exception: pass
+json.dump(idx,open('/tmp/work/pinyin_index.json','w',encoding='utf-8'),ensure_ascii=False)
+print('pinyin groups:',len(idx))
+"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r4-manifest
+          path: |
+            /tmp/work/manifest.round4.jsonl
+            /tmp/work/pinyin_index.json
+      - id: set
+        run: echo "done=true" >> "$GITHUB_OUTPUT"
+
+  matrix:
+    needs: prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include:
+          - {condition: B0,  model: v4flash,  repeats: 2}
+          - {condition: B0,  model: d41,      repeats: 2}
+          - {condition: B0,  model: d41think, repeats: 3}
+          - {condition: E1,  model: v4flash,  repeats: 2}
+          - {condition: E1,  model: d41,      repeats: 2}
+          - {condition: E2,  model: v4flash,  repeats: 2}
+          - {condition: E2,  model: d41,      repeats: 2}
+          - {condition: E3,  model: v4flash,  repeats: 2}
+          - {condition: E3,  model: d41,      repeats: 2}
+          - {condition: E3,  model: d41think, repeats: 3}
+          - {condition: E4,  model: v4flash,  repeats: 2}
+          - {condition: E4,  model: d41,      repeats: 2}
+          - {condition: E5,  model: v4flash,  repeats: 2}
+          - {condition: E6,  model: v4flash,  repeats: 2}
+          - {condition: E7,  model: v4flash,  repeats: 2}
+          - {condition: E8,  model: v4flash,  repeats: 3}
+          - {condition: E8,  model: d41,      repeats: 3}
+          - {condition: E8,  model: d41think, repeats: 3}
+          - {condition: E9,  model: v4flash,  repeats: 2}
+    name: ${{ matrix.condition }}-${{ matrix.model }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pypinyin
+      - uses: actions/download-artifact@v4
+        with:
+          name: r4-manifest
+          path: r4in
+      - name: Run ${{ matrix.condition }} on ${{ matrix.model }}
+        run: |
+          python scripts/round4.py \
+            --condition "${{ matrix.condition }}" \
+            --model "${{ matrix.model }}" \
+            --manifest r4in/manifest.round4.jsonl \
+            --pinyin-index r4in/pinyin_index.json \
+            --out "r4/${{ matrix.condition }}-${{ matrix.model }}.json" \
+            --repeats ${{ matrix.repeats }} --concurrency 2
+        env:
+          SUANLI_API_KEY: ${{ secrets.SUANLI_API_KEY }}
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r4-${{ matrix.condition }}-${{ matrix.model }}
+          path: r4/
+
+  aggregate:
+    needs: [prep, matrix]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: r4-*
+          path: r4
+          merge-multiple: true
+      - name: Build summary
+        run: |
+          ls r4/ || true
+          python scripts/agg_round4.py || echo "agg failed"
+      - name: Job summary
+        if: always()
+        run: cat results/round4-summary.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: round4-final
+          path: results/
+      - name: Persist to results branch
+        if: success()
+        run: |
+          git config user.name "ci-bot"
+          git config user.email "ci-bot@users.noreply.github.com"
+          git checkout -B results
+          mkdir -p history
+          cp results/round4-summary.md history/ 2>/dev/null || true
+          cp results/round4.json history/ 2>/dev/null || true
+          git add -A history
+          git commit -m "round4 results: $(date -u +%FT%TZ)" || echo "nothing to commit"
+          git push origin results --force
