@@ -89,16 +89,25 @@ def main():
     zh_wavs = sorted(glob.glob(os.path.join(wav_root, "**", "*.wav"), recursive=True))
     print("zh wavs:", len(zh_wavs))
 
-    # ---------------- en: LibriSpeech reader 1272 ----------------
+    # ---------------- en: LibriSpeech test-clean (first readers in archive) ----------------
     en_root = os.path.join(work, "librispeech")
     en_done = os.path.join(en_root, "done")
     if not os.path.exists(en_done):
+        os.makedirs(en_root, exist_ok=True)
         tgz = os.path.join(dl, "test-clean.tar.gz")
         download(LIBRI_URL, tgz)
-        print("extracting reader 1272 only")
+        print("extracting first 2 readers (dynamic, no hardcoded ids)")
         with tarfile.open(tgz) as tf:
-            members = [m for m in tf.getmembers() if "/1272/" in m.name]
-            tf.extractall(en_root, members=members)
+            members = tf.getmembers()
+            readers = {}
+            for m in members:
+                parts = m.name.split("/")
+                if len(parts) >= 4 and parts[1] == "test-clean":
+                    readers.setdefault(parts[2], []).append(m)
+            picked = list(readers)[:2]
+            sel = [m for r in picked for m in readers[r]]
+            print("readers in tar:", len(readers), "picked:", picked, "members:", len(sel))
+            tf.extractall(en_root, members=sel)
         open(en_done, "w").write("ok")
     if not subprocess.run(["which", "ffmpeg"], capture_output=True).returncode == 0:
         subprocess.run(["sudo", "apt-get", "update", "-y"], check=True)
