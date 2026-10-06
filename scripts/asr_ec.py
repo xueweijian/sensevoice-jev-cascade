@@ -75,12 +75,28 @@ def systemone(model, state, questions, provider="siliconflow"):
 
 
 def suanli_chat(system, user, max_tokens=900):
+    """LLM fallback / control B. Provider switch via env LLM_PROVIDER:
+    - 'suanli' (default): deepseek/deepseek-v4-flash-0731-free
+    - 'opencode': deepseek-v4.1-flash on the Go plan (/zen/go/v1 + x-opencode-session)
+    """
+    if os.environ.get("LLM_PROVIDER") == "opencode":
+        url = "https://opencode.ai/zen/go/v1/chat/completions"
+        key = os.environ["OPENCODE_API_KEY"]
+        model = "deepseek-v4.1-flash"
+        headers = {"Authorization": "Bearer " + key, "x-opencode-session": "asr-ec-cascade"}
+        max_tokens = max(max_tokens, 3000)  # reasoning model needs headroom
+    else:
+        url = SUANLI_CHAT_URL
+        key = os.environ["SUANLI_API_KEY"]
+        model = SUANLI_MODEL
+        headers = {"Authorization": "Bearer " + key}
+
     def call():
         r = requests.post(
-            SUANLI_CHAT_URL,
-            headers={"Authorization": "Bearer " + os.environ["SUANLI_API_KEY"]},
+            url,
+            headers=headers,
             json={
-                "model": SUANLI_MODEL,
+                "model": model,
                 "messages": [
                     {"role": "system", "content": system},
                     {"role": "user", "content": user},
@@ -88,7 +104,7 @@ def suanli_chat(system, user, max_tokens=900):
                 "temperature": 0,
                 "max_tokens": max_tokens,
             },
-            timeout=(10, 240),
+            timeout=(10, 300),
         )
         r.raise_for_status()
         return r.json()["choices"][0]["message"]["content"]
