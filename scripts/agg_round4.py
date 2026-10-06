@@ -20,6 +20,8 @@ def main():
         except Exception as e:  # noqa: BLE001
             print("skip", p, e)
             continue
+        if not isinstance(d, dict) or "condition" not in d:
+            continue  # e.g. pinyin_index.json picked up by artifact pattern
         rows.append((d["condition"], d["model"], d["summary"], d.get("wall_min")))
     rows.sort(key=lambda x: (x[0], x[1]))
 

@@ -136,10 +136,12 @@ jobs:
         run: |
           git config user.name "ci-bot"
           git config user.email "ci-bot@users.noreply.github.com"
-          git checkout -B results
+          git fetch origin results || true
+          git checkout -B results origin/results 2>/dev/null || git checkout -B results
           mkdir -p history
           cp results/round4-summary.md history/ 2>/dev/null || true
           cp results/round4.json history/ 2>/dev/null || true
           git add -A history
-          git commit -m "round4 results: $(date -u +%FT%TZ)" || echo "nothing to commit"
-          git push origin results --force
+          if git diff --cached --quiet; then echo "nothing to commit, no push"; exit 0; fi
+          git commit -m "round4 results: $(date -u +%FT%TZ)"
+          git push origin results
