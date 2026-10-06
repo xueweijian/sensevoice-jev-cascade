@@ -35,11 +35,11 @@ jobs:
           key: aishell-S0002-S0003-libri1272-v1
           restore-keys: aishell-
 
-      - name: Prep datasets (materialize wavs from dl cache)
-        run: python scripts/prep_data.py --work /tmp/work
-
       - name: Install deps
         run: pip install requests pypinyin opencc-python-reimplemented
+
+      - name: Prep datasets (materialize wavs from dl cache)
+        run: python scripts/prep_data.py --work /tmp/work
 
       - name: Run round6
         run: python scripts/round6.py
