@@ -498,6 +498,7 @@ def main():
     out = {"condition": args.condition, "model": args.model,
            "repeats": args.repeats, "wall_min": round((time.time() - t0) / 60, 1),
            "summary": summarize(records), "records": records}
+    os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print("SUMMARY", json.dumps(out["summary"], ensure_ascii=False), flush=True)
