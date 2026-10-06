@@ -1,0 +1,2768 @@
+{
+ "G0": {
+  "summary": {
+   "n": 40,
+   "dirty_err": 0.0736,
+   "dirty_err_after": 0.0329,
+   "dirty_worsened": 1,
+   "clean_damage": 0,
+   "dirty_flag_recall": 1.0,
+   "clean_flag_rate": 1.0,
+   "llm_calls": 58,
+   "calls_per_sent": 1.45,
+   "gate_ms_mean": 0,
+   "lat_p50": 1.25
+  },
+  "records": [
+   {
+    "id": "BAC009S0002W0122",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0667,
+    "err_after": 0.0667,
+    "calls": 1,
+    "lat": [
+     1.93
+    ],
+    "wall": 1.93,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0122",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0667,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     2.11,
+     1.71
+    ],
+    "wall": 3.82,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0833,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.33,
+     1.56
+    ],
+    "wall": 2.9,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0833,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.43,
+     1.3
+    ],
+    "wall": 2.73,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0588,
+    "err_after": 0.0588,
+    "calls": 1,
+    "lat": [
+     1.45
+    ],
+    "wall": 1.45,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0588,
+    "err_after": 0.0588,
+    "calls": 1,
+    "lat": [
+     1.44
+    ],
+    "wall": 1.44,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.125,
+    "err_after": 0.1875,
+    "calls": 2,
+    "lat": [
+     1.41,
+     1.15
+    ],
+    "wall": 2.56,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.125,
+    "err_after": 0.125,
+    "calls": 2,
+    "lat": [
+     1.25,
+     1.29
+    ],
+    "wall": 2.53,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.19,
+     1.38
+    ],
+    "wall": 2.58,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.45,
+     1.4
+    ],
+    "wall": 2.85,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0001",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0333,
+    "err_after": 0.0333,
+    "calls": 2,
+    "lat": [
+     1.52,
+     5.54
+    ],
+    "wall": 7.06,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0001",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0333,
+    "err_after": 0.0333,
+    "calls": 2,
+    "lat": [
+     1.56,
+     1.48
+    ],
+    "wall": 3.05,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0002",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.39,
+     1.45
+    ],
+    "wall": 2.85,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0002",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.21,
+     1.38
+    ],
+    "wall": 2.59,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0003",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0769,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.14,
+     1.54
+    ],
+    "wall": 2.69,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0003",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0769,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.42,
+     1.4
+    ],
+    "wall": 2.82,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0004",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.1333,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     0.66,
+     1.21
+    ],
+    "wall": 1.87,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0004",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.1333,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     0.68,
+     0.71
+    ],
+    "wall": 1.39,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0005",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0476,
+    "err_after": 0.0476,
+    "calls": 1,
+    "lat": [
+     0.75
+    ],
+    "wall": 0.75,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0005",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0476,
+    "err_after": 0.0476,
+    "calls": 2,
+    "lat": [
+     0.68,
+     0.8
+    ],
+    "wall": 1.48,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     3.64
+    ],
+    "wall": 3.64,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.85
+    ],
+    "wall": 0.85,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.6
+    ],
+    "wall": 0.6,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.65
+    ],
+    "wall": 0.65,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.6
+    ],
+    "wall": 0.6,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.5
+    ],
+    "wall": 0.5,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.55
+    ],
+    "wall": 0.55,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.48
+    ],
+    "wall": 0.48,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.93
+    ],
+    "wall": 0.93,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     1.04
+    ],
+    "wall": 1.04,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     0.93,
+     0.89
+    ],
+    "wall": 1.82,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     0.9,
+     1.09
+    ],
+    "wall": 1.99,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.6
+    ],
+    "wall": 0.6,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     2.21
+    ],
+    "wall": 2.21,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     8.41
+    ],
+    "wall": 8.41,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.71
+    ],
+    "wall": 0.71,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.62
+    ],
+    "wall": 0.62,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.55
+    ],
+    "wall": 0.55,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     1.75
+    ],
+    "wall": 1.75,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 1,
+    "lat": [
+     0.76
+    ],
+    "wall": 0.76,
+    "marks": []
+   }
+  ]
+ },
+ "G1": {
+  "summary": {
+   "n": 40,
+   "dirty_err": 0.0736,
+   "dirty_err_after": 0.0331,
+   "dirty_worsened": 0,
+   "clean_damage": 0,
+   "dirty_flag_recall": 0.7,
+   "clean_flag_rate": 0.0,
+   "llm_calls": 26,
+   "calls_per_sent": 0.65,
+   "gate_ms_mean": 32.0725,
+   "lat_p50": 1.4
+  },
+  "records": [
+   {
+    "id": "BAC009S0002W0122",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 72.9,
+    "err_before": 0.0667,
+    "err_after": 0.0667,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.07,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0122",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 64.3,
+    "err_before": 0.0667,
+    "err_after": 0.0667,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 62.3,
+    "err_before": 0.0833,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     0.7,
+     5.94
+    ],
+    "wall": 6.7,
+    "marks": [
+     {
+      "char": "候",
+      "suggest": "后",
+      "conf": 0.989
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 68.7,
+    "err_before": 0.0833,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     0.65,
+     0.63
+    ],
+    "wall": 1.34,
+    "marks": [
+     {
+      "char": "候",
+      "suggest": "后",
+      "conf": 0.989
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 70.1,
+    "err_before": 0.0588,
+    "err_after": 0.0588,
+    "calls": 1,
+    "lat": [
+     0.55
+    ],
+    "wall": 0.63,
+    "marks": [
+     {
+      "char": "网",
+      "suggest": "往",
+      "conf": 0.979
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 66.7,
+    "err_before": 0.0588,
+    "err_after": 0.0588,
+    "calls": 1,
+    "lat": [
+     1.04
+    ],
+    "wall": 1.11,
+    "marks": [
+     {
+      "char": "网",
+      "suggest": "往",
+      "conf": 0.979
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 67.5,
+    "err_before": 0.125,
+    "err_after": 0.125,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.07,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 64.6,
+    "err_before": 0.125,
+    "err_after": 0.125,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 65.5,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     0.58,
+     0.74
+    ],
+    "wall": 1.4,
+    "marks": [
+     {
+      "char": "手",
+      "suggest": "首",
+      "conf": 1.0
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 69.6,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     0.62,
+     1.09
+    ],
+    "wall": 1.78,
+    "marks": [
+     {
+      "char": "手",
+      "suggest": "首",
+      "conf": 1.0
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0001",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.1,
+    "err_before": 0.0333,
+    "err_after": 0.0333,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0001",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0333,
+    "err_after": 0.0333,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0002",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     4.84,
+     0.78
+    ],
+    "wall": 5.62,
+    "marks": [
+     {
+      "word": "hawkeye"
+     },
+     {
+      "word": "proceedcing"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0002",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0.1,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     0.74,
+     0.78
+    ],
+    "wall": 1.53,
+    "marks": [
+     {
+      "word": "hawkeye"
+     },
+     {
+      "word": "proceedcing"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0003",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0.1,
+    "err_before": 0.0769,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     38.35,
+     3.26
+    ],
+    "wall": 41.61,
+    "marks": [
+     {
+      "word": "aivulet"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0003",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0.1,
+    "err_before": 0.0769,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     2.07,
+     1.91
+    ],
+    "wall": 3.98,
+    "marks": [
+     {
+      "word": "aivulet"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0004",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.1333,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     2.38,
+     1.31
+    ],
+    "wall": 3.7,
+    "marks": [
+     {
+      "word": "chingachchguk"
+     },
+     {
+      "word": "disistrusting"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0004",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.1333,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.74,
+     12.74
+    ],
+    "wall": 14.49,
+    "marks": [
+     {
+      "word": "chingachchguk"
+     },
+     {
+      "word": "disistrusting"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0005",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0476,
+    "err_after": 0.0476,
+    "calls": 2,
+    "lat": [
+     1.95,
+     1.5
+    ],
+    "wall": 3.45,
+    "marks": [
+     {
+      "word": "scoonons"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0005",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0476,
+    "err_after": 0.0476,
+    "calls": 2,
+    "lat": [
+     1.57,
+     1.4
+    ],
+    "wall": 2.98,
+    "marks": [
+     {
+      "word": "scoonons"
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 63.8,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 56.1,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 66.9,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.07,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 66.2,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.07,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 52.8,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 51.9,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 52.3,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 51.5,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 73.5,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.07,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 75.2,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.08,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.1,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   }
+  ]
+ },
+ "G2": {
+  "summary": {
+   "n": 40,
+   "dirty_err": 0.0736,
+   "dirty_err_after": 0.0331,
+   "dirty_worsened": 0,
+   "clean_damage": 0,
+   "dirty_flag_recall": 0.7,
+   "clean_flag_rate": 0.0,
+   "llm_calls": 26,
+   "calls_per_sent": 0.65,
+   "gate_ms_mean": 30.59,
+   "lat_p50": 1.71
+  },
+  "records": [
+   {
+    "id": "BAC009S0002W0122",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 64.2,
+    "err_before": 0.0667,
+    "err_after": 0.0667,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0122",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 62.2,
+    "err_before": 0.0667,
+    "err_after": 0.0667,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 59.4,
+    "err_before": 0.0833,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     3.08,
+     1.57
+    ],
+    "wall": 4.71,
+    "marks": [
+     {
+      "char": "候",
+      "suggest": "后",
+      "conf": 0.989
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 68.3,
+    "err_before": 0.0833,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     6.08,
+     1.62
+    ],
+    "wall": 7.78,
+    "marks": [
+     {
+      "char": "候",
+      "suggest": "后",
+      "conf": 0.989
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 64.9,
+    "err_before": 0.0588,
+    "err_after": 0.0588,
+    "calls": 1,
+    "lat": [
+     1.62
+    ],
+    "wall": 1.68,
+    "marks": [
+     {
+      "char": "网",
+      "suggest": "往",
+      "conf": 0.979
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 66.4,
+    "err_before": 0.0588,
+    "err_after": 0.0588,
+    "calls": 1,
+    "lat": [
+     1.78
+    ],
+    "wall": 1.85,
+    "marks": [
+     {
+      "char": "网",
+      "suggest": "往",
+      "conf": 0.979
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 63.9,
+    "err_before": 0.125,
+    "err_after": 0.125,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 62.2,
+    "err_before": 0.125,
+    "err_after": 0.125,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 65.4,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.77,
+     1.37
+    ],
+    "wall": 3.21,
+    "marks": [
+     {
+      "char": "手",
+      "suggest": "首",
+      "conf": 1.0
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 69.2,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.85,
+     1.39
+    ],
+    "wall": 3.32,
+    "marks": [
+     {
+      "char": "手",
+      "suggest": "首",
+      "conf": 1.0
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0001",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.1,
+    "err_before": 0.0333,
+    "err_after": 0.0333,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0001",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0333,
+    "err_after": 0.0333,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0002",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     4.45,
+     1.77
+    ],
+    "wall": 6.22,
+    "marks": [
+     {
+      "word": "hawkeye"
+     },
+     {
+      "word": "proceedcing"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0002",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.71,
+     1.63
+    ],
+    "wall": 3.33,
+    "marks": [
+     {
+      "word": "hawkeye"
+     },
+     {
+      "word": "proceedcing"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0003",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0769,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.51,
+     1.57
+    ],
+    "wall": 3.08,
+    "marks": [
+     {
+      "word": "aivulet"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0003",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0769,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.88,
+     1.93
+    ],
+    "wall": 3.82,
+    "marks": [
+     {
+      "word": "aivulet"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0004",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.1333,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.76,
+     1.38
+    ],
+    "wall": 3.14,
+    "marks": [
+     {
+      "word": "chingachchguk"
+     },
+     {
+      "word": "disistrusting"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0004",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.1333,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     2.89,
+     1.49
+    ],
+    "wall": 4.38,
+    "marks": [
+     {
+      "word": "chingachchguk"
+     },
+     {
+      "word": "disistrusting"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0005",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0476,
+    "err_after": 0.0476,
+    "calls": 2,
+    "lat": [
+     1.85,
+     1.58
+    ],
+    "wall": 3.43,
+    "marks": [
+     {
+      "word": "scoonons"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0005",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0476,
+    "err_after": 0.0476,
+    "calls": 2,
+    "lat": [
+     1.67,
+     1.36
+    ],
+    "wall": 3.03,
+    "marks": [
+     {
+      "word": "scoonons"
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 55.9,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 54.2,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 62.7,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 62.4,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 50.6,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 50.2,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 49.6,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 49.5,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 70.7,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.07,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 71.5,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.07,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.1,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   }
+  ]
+ },
+ "G4": {
+  "summary": {
+   "n": 40,
+   "dirty_err": 0.0736,
+   "dirty_err_after": 0.0331,
+   "dirty_worsened": 0,
+   "clean_damage": 0,
+   "dirty_flag_recall": 0.7,
+   "clean_flag_rate": 0.0,
+   "llm_calls": 26,
+   "calls_per_sent": 0.65,
+   "gate_ms_mean": 31.5075,
+   "lat_p50": 1.65
+  },
+  "records": [
+   {
+    "id": "BAC009S0002W0122",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 62.1,
+    "err_before": 0.0667,
+    "err_after": 0.0667,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0122",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 61.2,
+    "err_before": 0.0667,
+    "err_after": 0.0667,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 57.7,
+    "err_before": 0.0833,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.56,
+     3.75
+    ],
+    "wall": 5.36,
+    "marks": [
+     {
+      "char": "候",
+      "suggest": "后",
+      "conf": 0.989
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0130",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 63.6,
+    "err_before": 0.0833,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.43,
+     1.41
+    ],
+    "wall": 2.91,
+    "marks": [
+     {
+      "char": "候",
+      "suggest": "后",
+      "conf": 0.989
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 64.9,
+    "err_before": 0.0588,
+    "err_after": 0.0588,
+    "calls": 2,
+    "lat": [
+     1.44,
+     1.49
+    ],
+    "wall": 3.0,
+    "marks": [
+     {
+      "char": "网",
+      "suggest": "往",
+      "conf": 0.979
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0132",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 66.1,
+    "err_before": 0.0588,
+    "err_after": 0.0588,
+    "calls": 2,
+    "lat": [
+     2.36,
+     1.3
+    ],
+    "wall": 3.73,
+    "marks": [
+     {
+      "char": "网",
+      "suggest": "往",
+      "conf": 0.979
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 73.2,
+    "err_before": 0.125,
+    "err_after": 0.125,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.07,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0136",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 64.4,
+    "err_before": 0.125,
+    "err_after": 0.125,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 68.3,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.89,
+     3.26
+    ],
+    "wall": 5.23,
+    "marks": [
+     {
+      "char": "手",
+      "suggest": "首",
+      "conf": 1.0
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0139",
+    "lang": "zh",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 87.0,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.19,
+     1.44
+    ],
+    "wall": 2.72,
+    "marks": [
+     {
+      "char": "手",
+      "suggest": "首",
+      "conf": 1.0
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0001",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.1,
+    "err_before": 0.0333,
+    "err_after": 0.0333,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0001",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0333,
+    "err_after": 0.0333,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0002",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.65,
+     2.02
+    ],
+    "wall": 3.67,
+    "marks": [
+     {
+      "word": "hawkeye"
+     },
+     {
+      "word": "proceedcing"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0002",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0556,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     3.24,
+     1.87
+    ],
+    "wall": 5.11,
+    "marks": [
+     {
+      "word": "hawkeye"
+     },
+     {
+      "word": "proceedcing"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0003",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0769,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.52,
+     2.26
+    ],
+    "wall": 3.79,
+    "marks": [
+     {
+      "word": "aivulet"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0003",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0769,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.75,
+     1.65
+    ],
+    "wall": 3.4,
+    "marks": [
+     {
+      "word": "aivulet"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0004",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.1333,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.31,
+     1.31
+    ],
+    "wall": 2.62,
+    "marks": [
+     {
+      "word": "chingachchguk"
+     },
+     {
+      "word": "disistrusting"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0004",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.1333,
+    "err_after": 0.0,
+    "calls": 2,
+    "lat": [
+     1.99,
+     1.63
+    ],
+    "wall": 3.63,
+    "marks": [
+     {
+      "word": "chingachchguk"
+     },
+     {
+      "word": "disistrusting"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0005",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 1,
+    "flagged": true,
+    "gate_ms": 0.0,
+    "err_before": 0.0476,
+    "err_after": 0.0476,
+    "calls": 1,
+    "lat": [
+     2.04
+    ],
+    "wall": 2.04,
+    "marks": [
+     {
+      "word": "scoonons"
+     }
+    ]
+   },
+   {
+    "id": "1320-122612-0005",
+    "lang": "en",
+    "dirty": true,
+    "repeat": 2,
+    "flagged": true,
+    "gate_ms": 0.1,
+    "err_before": 0.0476,
+    "err_after": 0.0476,
+    "calls": 1,
+    "lat": [
+     4.61
+    ],
+    "wall": 4.61,
+    "marks": [
+     {
+      "word": "scoonons"
+     }
+    ]
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 63.9,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0123",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 54.2,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 64.5,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0124",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 64.6,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.06,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 50.4,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0125",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 50.3,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 50.2,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0126",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 50.3,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.05,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 71.7,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.07,
+    "marks": []
+   },
+   {
+    "id": "BAC009S0002W0127",
+    "lang": "zh",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 71.3,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.07,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.1,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0000",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.1,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0006",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0008",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0009",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 1,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   },
+   {
+    "id": "1320-122612-0013",
+    "lang": "en",
+    "dirty": false,
+    "repeat": 2,
+    "flagged": false,
+    "gate_ms": 0.0,
+    "err_before": 0.0,
+    "err_after": 0.0,
+    "calls": 0,
+    "lat": [],
+    "wall": 0.0,
+    "marks": []
+   }
+  ]
+ }
+}
