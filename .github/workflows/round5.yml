@@ -1,0 +1,81 @@
+name: round5
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/round5.py"
+      - "asr_correct/**"
+      - ".github/workflows/round5.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: round5
+  cancel-in-progress: true
+
+jobs:
+  csc-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      HF_HOME: /tmp/hf
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip (torch cpu + transformers)
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-round5-v2
+
+      - name: Cache HF model (macbert4csc)
+        uses: actions/cache@v4
+        with:
+          path: /tmp/hf
+          key: hf-macbert4csc-v1
+
+      - name: Install deps
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install transformers requests pyspellchecker pypinyin
+
+      - name: Run round5 (G0 no-gate / G1 CSC@0.5 / G2 CSC@0.9 / G4 hints)
+        run: python scripts/round5.py
+          --manifest experiments/round4/manifest.round4.jsonl
+          --out results --repeats 2
+        env:
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+          SUANLI_API_KEY: ${{ secrets.SUANLI_API_KEY }}
+
+      - name: Job summary
+        if: always()
+        run: cat results/round5-summary.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: round5
+          path: results/
+
+      - name: Persist to results branch + archive to main experiments
+        if: success()
+        run: |
+          git config user.name "ci-bot"
+          git config user.email "ci-bot@users.noreply.github.com"
+          mkdir -p experiments/round5
+          cp results/round5.json results/round5-summary.md experiments/round5/ 2>/dev/null || true
+          git add -A experiments/round5
+          if ! git diff --cached --quiet; then
+            git commit -m "round5 results: $(date -u +%FT%TZ)"
+            git push origin HEAD:main
+          else
+            echo "no results change"
+          fi

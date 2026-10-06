@@ -114,14 +114,16 @@ def guard(original, candidate, cfg):
     return True, ""
 
 
-def correct_sentence(sentence, cfg, log=print):
+def correct_sentence(sentence, cfg, log=print, hint=None):
     """Two-pass correction with guards and model fallback. Never raises
-    for guard reasons — falls back to the original sentence."""
+    for guard reasons — falls back to the original sentence.
+    hint: optional advisory list (e.g. [{'char':'候','suggest':'后','conf':0.98}])
+    from an upstream detector; appended to pass-1 input as a soft prior."""
     lang = "en" if _is_latin(sentence) else "zh"
     correct_sys = CORRECT_ZH if lang == "zh" else CORRECT_EN
     verify_sys = VERIFY_ZH if lang == "zh" else VERIFY_EN
     res = {"orig": sentence, "final": sentence, "edits": [], "guards": [],
-           "calls": 0, "models": [], "lat": [], "pass2": False}
+           "calls": 0, "models": [], "lat": [], "pass2": False, "gated_hint": bool(hint)}
 
     chain = []
     for m in (cfg.llm_primary, cfg.llm_fallback):
@@ -135,6 +137,9 @@ def correct_sentence(sentence, cfg, log=print):
         if spec.get("fewshot"):
             system += FEWSHOT_ZH if lang == "zh" else FEWSHOT_EN
         user = sentence
+        if hint:
+            user += "\n上游检测器标记的可疑字（仅供参考，可能有误报）：" + json.dumps(
+                hint, ensure_ascii=False)
         fixed, lat = "", None
         for attempt in range(1 + cfg.empty_retries):
             fixed, lat = llm_call(model_id, system, user, cfg)
